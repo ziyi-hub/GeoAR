@@ -57,10 +57,11 @@
     <a-text
         value="L'Institut Universitaire de Technologie Nancy-Charlemagne"
         look-at="[gps-camera]"
-        scale="0 0 0"
+        scale="120 120 120"
         gps-entity-place="latitude: 48.6835098; longitude: 6.1616104"
     ></a-text>
-    <a-camera gps-camera rotation-reader> </a-camera>
+    <!-- infos de a-camera https://jeromeetienne.github.io/AR.js/aframe/ -->
+    <a-camera gps-camera="alert: true;" rotation-reader> </a-camera>
 </a-scene>
 </body>
 </html>
