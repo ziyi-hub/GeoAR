@@ -6,8 +6,8 @@ const loadPlaces = function (coords) {
         {
             name: "IUT Nancy Charlemagne",
             location: {
-                lat: 48.6971757, // add here latitude if using static data
-                lng: 6.172229, // add here longitude if using static data
+                lat: 48.6835098, // add here latitude if using static data
+                lng: 6.1616104, // add here longitude if using static data
             }
         },
     ];
@@ -62,15 +62,13 @@ window.onload = () => {
         loadPlaces(position.coords)
             .then((places) => {
                 places.forEach((place) => {
-                    //const latitude = place.location.lat;
-                    //const longitude = place.location.lng;
-                    const latitude = 48.6835098;
-                    const longitude = 6.1616104;
+                    const latitude = place.location.lat;
+                    const longitude = place.location.lng;
 
                     // add place name
                     const text = document.createElement('a-link');
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-                    text.setAttribute('title', /*place.name*/"IUT Nancy-Charlemagne");
+                    text.setAttribute('title', place.name);
                     text.setAttribute('href', 'http://www.example.com/');
                     text.setAttribute('scale', '20 20 20');
 
