@@ -62,13 +62,15 @@ window.onload = () => {
         loadPlaces(position.coords)
             .then((places) => {
                 places.forEach((place) => {
-                    const latitude = place.location.lat;
-                    const longitude = place.location.lng;
+                    //const latitude = place.location.lat;
+                    //const longitude = place.location.lng;
+                    const latitude = 48.6835098;
+                    const longitude = 6.1616104;
 
                     // add place name
                     const text = document.createElement('a-link');
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-                    text.setAttribute('title', place.name);
+                    text.setAttribute('title', /*place.name*/"IUT Nancy-Charlemagne");
                     text.setAttribute('href', 'http://www.example.com/');
                     text.setAttribute('scale', '20 20 20');
 
