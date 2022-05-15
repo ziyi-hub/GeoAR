@@ -914,7 +914,7 @@ window.onload = () => {
 
                         icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
 
-                        /*const clickListener = function(ev) {
+                        const clickListener = function(ev) {
                             ev.stopPropagation();
                             ev.preventDefault();
 
@@ -934,11 +934,9 @@ window.onload = () => {
                                     container.parentElement.removeChild(container);
                                 }, 1500);
                             }
-                        };*/
+                        };
 
-                        icon.addEventListener('click', /*clickListener*/()=>{
-                            alert("you click this one");
-                        });
+                        icon.addEventListener('click',clickListener);
 
                         scene.appendChild(icon);
                     });
