@@ -847,7 +847,7 @@ const loadPlaces = function () {
 };
 
 
-/*
+
 window.onload = () => {
     const scene = document.querySelector('a-scene');
 
@@ -859,10 +859,10 @@ window.onload = () => {
             .then((places) => {
                 places.forEach((place) => {
                     const latitude = place.latitude;
-                    const longitude = place.longitude;*/
+                    const longitude = place.longitude;
 
                     // add place name
-  /*                  const text = document.createElement('a-link');
+/*                    const text = document.createElement('a-link');
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     text.setAttribute('title', place.name);
                     text.setAttribute('href', 'http://www.example.com/');
@@ -870,12 +870,18 @@ window.onload = () => {
 
                     text.addEventListener('loaded', () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
-                    });*/
-                    /*const text = document.createElement('a-text');
+                    });
+                    
+ */
+                    
+                    const text = document.createElement('a-text');
                     text.setAttribute('value', place.name);
                     text.setAttribute('look-at', "[gps-camera]");
                     text.setAttribute('scale', "120 120 120");
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+                    text.addEventListener('click', () => {
+                        alert(place.name)
+                    })
                     scene.appendChild(text);
                 });
             })
@@ -887,9 +893,9 @@ window.onload = () => {
             timeout: 27000,
         }
     );
-};*/
+};
 
-
+/*
 window.onload = () => {
     const scene = document.querySelector('a-scene');
 
@@ -950,4 +956,4 @@ window.onload = () => {
         }
     );
 };
-
+*/
