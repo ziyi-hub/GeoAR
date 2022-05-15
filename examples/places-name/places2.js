@@ -880,8 +880,12 @@ window.onload = () => {
                     text.setAttribute('scale', "120 120 120");
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     text.addEventListener('click', () => {
-                        alert(place.name)
-                    })
+                        window.alert(place.name);
+                    });
+                    
+                    text.addEventListener('loaded', () => {
+                        window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
+                    });
                     scene.appendChild(text);
                 });
             })
