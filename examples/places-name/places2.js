@@ -898,13 +898,15 @@ window.onload = () => {
                         }
                     };*/
 
-                    text.addEventListener('click', (ev)=>{
-                        console.log(ev.target);
-                    });
+
                     
                     scene.appendChild(text);
                     console.log("image ok");
 
+                    text.addEventListener('click', (ev)=>{
+                        console.log(ev.target);
+                        console.log("you click me");
+                    });
 /*                    
                     const text = document.createElement('a-text');
                     text.setAttribute('value', place.name);
