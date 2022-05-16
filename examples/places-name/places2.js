@@ -898,8 +898,8 @@ window.onload = () => {
                         }
                     };*/
 
-                    text.addEventListener('click', ()=>{
-                        alert("you click me");
+                    text.addEventListener('click', (ev)=>{
+                        console.log(ev.target);
                     });
                     
                     scene.appendChild(text);
