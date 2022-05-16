@@ -76,7 +76,7 @@ AFRAME.registerComponent('gps-camera', {
         // if Firefox
         if (navigator.browserSpecs.name === 'Firefox') {
             // Do something for Firefox.
-            if (navigator.browserSpecs.version > 42) {
+            //if (navigator.browserSpecs.version > 42) {
                 // Do something for Firefox versions greater than 42.
                 if (typeof DeviceOrientationEvent.requestPermission === 'function') {
                     var handler = function() {
@@ -96,7 +96,7 @@ AFRAME.registerComponent('gps-camera', {
                         clearTimeout(timeout);
                     });
                 }
-            }
+            //}
         }
 
         window.addEventListener(eventName, this._onDeviceOrientation, false);
