@@ -847,7 +847,7 @@ const loadPlaces = function () {
 };
 
 
-/*
+
 window.onload = () => {
     const scene = document.querySelector('a-scene');
 
@@ -870,8 +870,8 @@ window.onload = () => {
 
                     text.addEventListener('loaded', () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
-                    });*/
-                    
+                    });
+                    scene.appendChild(text);
 
 /*                    
                     const text = document.createElement('a-text');
@@ -881,7 +881,7 @@ window.onload = () => {
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     scene.appendChild(text);
 */                    
-                /*});
+                });
             })
     },
         (err) => console.error('Error in retrieving position', err),
@@ -892,9 +892,9 @@ window.onload = () => {
         }
     );
 };
-*/
 
 
+/*
 window.onload = () => {
     const scene = document.querySelector('a-scene');
 
@@ -950,4 +950,4 @@ window.onload = () => {
             timeout: 27000,
         }
     );
-};
+};*/
