@@ -847,7 +847,7 @@ const loadPlaces = function () {
 };
 
 
-
+/*
 window.onload = () => {
     const scene = document.querySelector('a-scene');
 
@@ -866,11 +866,11 @@ window.onload = () => {
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     text.setAttribute('title', place.name);
                     text.setAttribute('href', place.image);
-                    text.setAttribute('scale', '20 20 20');
+                    text.setAttribute('scale', '120 120 120');
 
                     text.addEventListener('loaded', () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
-                    });
+                    });*/
                     
 
 /*                    
@@ -881,10 +881,7 @@ window.onload = () => {
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     scene.appendChild(text);
 */                    
-                });
-            })
-            .catch(() => {
-                console.log("erreur");
+                /*});
             })
     },
         (err) => console.error('Error in retrieving position', err),
@@ -895,9 +892,9 @@ window.onload = () => {
         }
     );
 };
+*/
 
 
-/*
 window.onload = () => {
     const scene = document.querySelector('a-scene');
 
@@ -953,4 +950,4 @@ window.onload = () => {
             timeout: 27000,
         }
     );
-};*/
+};
