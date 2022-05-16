@@ -903,7 +903,7 @@ window.onload = () => {
                     });
                     
                     scene.appendChild(text);
-                    //console.log("image ok");
+                    console.log("image ok");
 
 /*                    
                     const text = document.createElement('a-text');
