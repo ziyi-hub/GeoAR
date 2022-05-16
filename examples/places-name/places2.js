@@ -880,8 +880,11 @@ window.onload = () => {
                     text.setAttribute('scale', "120 120 120");
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     scene.appendChild(text);
-                    console.log("image bien fonctionne");
+                    
                 });
+            })
+            .catch(() => {
+                console.log("erreur");
             })
     },
         (err) => console.error('Error in retrieving position', err),
