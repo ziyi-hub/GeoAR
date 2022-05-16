@@ -872,7 +872,7 @@ window.onload = () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
                     });
 
-                    const clickListener = function(ev) {
+                    /*const clickListener = function(ev) {
                         ev.stopPropagation();
                         ev.preventDefault();
 
@@ -896,9 +896,11 @@ window.onload = () => {
                                 container.parentElement.removeChild(container);
                             }, 1500);
                         }
-                    };
+                    };*/
 
-                    text.addEventListener('click', clickListener);
+                    text.addEventListener('click', ()=>{
+                        alert("you click me");
+                    });
                     
                     scene.appendChild(text);
                     //console.log("image ok");
