@@ -872,6 +872,7 @@ window.onload = () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
                     });
                     scene.appendChild(text);
+                    console.log("image ok");
 
 /*                    
                     const text = document.createElement('a-text');
