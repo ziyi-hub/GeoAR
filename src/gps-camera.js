@@ -32,7 +32,7 @@ AFRAME.registerComponent('gps-camera', {
         this._onDeviceOrientation = this._onDeviceOrientation.bind(this);
 
         // if Safari
-        if (!!navigator.userAgent.match(/Version\/[\d.]+.*Safari/)) {
+        //if (!!navigator.userAgent.match(/Version\/[\d.]+.*Safari/)) {
             // iOS 13+
             if (typeof DeviceOrientationEvent.requestPermission === 'function') {
                 var handler = function() {
@@ -52,7 +52,7 @@ AFRAME.registerComponent('gps-camera', {
                     clearTimeout(timeout);
                 });
             }
-        }
+        //}
 
         window.addEventListener(eventName, this._onDeviceOrientation, false);
 
