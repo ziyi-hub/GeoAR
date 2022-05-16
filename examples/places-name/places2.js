@@ -874,16 +874,6 @@ window.onload = () => {
 
                     scene.appendChild(text);
                     console.log("image ok");
-
-                    text.addEventListener('onload', (ev)=>{
-                        ev.stopPropagation();
-                        ev.preventDefault();
-
-                        const name = ev.target.getAttribute('title');
-                        console.log(name);
-                        const el = ev.detail.intersection && ev.detail.intersection.object.el;
-                        console.log(el);
-                    });
                 });
             })
     },
