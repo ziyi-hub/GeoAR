@@ -862,25 +862,25 @@ window.onload = () => {
                     const longitude = place.longitude;
 
                     // add place name
-/*                    const text = document.createElement('a-link');
+                    const text = document.createElement('a-link');
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     text.setAttribute('title', place.name);
-                    text.setAttribute('href', 'http://www.example.com/');
+                    text.setAttribute('href', place.image);
                     text.setAttribute('scale', '20 20 20');
 
                     text.addEventListener('loaded', () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
                     });
                     
- */
-                    
+
+/*                    
                     const text = document.createElement('a-text');
                     text.setAttribute('value', place.name);
                     text.setAttribute('look-at', "[gps-camera]");
                     text.setAttribute('scale', "120 120 120");
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     scene.appendChild(text);
-                    
+*/                    
                 });
             })
             .catch(() => {
