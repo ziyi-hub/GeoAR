@@ -904,8 +904,26 @@ window.onload = () => {
                     console.log("image ok");
 
                     text.addEventListener('click', (ev)=>{
-                        console.log(ev.target);
-                        console.log("you click me");
+                        ev.stopPropagation();
+                        ev.preventDefault();
+
+                        const name = ev.target.getAttribute('title');
+                        console.log(name);
+                        const el = ev.detail.intersection && ev.detail.intersection.object.el;
+                        console.log(el);
+                        
+                        if (el && el === ev.target) {
+                            const label = document.createElement('span');
+                            const container = document.createElement('div');
+                            container.setAttribute('id', 'place-label');
+                            label.innerText = name;
+                            container.appendChild(label);
+                            document.body.appendChild(container);
+
+                            setTimeout(() => {
+                                container.parentElement.removeChild(container);
+                            }, 1500);
+                        }
                     });
 /*                    
                     const text = document.createElement('a-text');
