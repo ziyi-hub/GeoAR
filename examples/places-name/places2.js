@@ -894,7 +894,7 @@ window.onload = () => {
                         }
                     };
 
-                    icon.addEventListener('click', clickListener);
+                    text.addEventListener('click', clickListener);
                     
                     scene.appendChild(text);
                     console.log("image ok");
