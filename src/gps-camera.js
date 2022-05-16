@@ -32,7 +32,7 @@ AFRAME.registerComponent('gps-camera', {
         this._onDeviceOrientation = this._onDeviceOrientation.bind(this);
 
         // if Safari
-        //if (!!navigator.userAgent.match(/Version\/[\d.]+.*Safari/)) {
+        if (!!navigator.userAgent.match(/Version\/[\d.]+.*Safari/)) {
             // iOS 13+
             if (typeof DeviceOrientationEvent.requestPermission === 'function') {
                 var handler = function() {
@@ -52,7 +52,52 @@ AFRAME.registerComponent('gps-camera', {
                     clearTimeout(timeout);
                 });
             }
-        //}
+        }
+
+        navigator.browserSpecs = (function(){
+            var ua = navigator.userAgent, tem,
+                M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+            if(/trident/i.test(M[1])){
+                tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+                return {name:'IE',version:(tem[1] || '')};
+            }
+            if(M[1]=== 'Chrome'){
+                tem = ua.match(/\b(OPR|Edge)\/(\d+)/);
+                if(tem != null) return {name:tem[1].replace('OPR', 'Opera'),version:tem[2]};
+            }
+            M = M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+            if((tem = ua.match(/version\/(\d+)/i))!= null)
+                M.splice(1, 1, tem[1]);
+            return {name:M[0], version:M[1]};
+        })();
+
+        console.log(navigator.browserSpecs); //Object { name: "Firefox", version: "42" }
+
+        // if Firefox
+        if (navigator.browserSpecs.name === 'Firefox') {
+            // Do something for Firefox.
+            if (navigator.browserSpecs.version > 42) {
+                // Do something for Firefox versions greater than 42.
+                if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+                    var handler = function() {
+                        console.log('Requesting device orientation permissions...')
+                        DeviceOrientationEvent.requestPermission();
+                        document.removeEventListener('touchend', handler);
+                    };
+
+                    document.addEventListener('touchend', function() { handler() }, false);
+
+                    alert('After camera permission prompt, please tap the screen to active geolocation.');
+                } else {
+                    var timeout = setTimeout(function () {
+                        alert('Please enable device orientation in Settings > Safari > Motion & Orientation Access.')
+                    }, 750);
+                    window.addEventListener(eventName, function () {
+                        clearTimeout(timeout);
+                    });
+                }
+            }
+        }
 
         window.addEventListener(eventName, this._onDeviceOrientation, false);
 
