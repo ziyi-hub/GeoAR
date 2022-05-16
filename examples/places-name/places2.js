@@ -879,7 +879,10 @@ window.onload = () => {
                         const name = ev.target.getAttribute('title');
 
                         const el = ev.detail.intersection && ev.detail.intersection.object.el;
-
+                        
+                        console.log(el);
+                        console.log(ev.target);
+                        
                         if (el && el === ev.target) {
                             const label = document.createElement('span');
                             const container = document.createElement('div');
@@ -887,6 +890,7 @@ window.onload = () => {
                             label.innerText = name;
                             container.appendChild(label);
                             document.body.appendChild(container);
+                            console.log("add label");
 
                             setTimeout(() => {
                                 container.parentElement.removeChild(container);
@@ -897,7 +901,7 @@ window.onload = () => {
                     text.addEventListener('click', clickListener);
                     
                     scene.appendChild(text);
-                    console.log("image ok");
+                    //console.log("image ok");
 
 /*                    
                     const text = document.createElement('a-text');
