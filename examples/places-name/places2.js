@@ -880,6 +880,7 @@ window.onload = () => {
                     text.setAttribute('scale', "120 120 120");
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     scene.appendChild(text);
+                    console.log("image bien fonctionne");
                 });
             })
     },
