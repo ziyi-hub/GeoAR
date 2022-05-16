@@ -847,7 +847,7 @@ const loadPlaces = function () {
 };
 
 
-/*
+
 window.onload = () => {
     const scene = document.querySelector('a-scene');
 
@@ -859,7 +859,7 @@ window.onload = () => {
             .then((places) => {
                 places.forEach((place) => {
                     const latitude = place.latitude;
-                    const longitude = place.longitude;*/
+                    const longitude = place.longitude;
 
                     // add place name
 /*                    const text = document.createElement('a-link');
@@ -874,7 +874,7 @@ window.onload = () => {
                     
  */
                     
-                    /*const text = document.createElement('a-text');
+                    const text = document.createElement('a-text');
                     text.setAttribute('value', place.name);
                     text.setAttribute('look-at', "[gps-camera]");
                     text.setAttribute('scale', "120 120 120");
@@ -891,29 +891,25 @@ window.onload = () => {
         }
     );
 };
-*/
 
 
+/*
 window.onload = () => {
     const scene = document.querySelector('a-scene');
 
-    // first get current user location
     return navigator.geolocation.getCurrentPosition(function (position) {
 
-            // then use it to load from remote APIs some places nearby
             loadPlaces()
                 .then((places) => {
                     places.forEach((place) => {
                         const latitude = place.latitude;
                         const longitude = place.longitude;
 
-                        // add place icon
                         const icon = document.createElement('a-image');
                         icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
                         icon.setAttribute('name', place.name);
                         icon.setAttribute('src', '../assets/map-marker.png');
 
-                        // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
                         icon.setAttribute('scale', '120, 120');
 
                         icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
@@ -953,4 +949,4 @@ window.onload = () => {
             timeout: 27000,
         }
     );
-};
+};*/
