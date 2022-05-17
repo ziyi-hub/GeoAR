@@ -95,13 +95,7 @@
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         <img id="cubes" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
         <img id="sechelt" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
-        <a-text
-            id="test" crossorigin="anonymous"
-            value="This content will always face you."
-            look-at="[gps-camera]"
-            scale="120 120 120"
-            gps-entity-place="latitude: 48.6835098; longitude: 6.1616104"
-        ></a-text>
+        <img id="homeThumbnail" src="examples/assets/IUT_SLIDER1_GENERIQUE_06.png">
     </a-assets>
 
     <!-- 360-degree image. -->
@@ -114,8 +108,7 @@
         <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
-        <!--<a-entity template="src: #link" data-src="#test" data-thumb="#sechelt-thumb"></a-entity>-->
-        <a-entity link="href: examples/places-name/index.html; title: My Homepage;" data-thumb="#sechelt-thumb"></a-entity>
+        <a-entity link="href: index.html; title: My Homepage; image: #homeThumbnail"></a-entity>        
     </a-entity>
 
     <!-- Camera + cursor. -->
