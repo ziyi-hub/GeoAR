@@ -48,14 +48,33 @@
 
 <body>
 
-<a-scene
+<!--<a-scene
     vr-mode-ui="enabled: true"
     arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
     background="transparent: true"
->
+>-->
     
     <!-- infos de a-camera https://jeromeetienne.github.io/AR.js/aframe/ -->
-    <a-camera gps-camera rotation-reader></a-camera>
+    <!--<a-camera gps-camera rotation-reader></a-camera>
+</a-scene>-->
+
+
+<a-scene>
+    <a-assets>
+        <audio id = "click-sound" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+        <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
+        <img id="city-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+        <img id="cubes" src="https://cdn.aframe.io/360-image -gallery-boilerplate/img/cubes.jpg">
+        <img id="cubes-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+        <img id = "sechelt" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg" >
+        <img id = "sechelt-thumb" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+    </a-assets>
+    <a-sky id="image-360" radius="10" src="#city"></a-sky>
+    <a-entity class="链接"></a-entity>
+    <a-camera>
+        <a-cursor id="cursor" animation__click = "property: scale; from: 0.1 0.1 0.1; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click" animation__clickreset = "属性：比例；到：0.1 0.1 0.1；dur：1；startEvents：animationcomplete__click" animation__fusing = "属性：比例；从：1 1 1；到：0.1 0.1 0.1；缓动：easeInCubic；dur：150；startEvents：融合" ></a-cursor >
+    </a-camera>
 </a-scene>
+
 </body>
 </html>
