@@ -60,14 +60,20 @@
 
 
 <a-scene>
+    <a-text
+        value="This content will always face you."
+        look-at="[gps-camera]"
+        scale="120 120 120"
+        gps-entity-place="latitude: 48.6835098; longitude: 6.1616104"
+    ></a-text>
     <a-assets>
-        <audio id = "click-sound" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+        <audio id="click-sound" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
         <img id="city-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
         <img id="cubes" src="https://cdn.aframe.io/360-image -gallery-boilerplate/img/cubes.jpg">
         <img id="cubes-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
-        <img id = "sechelt" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg" >
-        <img id = "sechelt-thumb" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+        <img id="sechelt" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg" >
+        <img id="sechelt-thumb" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
     </a-assets>
     <a-sky id="image-360" radius="10" src="#city"></a-sky>
     <a-entity class="链接"></a-entity>
