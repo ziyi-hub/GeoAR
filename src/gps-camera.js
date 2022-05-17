@@ -31,10 +31,37 @@ AFRAME.registerComponent('gps-camera', {
         var eventName = this._getDeviceOrientationEventName();
         this._onDeviceOrientation = this._onDeviceOrientation.bind(this);
 
+        var front = false;
+        document.getElementById('flip-button').onclick = function() { front = !front; };
+
+        var constraints = { video: { facingMode: (front? "user" : "environment") } };
+        navigator.mediaDevices.getUserMedia(constraints)
+            .then(function() {
+                if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+                    var handler = function() {
+                        console.log('Requesting device orientation permissions...')
+                        DeviceOrientationEvent.requestPermission();
+                        document.removeEventListener('touchend', handler);
+                    };
+
+                    document.addEventListener('touchend', function() { handler() }, false);
+
+                    alert('After camera permission prompt, please tap the screen to active geolocation.');
+                } else {
+                    var timeout = setTimeout(function () {
+                        alert('Please enable device orientation in Settings > Safari > Motion & Orientation Access.')
+                    }, 750);
+                    window.addEventListener(eventName, function () {
+                        clearTimeout(timeout);
+                    });
+                }
+            })
+            .catch(function(err) { console.log(err.name + ": " + err.message); }); // always check for errors at the end.
+        
         // if Safari
-        if (!!navigator.userAgent.match(/Version\/[\d.]+.*Safari/)) {
-            // iOS 13+
-            if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+        /* if (!!navigator.userAgent.match(/Version\/[\d.]+.*Safari/)) {
+            //ios 13+
+           if (typeof DeviceOrientationEvent.requestPermission === 'function') {
                 var handler = function() {
                     console.log('Requesting device orientation permissions...')
                     DeviceOrientationEvent.requestPermission();
@@ -52,7 +79,7 @@ AFRAME.registerComponent('gps-camera', {
                     clearTimeout(timeout);
                 });
             }
-        }
+        }*/
 
         navigator.browserSpecs = (function(){
             var ua = navigator.userAgent, tem,
@@ -72,7 +99,7 @@ AFRAME.registerComponent('gps-camera', {
         })();
 
         console.log(navigator.browserSpecs); //Object { name: "Firefox", version: "42" }
-
+/*
         // if Firefox
         if (navigator.browserSpecs.name === 'Firefox') {
             // Do something for Firefox.
@@ -97,7 +124,7 @@ AFRAME.registerComponent('gps-camera', {
                     });
                 }
             //}
-        }
+        }*/
 
         window.addEventListener(eventName, this._onDeviceOrientation, false);
 
