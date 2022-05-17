@@ -41,53 +41,6 @@ AFRAME.registerComponent('gps-camera', {
         document.addEventListener('touchend', function() { handler() }, false);
 
         alert('After camera permission prompt, please tap the screen to active geolocation.');
-/*
-        var constraints = { video: { facingMode: ("environment") } };
-        navigator.mediaDevices.getUserMedia(constraints)
-            .then(function() {
-                if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-                    var handler = function() {
-                        console.log('Requesting device orientation permissions...')
-                        DeviceOrientationEvent.requestPermission();
-                        document.removeEventListener('touchend', handler);
-                    };
-
-                    document.addEventListener('touchend', function() { handler() }, false);
-
-                    alert('After camera permission prompt, please tap the screen to active geolocation.');
-                } else {
-                    var timeout = setTimeout(function () {
-                        alert('Please enable device orientation in Settings > Safari > Motion & Orientation Access.')
-                    }, 750);
-                    window.addEventListener(eventName, function () {
-                        clearTimeout(timeout);
-                    });
-                }
-            })
-            .catch(function(err) { console.log(err.name + ": " + err.message); }); // always check for errors at the end.
-*/        
-        // if Safari
-        /* if (!!navigator.userAgent.match(/Version\/[\d.]+.*Safari/)) {
-            //ios 13+
-           if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-                var handler = function() {
-                    console.log('Requesting device orientation permissions...')
-                    DeviceOrientationEvent.requestPermission();
-                    document.removeEventListener('touchend', handler);
-                };
-
-                document.addEventListener('touchend', function() { handler() }, false);
-
-                alert('After camera permission prompt, please tap the screen to active geolocation.');
-            } else {
-                var timeout = setTimeout(function () {
-                    alert('Please enable device orientation in Settings > Safari > Motion & Orientation Access.')
-                }, 750);
-                window.addEventListener(eventName, function () {
-                    clearTimeout(timeout);
-                });
-            }
-        }*/
 
 
         window.addEventListener(eventName, this._onDeviceOrientation, false);
