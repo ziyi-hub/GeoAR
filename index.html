@@ -23,7 +23,7 @@
     </script>
 </head>
 <body>
-<a-scene>
+<!--<a-scene>
     <a-assets>
         <img id="city" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
         <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
@@ -56,6 +56,99 @@
             event-set__mouseleave="_event: mouseleave; color: black"
             raycaster="objects: .link"></a-cursor>
     </a-entity>
+</a-scene>-->
+
+<a-scene
+    antialias="true"
+    fog="color: #000000; near: 0.1; far: 5;"
+    loading
+    vr-mode-ui="enabled: false">
+
+    <a-assets>
+        <img id="play_button" src="./images/play.png">
+        <img id="pause_button" src="./images/pause.png">
+        <img id="info_button" src="./images/info.png">
+    </a-assets>
+
+
+    <a-entity
+        camera="userHeight: 1.6; near:0.01;"
+        listener
+        look-controls
+        wasd-controls="enabled:true;"
+        position="0 0 0">
+    </a-entity>
+
+    <a-entity menu position="0 2 -2" scale="0.75 0.75 1" id="menu">
+        <a-animation
+            begin="shrink" attribute="position" to="0 1.8 -2" dur="1000" easing="ease-out"></a-animation>
+        <a-animation
+            begin="shrink" attribute="scale" to="0.5 0.5 1" dur="1000" easing="ease-out"></a-animation>
+        <a-animation
+            begin="grow" attribute="position" to="0 2 -2" dur="2000" easing="ease-out" ></a-animation>
+        <a-animation
+            begin="grow" attribute="scale" to="0.75 0.75 1" dur="2000" easing="ease-out" ></a-animation>
+    </a-entity>
+
+    <!-- play button -->
+    <a-entity
+        playbutton="playing:false; visible: false"
+        position="0 1 -2"
+        id="playButton"
+        animate="attribute:scale; time:100;"
+        rotation="90 0 0">
+        <a-entity>
+            <a-plane src="#play_button"
+                     material="transparent: true"
+                     scale="0.9 0.9 0.9"
+                     position="0 0.5 0" rotation="-90 0 0"></a-plane>
+            <a-circle
+                class="selectable"
+                material="color: white; shader: flat;" rotation="-90 0 0">
+                <a-animation
+                    begin="mouseenter" attribute="material.color" to="rgb(100, 100, 100)" dur="0"></a-animation>
+                <a-animation
+                    begin="mouseleave" attribute="material.color" to="white" dur="0"></a-animation>
+            </a-circle>
+            <a-cylinder
+                material="color: rgb(80, 80, 80); shader: flat;"
+                position="0 -0.52 0"
+                rotation="0 0 0">
+            </a-cylinder>
+            <a-animation
+                begin="mousedown" attribute="scale" to="1 0.5 1" dur="100"></a-animation>
+            <a-animation
+                begin="mousedown" attribute="position" to="0 -0.5 0" dur="100"></a-animation>
+            <a-animation
+                begin="mouseup" attribute="scale" to="1 1 1" dur="100"></a-animation>
+            <a-animation
+                begin="mouseup" attribute="position" to="0 0 0" dur="100"></a-animation>
+        </a-entity>
+    </a-entity>
+
+    <!-- LOADING -->
+    <a-image
+        id="loadingRing"
+        src="./images/spinner5.png"
+        material="transparent: true"
+        sprite-sheet="cols:12; rows: 12; progress: 0;"
+        position="0 1 -2" scale="0.4 0.4 0.4" visible="false" >
+        <a-animation
+            attribute="sprite-sheet.progress" from="0" to="1" dur="2800" repeat="indefinite" easing="linear"></a-animation>
+        <a-animation
+            attribute="rotation" from="0 0 0" to="0 0 160" dur="2800" repeat="indefinite" easing="linear"></a-animation>
+    </a-image>
+
+    <a-sky bg-color="#000" color="#000"></a-sky>
+    <a-entity shader-floor scale="1 1 1"></a-entity>
+    <a-entity atmosphere position="0 0 0" scale="7 7 7"></a-entity>
+    <!--a-plane id="ground" rotation="-90 0 0" material="color:#000" scale="1000 1000 1000"></a-plane>-->
+
+    <a-entity tracks rotation="0 -180 0"></a-entity>
+
+    <a-entity controls></a-entity>
+    <!--a-text id="console-3d" value="console-3d" position="0 0.3 -0.5"></qa-text-->
+
 </a-scene>
 </body>
 </html>
