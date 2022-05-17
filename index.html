@@ -70,17 +70,25 @@
         <img id="sechelt" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg" >
         <img id="sechelt-thumb" src = "https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
     </a-assets>
-    
-    <a-text
-        id="title"
-        value="This content will always face you."
-        look-at="[gps-camera]"
-        scale="120 120 120"
-        gps-entity-place="latitude: 48.6835098; longitude: 6.1616104"
-    ></a-text>
+
+    <!-- new -->
+    <a-assets>
+        <script id="plane" type="text/html">
+            <a-entity class="link"
+                      geometry="primitive: plane; height: 1; width: 1"
+                      material="shader: flat; src: #cubes-thumb"
+                      sound="on: click; src: #click-sound">
+            </a-entity>
+        </script>
+    </a-assets>
     
     <a-sky id="image-180" radius="10" src="#city"></a-sky>
-    <a-entity src="#title"></a-entity>
+
+    <!-- new -->
+    <a-entity template="src: #plane" data-thumb="#city-thumb"></a-entity>
+    <a-entity template="src: #plane" data-thumb="#cubes-thumb"></a-entity>
+    <a-entity template="src: #plane" data-thumb="#sechelt-thumb"></a-entity>
+    
     
     <a-camera>
         <a-cursor id="cursor" animation__click = "property: scale; from: 0.1 0.1 0.1; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click" animation__clickreset = "属性：比例；到：0.1 0.1 0.1；dur：1；startEvents：animationcomplete__click" animation__fusing = "属性：比例；从：1 1 1；到：0.1 0.1 0.1；缓动：easeInCubic；dur：150；startEvents：融合" ></a-cursor >
