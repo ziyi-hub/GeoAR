@@ -13,13 +13,14 @@
 
     <script id="link" type="text/html">
         <a-entity class="link"
-                  geometry="primitive: plane; height: 1; width: 1"
-                  material="shader: flat; src: ${thumb}"
-                  event-set__mouseenter="scale: 1.2 1.2 1"
-                  event-set__mouseleave="scale: 1 1 1"
-                  event-set__click="_target: #image-360; _delay: 300; material.src: ${src}"
-                  proxy-event="event: click; to: #image-360; as: fade"
-                  sound="on: click; src: #click-sound"></a-entity>
+          geometry="primitive: plane; height: 1; width: 1"
+          material="shader: flat; src: ${thumb}"
+          event-set__mouseenter="scale: 1.2 1.2 1"
+          event-set__mouseleave="scale: 1 1 1"
+          event-set__click="_target: #image-360; _delay: 300; material.src: ${src}"
+          proxy-event="event: click; to: #image-360; as: fade"
+          sound="on: click; src: #click-sound">
+        </a-entity>
     </script>
 </head>
 <body>
@@ -61,13 +62,18 @@
 </body>
 </html>-->
 
-<!DOCTYPE html>
+
+
+
+
+
+
+<!--<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>GeoAR.js demo</title>
-    <!--<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>-->
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
@@ -78,10 +84,41 @@
 
 <a-scene
     vr-mode-ui="enabled: true"
+    isMobile="true"
     arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
 >
-    <!-- infos de a-camera https://jeromeetienne.github.io/AR.js/aframe/ -->
     <a-camera gps-camera rotation-reader></a-camera>
+</a-scene>
+
+</body>
+</html>-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GeoAR.js demo</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="examples/places-name/places2.js"></script>
+</head>
+
+<body>
+
+<a-scene>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"
+             event-set__down="_event: mousedown; material.wireframe: true"
+             event-set__up="_event: mouseup; material.wireframe: false"
+             event-set__leave="_event: mouseleave; material.wireframe: false"></a-plane>
+
+    <a-camera>
+        <a-cursor></a-cursor>
+    </a-camera>
 </a-scene>
 
 </body>
