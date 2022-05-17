@@ -31,10 +31,7 @@ AFRAME.registerComponent('gps-camera', {
         var eventName = this._getDeviceOrientationEventName();
         this._onDeviceOrientation = this._onDeviceOrientation.bind(this);
 
-        var front = false;
-        document.getElementById('flip-button').onclick = function() { front = !front; };
-
-        var constraints = { video: { facingMode: (front? "user" : "environment") } };
+        var constraints = { video: { facingMode: ("environment") } };
         navigator.mediaDevices.getUserMedia(constraints)
             .then(function() {
                 if (typeof DeviceOrientationEvent.requestPermission === 'function') {
@@ -80,7 +77,7 @@ AFRAME.registerComponent('gps-camera', {
                 });
             }
         }*/
-
+/*
         navigator.browserSpecs = (function(){
             var ua = navigator.userAgent, tem,
                 M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
@@ -98,7 +95,7 @@ AFRAME.registerComponent('gps-camera', {
             return {name:M[0], version:M[1]};
         })();
 
-        console.log(navigator.browserSpecs); //Object { name: "Firefox", version: "42" }
+        console.log(navigator.browserSpecs); //Object { name: "Firefox", version: "42" }*/
 /*
         // if Firefox
         if (navigator.browserSpecs.name === 'Firefox') {
