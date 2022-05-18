@@ -42,9 +42,14 @@
 
 <a-scene>
     <a-assets>
-        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
     </a-assets>
+
+    <!-- Box with random color. -->
+    <a-entity geometry="primitive: box; depth: 0.5; height: 0.5; width 0.5"
+              material="shader: standard"
+              position="0 0.5 -2"
+              random-color></a-entity>
 
     <a-cylinder id="ground" src="#groundTexture" radius="30" height="0.1"></a-cylinder>
 
