@@ -851,7 +851,6 @@ const loadPlaces = function () {
 window.onload = () => {
     const scene = document.querySelector('a-scene');
     var constraints = {audio: true, video: false}
-    navigator.mediaDevices.getUserMedia(constraints).then(function(stream) {permissiongiven = 1;});
 
     // first get current user location
     return navigator.geolocation.getCurrentPosition(function (position) {
