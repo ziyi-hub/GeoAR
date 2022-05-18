@@ -48,12 +48,9 @@
              src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
     </a-assets>
     <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
-    <a-text
-        value="FACULTÉ DES SCIENCES ET TECHNOLOGIES"
-        look-at="[gps-camera]"
-        scale="120 120 120"
-        gps-entity-place="latitude: 48.6651218; longitude: 6.1611247"
-    ></a-text>
+    <a-camera>
+        <a-cursor></a-cursor>
+    </a-camera>
 
     <a-sky src="#skyTexture"></a-sky>
 
