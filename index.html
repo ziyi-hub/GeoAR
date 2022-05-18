@@ -49,7 +49,12 @@
     </a-assets>
     <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
     <a-camera>
-        <a-cursor></a-cursor>
+        <a-cursor id="cursor"
+                  animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+                  animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+                  event-set__mouseenter="_event: mouseenter; color: springgreen"
+                  event-set__mouseleave="_event: mouseleave; color: black"
+        ></a-cursor>
     </a-camera>
 
     <a-sky src="#skyTexture"></a-sky>
