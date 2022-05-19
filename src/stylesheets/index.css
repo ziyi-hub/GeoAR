@@ -92,16 +92,17 @@ div.debug {
 @media screen and (max-width:400px) {
 
     .titre_1{
-        font-size: 25em;
+        font-size: 30em;
         padding-bottom: 0;
         margin-bottom: 0;
     }
 
     .titre_2 {
+        font-size: 15em;
         padding-top: 0;
         padding-bottom: 0;
         margin: 0;
-        font-size: 15em;
+        color: red;
     }
 
     .btn{
