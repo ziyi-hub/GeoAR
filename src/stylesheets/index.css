@@ -77,11 +77,16 @@ div.debug {
 
 .desc{
     padding-top: 7%;
+    line-height: 90%;
 }
 
 .center{
     padding: 4% 0 4% 0;
     font-size: 5em;
+    width: 100%;
+    display: inline-block; 
+    margin: auto; 
+    position: relative;
 }
 
 .btn-outline-primary{
