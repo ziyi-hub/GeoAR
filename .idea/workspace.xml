@@ -32,6 +32,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -77,7 +84,7 @@
       <workItem from="1652708376579" duration="19195000" />
       <workItem from="1652797649435" duration="8988000" />
       <workItem from="1652950455560" duration="1402000" />
-      <workItem from="1652952173740" duration="447000" />
+      <workItem from="1652952173740" duration="6856000" />
     </task>
     <servers />
   </component>
