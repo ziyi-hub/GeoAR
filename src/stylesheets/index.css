@@ -72,7 +72,7 @@ div.debug {
 }
 
 .desc{
-    padding: 8% 6% 0;
+    padding: 8% 6% 6%;
     line-height: 100%;
 }
 
@@ -176,7 +176,7 @@ div.debug {
     }
     
     .btn-primary{
-        margin-right: 18%;
+        margin-right: 20%;
     }
 
     .image_3{
