@@ -71,6 +71,11 @@ div.debug {
     opacity: 0.9;
 }
 
+.image_4{
+    background-image: url(../../assets/image/intro2.jpg);
+    opacity: 0.9;
+}
+
 .desc{
     padding: 10% 6% 6%;
     line-height: 100%;
