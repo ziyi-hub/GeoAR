@@ -177,13 +177,9 @@ div.debug {
         width: 28%;
         height: 120px;
     }
-
-    button{
-        border-radius: 12px;
-    }
-
+    
     .btn-primary{
-        margin-right: 10%;
+        margin-right: 12%;
     }
 
     .image_3{
@@ -193,6 +189,10 @@ div.debug {
         top: 45%;
         border-radius: 50px 50px 0 0;
         color: white;
+    }
+    
+    center{
+        padding-bottom: 5%;
     }
 }
 
