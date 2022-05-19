@@ -71,12 +71,8 @@ div.debug {
     opacity: 0.9;
 }
 
-.desc, .btn{
-    padding: 6%;
-}
-
 .desc{
-    padding-top: 7%;
+    padding: 8% 6% 0;
     line-height: 100%;
 }
 
@@ -176,6 +172,7 @@ div.debug {
     .btn{
         width: 28%;
         height: 120px;
+        padding: 6%;
     }
     
     .btn-primary{
