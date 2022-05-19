@@ -48,3 +48,16 @@ div.debug {
     font-size: 1.5em;
     border-radius: 5px;
 }
+
+.introduction{
+    background-size: cover;
+}
+
+.thumbnail{
+    position: relative;
+}
+
+.caption{
+    position: absolute;
+}
+
