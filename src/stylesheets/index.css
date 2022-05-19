@@ -177,7 +177,8 @@ div.debug {
 
     .btn{
         width: 25%;
-        height: 80px;
+        height: 10%;
+        font-size: 5em;
     }
 
     .image_3{
