@@ -82,10 +82,8 @@ div.debug {
 
 .center{
     padding: 4% 0 4% 0;
-    display: inline-block; 
-    margin: auto; 
-    position: relative;
     width: 100%;
+    justify-content: center;
 }
 
 .btn-outline-primary{
