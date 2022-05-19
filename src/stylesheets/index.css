@@ -49,15 +49,29 @@ div.debug {
     border-radius: 5px;
 }
 
-.introduction{
+.entete{
+    background-image: url(../../assets/image/intro.jpg);
+    overflow: scroll;
     background-size: cover;
-}
-
-.thumbnail{
-    position: relative;
-}
-
-.caption{
+    background-attachment: fixed;
+    /*background-position: 50%;*/
+    background-repeat: no-repeat;
+    display: grid;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
     position: absolute;
+    opacity:10;
+    color: black;
+}
+
+.Welcome{
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
