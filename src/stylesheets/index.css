@@ -170,9 +170,13 @@ div.debug {
     }
 
     .btn{
-        width: 28%;
+        width: 29%;
         height: 120px;
         padding: 6%;
+    }
+    
+    .btn-2{
+        
     }
     
     .btn-primary{
