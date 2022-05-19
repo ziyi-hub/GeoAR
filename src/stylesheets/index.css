@@ -130,7 +130,8 @@ div.debug {
     }
 
     .btn{
-        width: 200px;
+        width: 300px;
+        height: 80px;
         font-size: 5em;
     }
 
@@ -163,7 +164,9 @@ div.debug {
     }
 
     .btn{
-        width: 200px;
+        width: 300px;
+        height: 80px;
+        font-size: 5em;
     }
 
     .btn-primary{
