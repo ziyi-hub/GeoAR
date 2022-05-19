@@ -77,6 +77,11 @@ div.debug {
 
 .center{
     padding: 4% 0 4% 0;
+    font-size: 5em;
+}
+
+.btn-outline-primary{
+    color: white;
 }
 
 /*
@@ -165,7 +170,7 @@ div.debug {
 
     .btn{
         width: 250px;
-        height: 120px;
+        height: 80px;
         font-size: 5em;
     }
 
