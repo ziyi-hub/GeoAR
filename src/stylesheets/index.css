@@ -177,8 +177,9 @@ div.debug {
     }
 
     .btn{
-        width: 25%;
-        height: 10%;
+        width: 28%;
+        height: 8%;
+        border-radius: 50px;
     }
 
     .image_3{
