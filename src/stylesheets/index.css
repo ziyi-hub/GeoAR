@@ -33,7 +33,7 @@ div.debug {
 #place-label {
     position: absolute;
     top: 5%;
-    left: 0%;
+    left: 0;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -80,7 +80,7 @@ div.debug {
 }
 
 
-@media screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
 
     .titre_1{
         font-size: 30em;
