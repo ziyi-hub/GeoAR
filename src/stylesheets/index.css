@@ -92,7 +92,7 @@ div.debug {
 @media screen and (max-width:400px) {
 
     .titre_1{
-        font-size: 20em;
+        font-size: 25em;
         padding-bottom: 0;
         margin-bottom: 0;
     }
@@ -101,6 +101,7 @@ div.debug {
         padding-top: 0;
         padding-bottom: 0;
         margin: 0;
+        font-size: 15em;
     }
 
     .btn{
