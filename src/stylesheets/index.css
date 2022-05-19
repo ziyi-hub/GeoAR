@@ -162,6 +162,7 @@ div.debug {
 */
 
 @media screen and (orientation: portrait) {
+    
     .titre_1{
         font-size: 6.5em;
         padding-bottom: 0;
@@ -178,7 +179,6 @@ div.debug {
     .btn{
         width: 25%;
         height: 10%;
-        font-size: 5em;
     }
 
     .image_3{
