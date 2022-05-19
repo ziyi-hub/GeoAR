@@ -77,13 +77,11 @@ div.debug {
 
 .desc{
     padding-top: 7%;
-    line-height: 90%;
+    line-height: 98%;
 }
 
 .center{
     padding: 4% 0 4% 0;
-    font-size: 5em;
-    width: 100%;
     display: inline-block; 
     margin: auto; 
     position: relative;
@@ -181,10 +179,6 @@ div.debug {
     .btn{
         width: 25%;
         height: 80px;
-    }
-
-    .btn-primary{
-        margin-right: 60px;
     }
 
     .image_3{
