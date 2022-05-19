@@ -92,7 +92,7 @@ div.debug {
 @media screen and (max-width:400px) {
 
     .titre_1{
-        font-size: 5em;
+        font-size: 20em;
         padding-bottom: 0;
         margin-bottom: 0;
     }
@@ -135,7 +135,25 @@ div.debug {
     }
 }
 
-@media screen and (min-width:60em) {
-    
+@media screen and (orientation: portrait) {
+    .titre_1{
+        font-size: 5em;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .titre_2 {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .btn{
+        width:100px;
+    }
+
+    .btn-primary{
+        margin-right: 60px;
+    }
 }
 
