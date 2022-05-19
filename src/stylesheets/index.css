@@ -117,7 +117,7 @@ div.debug {
 
 @media screen and (orientation: landscape) and (min-width: 768px) {
     .titre_1{
-        font-size: 8em;
+        font-size: 5em;
         padding-bottom: 0;
         margin-bottom: 0;
     }
@@ -151,7 +151,7 @@ div.debug {
 
 @media screen and (orientation: portrait) {
     .titre_1{
-        font-size: 8em;
+        font-size: 5em;
         padding-bottom: 0;
         margin-bottom: 0;
     }
