@@ -20,8 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/parametre.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/parametre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/propos_detail_cl.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/propos_detail_cl_2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/propos_detail_demoes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/propos_detail_ul.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/propos_detail_ul_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/assets/IUT_SLIDER1_GENERIQUE_06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/assets/map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/assets/place_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/places-name/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/places-name/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/places-name/places2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/condition.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/condition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/logicielTiers.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logicielTiers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/politique.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/politique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/reglement.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/reglement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/parametre_detail.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +92,7 @@
       <recent name="$PROJECT_DIR$/examples/places-name" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -93,7 +111,7 @@
       <workItem from="1652797649435" duration="8988000" />
       <workItem from="1652950455560" duration="1402000" />
       <workItem from="1652952173740" duration="15677000" />
-      <workItem from="1652993539033" duration="29079000" />
+      <workItem from="1652993539033" duration="30574000" />
     </task>
     <servers />
   </component>
