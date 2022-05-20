@@ -124,7 +124,6 @@
 </body>
 </html>-->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -142,7 +141,15 @@
 </head>
 <body>
 
-<h1>Hello</h1>
+<!-- GeoAR -->
+<a-scene
+    vr-mode-ui="enabled: false"
+    isMobile="true"
+    arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
+    class="scene"
+>
+    <a-camera gps-camera rotation-reader></a-camera>
+</a-scene>
 
 <footer>
     <div class="navigation">
@@ -168,8 +175,8 @@
                     <span class="text">Découvrir</span>
                 </a>
             </li>
-            <li class="list">
-                <a href="geo.html">
+            <li class="list active">
+                <a href="#">
                     <span class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
                           <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
@@ -191,7 +198,7 @@
                     <span class="text">Propos</span>
                 </a>
             </li>
-            <li class="list active">
+            <li class="list">
                 <a href="parametre.html">
                     <span class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear-wide-connected" viewBox="0 0 16 16">
