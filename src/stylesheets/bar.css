@@ -44,6 +44,11 @@ body{
     z-index: 1;
 }
 
+a:link, a:visited, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
 .navigation ul li a{
     position: relative;
     display: flex;
