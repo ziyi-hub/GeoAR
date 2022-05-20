@@ -91,19 +91,6 @@ div.debug {
     color: white;
 }
 
-footer
-{
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-top: 1px solid #000000;
-    background-color: white;
-    width: 100%;
-}
-
 /*
 @media only screen and (max-width: 768px) {
 
