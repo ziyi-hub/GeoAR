@@ -30,7 +30,7 @@ const clickListener = function(ev) {
         container.appendChild(label);
         document.body.appendChild(container);
     }*/
-    alert(title);
+    alert("ok");
 };
 
 AFRAME.registerComponent('change-color-on-click', {
