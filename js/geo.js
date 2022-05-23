@@ -1,6 +1,6 @@
 const loadPlaces = function () {
-
-    const PLACES = [
+    let PLACES;
+/*    const PLACES = [
         {
             id: 0,
             longitude: 6.172229,
@@ -842,7 +842,17 @@ const loadPlaces = function () {
         },
 
     ];
-
+*/
+    let request = new XMLHttpRequest();
+    request.open('GET','../datas/places.json', false);
+    request.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            let json = JSON.parse(this.responseText)
+            console.log(json);
+            PLACES = json;
+        }
+    };
+    request.send();
     return Promise.resolve(PLACES);
 };
 
