@@ -30,7 +30,7 @@ const clickListener = function(ev) {
         container.appendChild(label);
         document.body.appendChild(container);
     }*/
-    alert(ev.target.dataset.id, ev.detail.intersection.object.el);
+    alert(el && el === ev.target);
 };
 
 AFRAME.registerComponent('change-color-on-click', {
