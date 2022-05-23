@@ -20,7 +20,7 @@ const clickListener = function(ev) {
 
     const title = ev.target.getAttribute('title');
 
-    const el = ev.detail.intersection && ev.detail.intersection.object.el;
+    /*const el = ev.detail.intersection && ev.detail.intersection.object.el;
 
     if (el && el === ev.target) {
         const label = document.createElement('span');
@@ -29,8 +29,8 @@ const clickListener = function(ev) {
         label.innerText = title;
         container.appendChild(label);
         document.body.appendChild(container);
-
-    }
+    }*/
+    alert(title);
 };
 
 AFRAME.registerComponent('change-color-on-click', {
