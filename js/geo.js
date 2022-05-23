@@ -21,6 +21,7 @@ AFRAME.registerComponent('change-color-on-click', {
             link.onclick = () => {
                 const title = link.getAttribute("title");
                 alert(link.dataset.description);
+                window.open(link.getAttribute("href"))
             }
         })
     }
@@ -46,6 +47,7 @@ window.onload = () => {
                     text.setAttribute('title', place.name);
                     text.setAttribute('data-description', place.description);
                     //text.setAttribute('href', place.image);
+                    text.setAttribute('href', "poiDetail.html");
                     text.setAttribute('scale', '120 120 120');
                     text.setAttribute('change-color-on-click', "")
 

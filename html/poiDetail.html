@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>POI Détail</title>
+    <script>
+        let title;
+        let scene = window.opener.document.querySelector('a-scene');
+        scene.querySelectorAll("a-link").forEach(link => {
+            link.onclick = () => {
+                title = link.getAttribute("title");
+                //alert(link.dataset.description);
+            }
+        })
+        alert(title);
+    </script>
 </head>
 <body>
     <h1>Have a nice day Ziyi</h1>
