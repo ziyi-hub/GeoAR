@@ -5,9 +5,12 @@
     <title>POI Détail</title>
     <script>
         function getData(){
+            debugger;
             let parentWin = window.opener;
-            let val = parentWin.document.querySelector('a-scene');
-            console.log(val);
+            let scene = parentWin.document.querySelector('a-scene');
+            scene.querySelectorAll("a-link").forEach(link => {
+                console.log(link.dataset.description);
+            })
         }
         window.onload = getData;
     </script>
