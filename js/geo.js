@@ -18,7 +18,7 @@ const clickListener = function(ev) {
     ev.stopPropagation();
     ev.preventDefault();
 
-    const name = ev.target.getAttribute('name');
+    const title = ev.target.getAttribute('title');
 
     const el = ev.detail.intersection && ev.detail.intersection.object.el;
 
@@ -26,13 +26,10 @@ const clickListener = function(ev) {
         const label = document.createElement('span');
         const container = document.createElement('div');
         container.setAttribute('id', 'place-label');
-        label.innerText = name;
+        label.innerText = title;
         container.appendChild(label);
         document.body.appendChild(container);
 
-        setTimeout(() => {
-            container.parentElement.removeChild(container);
-        }, 1500);
     }
 };
 
