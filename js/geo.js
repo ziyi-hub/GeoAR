@@ -58,7 +58,7 @@ window.onload = () => {
                     const text = document.createElement('a-link');
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     text.setAttribute('title', place.name);
-                    text.setAttribute('href', place.image);
+                    //text.setAttribute('href', place.image);
                     text.setAttribute('scale', '120 120 120');
                     text.setAttribute('change-color-on-click', "")
 
