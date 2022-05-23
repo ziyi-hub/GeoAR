@@ -63,6 +63,7 @@ window.onload = () => {
                 
                 div.style.position = "relative";
                 div.style.top = "70px";
+                div.style.fontWeight = "bolder";
                 div.innerHTML = name;
                 
                 div.appendChild(p);
