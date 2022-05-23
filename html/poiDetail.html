@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>POI Détail</title>
+    <script>
+        function getData(){
+            let parentWin = window.opener;
+            let val = parentWin.document.querySelector('a-scene');
+            console.log(val);
+        }
+        window.onload = getData;
+    </script>
 </head>
 <body>
     <h1>Have a nice day Ziyi</h1>
