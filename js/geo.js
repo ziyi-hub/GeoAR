@@ -13,7 +13,7 @@ const loadPlaces = function () {
     return Promise.resolve(PLACES);
 };
 
-
+/*
 const clickListener = function(ev) {
     ev.stopPropagation();
     ev.preventDefault();
@@ -30,11 +30,21 @@ const clickListener = function(ev) {
         container.appendChild(label);
         document.body.appendChild(container);
     }
-};
+};*/
+
 
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
-        this.el.addEventListener('click', clickListener);
+        let scene = document.querySelector('a-scene');
+        scene.querySelectorAll("a-link").forEach(link => {
+            link.onclick = () => {
+                const title = link.getAttribute("title");
+                alert(title);
+            }
+        })
+        /*this.el.addEventListener('click', ()=>{
+            
+        });*/
     }
 });
 
