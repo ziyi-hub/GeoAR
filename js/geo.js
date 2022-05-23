@@ -20,9 +20,9 @@ const clickListener = function(ev) {
 
     const title = ev.target.getAttribute('title');
 
-    /*const el = ev.detail.intersection && ev.detail.intersection.object.el;
+    const el = ev.detail.intersection && ev.detail.intersection.object.el;
 
-    if (el && el === ev.target) {
+    /*if (el && el === ev.target) {
         const label = document.createElement('span');
         const container = document.createElement('div');
         container.setAttribute('id', 'place-label');
