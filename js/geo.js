@@ -14,11 +14,31 @@ const loadPlaces = function () {
 };
 
 
+const clickListener = function(ev) {
+    ev.stopPropagation();
+    ev.preventDefault();
+
+    const name = ev.target.getAttribute('name');
+
+    const el = ev.detail.intersection && ev.detail.intersection.object.el;
+
+    if (el && el === ev.target) {
+        const label = document.createElement('span');
+        const container = document.createElement('div');
+        container.setAttribute('id', 'place-label');
+        label.innerText = name;
+        container.appendChild(label);
+        document.body.appendChild(container);
+
+        setTimeout(() => {
+            container.parentElement.removeChild(container);
+        }, 1500);
+    }
+};
+
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
-        this.el.addEventListener('click', function (evt) {
-            alert("you click this " + evt);
-        });
+        this.el.addEventListener('click', clickListener);
     }
 });
 
