@@ -13,25 +13,6 @@ const loadPlaces = function () {
     return Promise.resolve(PLACES);
 };
 
-/*
-const clickListener = function(ev) {
-    ev.stopPropagation();
-    ev.preventDefault();
-
-    //const title = ev.target.getAttribute('title');
-
-    const el = ev.detail.intersection && ev.detail.intersection.object.el;
-
-    if (el && el === ev.target) {
-        const label = document.createElement('span');
-        const container = document.createElement('div');
-        container.setAttribute('id', 'place-label');
-        label.innerText = "title";
-        container.appendChild(label);
-        document.body.appendChild(container);
-    }
-};*/
-
 
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
@@ -39,19 +20,15 @@ AFRAME.registerComponent('change-color-on-click', {
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
                 const title = link.getAttribute("title");
-                alert(title);
+                alert(link.dataset.description);
             }
         })
-        /*this.el.addEventListener('click', ()=>{
-            
-        });*/
     }
 });
 
 
 window.onload = () => {
     const scene = document.querySelector('a-scene');
-    var constraints = {audio: true, video: false}
 
     // first get current user location
     return navigator.geolocation.getCurrentPosition(function (position) {
@@ -67,7 +44,7 @@ window.onload = () => {
                     const text = document.createElement('a-link');
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     text.setAttribute('title', place.name);
-                    text.setAttribute('data-id', place.name);
+                    text.setAttribute('data-description', place.description);
                     //text.setAttribute('href', place.image);
                     text.setAttribute('scale', '120 120 120');
                     text.setAttribute('change-color-on-click', "")
