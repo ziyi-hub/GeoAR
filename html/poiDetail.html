@@ -3,21 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>POI Détail</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCfld0seEmoVxj0ZRr7AAT_206D96d2QU"></script>
-    <script>
-        function getData(){
-            debugger;
-            let parentWin = window.opener;
-            let scene = parentWin.document.querySelector('a-scene');
-            scene.querySelectorAll("a-link").forEach(link => {
-                console.log(link.dataset.description);
-            })
-        }
-        window.onload = getData;
-    </script>
+
 </head>
 <body>
-    <div id="googleMap" style="width:100%;height:700px;"></div>
-    <script src="../js/map.js"></script>
+    <div id="googleMap" style="width:100%;height:380px;"></div>
+    <script type="text/javascript" src="../js/map.js"></script>
 </body>
 </html>
