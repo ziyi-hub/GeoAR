@@ -14,6 +14,14 @@ const loadPlaces = function () {
 };
 
 
+AFRAME.registerComponent('change-color-on-click', {
+    init: function () {
+        this.el.addEventListener('click', function (evt) {
+            alert("you click this " + evt);
+        });
+    }
+});
+
 
 window.onload = () => {
     const scene = document.querySelector('a-scene');
@@ -35,6 +43,7 @@ window.onload = () => {
                     text.setAttribute('title', place.name);
                     text.setAttribute('href', place.image);
                     text.setAttribute('scale', '120 120 120');
+                    text.setAttribute('change-color-on-click', "")
 
                     text.addEventListener('loaded', () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))

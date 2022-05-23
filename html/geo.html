@@ -22,7 +22,9 @@
         arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
         class="scene"
     >
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera gps-camera rotation-reader>
+            <a-cursor geometry="primitive: ring" material="color: #FFC0CB; shader: flat"></a-cursor>
+        </a-camera>
     </a-scene>
 
     <footer>
