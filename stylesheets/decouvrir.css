@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    display: initial;
+    justify-content: initial;
+    background-color: initial;
+}
+
+.parallax {
+    /* Votre image */
+    background-image: url("https://i.ytimg.com/vi/1OaBoi9kRzw/maxresdefault.jpg");
+
+    /* Une hauteur variable */
+    height: 100vh;
+    
+    /* L'effet de parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.parallax2 {
+    /* Votre image */
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipPGOku-UZdJ_u0hzW8wHB3IgJJCTFbIw8z6iC-_=s957-k");
+
+    /* Une hauteur variable */
+    height: 100vh;
+
+    /* L'effet de parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
