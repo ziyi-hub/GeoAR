@@ -30,7 +30,7 @@ const clickListener = function(ev) {
         container.appendChild(label);
         document.body.appendChild(container);
     }*/
-    alert(ev.target.dataset.title);
+    alert(ev.target.dataset.id, ev.detail.intersection.object.el);
 };
 
 AFRAME.registerComponent('change-color-on-click', {
@@ -58,7 +58,7 @@ window.onload = () => {
                     const text = document.createElement('a-link');
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     text.setAttribute('title', place.name);
-                    text.setAttribute('data-title', place.name);
+                    text.setAttribute('data-id', place.name);
                     //text.setAttribute('href', place.image);
                     text.setAttribute('scale', '120 120 120');
                     text.setAttribute('change-color-on-click', "")
