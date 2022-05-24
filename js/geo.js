@@ -30,7 +30,7 @@ AFRAME.registerComponent('change-color-on-click', {
             link.onclick = () => {
                 const title = link.getAttribute("title");
                 alert(link.dataset.description);
-                window.open(link.getAttribute("href"))
+                //window.open(link.getAttribute("href"))
             }
         })
     }
