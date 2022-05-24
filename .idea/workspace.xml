@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/geo.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/geo.css" afterDir="false" />
-    </list>
+    <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +93,7 @@
       <workItem from="1652952173740" duration="15677000" />
       <workItem from="1652993539033" duration="34607000" />
       <workItem from="1653289583589" duration="40246000" />
-      <workItem from="1653375758939" duration="10982000" />
+      <workItem from="1653375758939" duration="11238000" />
     </task>
     <servers />
   </component>
@@ -127,10 +124,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="455" height="442" key="Diff.GoToChangePopup/0.0.1440.900@0.0.1440.900" timestamp="1653319432090" />
-    <state x="106" y="200" width="1240" height="700" key="DiffContextDialog" timestamp="1653385641114">
+    <state x="106" y="200" width="1240" height="700" key="DiffContextDialog" timestamp="1653388307228">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="106" y="200" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1653385641114" />
+    <state x="106" y="200" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1653388307228" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1652689197729">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
