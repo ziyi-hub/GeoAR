@@ -30,6 +30,11 @@ AFRAME.registerComponent('change-color-on-click', {
             link.onclick = () => {
                 //const title = link.getAttribute("title");
                 document.querySelector(".panel").style.display = "block";
+                let span = document.createElement("SPAN");
+                let txt = document.createTextNode("\u00D7");
+                span.className = "close";
+                span.appendChild(txt);
+                document.querySelector(".panel").appendChild(span);
                 document.querySelector(".panel").innerHTML = link.dataset.description;
             }
         })

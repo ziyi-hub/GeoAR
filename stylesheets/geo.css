@@ -11,8 +11,8 @@
 .close{
     font-size: 48px;
     color: black;
+    position: absolute;
+    right: 0;
     top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 999;
+    padding: 12px 16px 12px 16px;
 }
