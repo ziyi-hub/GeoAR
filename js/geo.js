@@ -22,7 +22,7 @@ const loadPlaces = function () {
     return Promise.resolve(PLACES);
 };
 
-
+/*
 function getLocation()
 {
     if (navigator.geolocation) 
@@ -39,7 +39,7 @@ function showPosition(position)
     let lng = position.coords.longitude;
     let lat = position.coords.latitude;
     return [lat.toFixed(8), lng.toFixed(8)];
-}
+}*/
 
 function getDistance(lat1, lng1, lat2, lng2){
     let radLat1 = lat1 * Math.PI/ 180.0 ;
