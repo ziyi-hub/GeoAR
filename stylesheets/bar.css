@@ -160,6 +160,7 @@ footer
     border-top: 10px solid white;
     width: 100%;
     z-index: 9999;
+    background-color: #ff0000;
 }
 
 
