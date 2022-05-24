@@ -34,11 +34,19 @@ AFRAME.registerComponent('change-color-on-click', {
                 }
                 
                 //const title = link.getAttribute("title");
+
+                <!--<img class="fit-picture"
+                     src="/media/cc0-images/grapefruit-slice-332-332.jpg"
+                     alt="">-->
                 document.querySelector(".panel").style.display = "block";
                 let p = document.createElement("p");
                 let p2 = document.createElement("p");
                 let button = document.createElement("button");
+                let img = document.createElement("img");
                 
+                img.className = "fit-picture";
+                img.src = link.dataset.image;
+                img.alt = link.dataset.image;
                 button.className = "mdl-button mdl-button--raised mdl-button--accent";
                 button.innerHTML = "Afficher plus";
                 p.style.fontSize = "2em";
@@ -48,6 +56,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
                 document.querySelector(".panel").appendChild(button);
+                document.querySelector(".panel").appendChild(img);
             }
         })
     }
@@ -72,6 +81,7 @@ window.onload = () => {
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                         text.setAttribute('data-titre', place.name);
                         text.setAttribute('data-description', place.description);
+                        text.setAttribute('data-image', place.image);
                         //text.setAttribute('href', place.image);
                         text.setAttribute('href', "javascript:void(0)");
                         text.setAttribute('scale', '120 120 120');
