@@ -26,7 +26,7 @@ const loadPlaces = function () {
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
         let scene = document.querySelector('a-scene');
-        scene.querySelectorAll("a-image").forEach(link => {
+        scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
                 const title = link.getAttribute("title");
                 document.querySelector(".panel").innerHTML = "ok";
@@ -52,7 +52,7 @@ window.onload = () => {
                         const longitude = place.longitude;
 
                         // add place name
-/*                        const text = document.createElement('a-link');
+                        const text = document.createElement('a-link');
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                         text.setAttribute('title', place.name);
                         text.setAttribute('data-description', place.description);
@@ -64,14 +64,15 @@ window.onload = () => {
                         text.addEventListener('loaded', () => {
                             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
                         });
-*/
+
+                        /*
                         const text = document.createElement('a-image');
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
                         text.setAttribute('name', place.name);
                         text.setAttribute('data-description', place.description);
                         text.setAttribute('src', place.image);
                         text.setAttribute('scale', '20, 20');
-                        
+                        */
                         scene.appendChild(text);
                     });
                 })
