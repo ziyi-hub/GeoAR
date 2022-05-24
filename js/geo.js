@@ -28,6 +28,11 @@ AFRAME.registerComponent('change-color-on-click', {
         let scene = document.querySelector('a-scene');
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
+                let content = document.querySelector(".panel");
+                while (content.hasChildNodes()) {
+                    content.removeChild(content.firstChild);
+                }
+                
                 //const title = link.getAttribute("title");
                 document.querySelector(".panel").style.display = "block";
                 let p = document.createElement("p");
