@@ -29,7 +29,8 @@ AFRAME.registerComponent('change-color-on-click', {
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
                 const title = link.getAttribute("title");
-                alert(link.dataset.description);
+                document.querySelector(".panel").innerHTML = link.dataset.description;
+                //alert(link.dataset.description);
                 //window.open(link.getAttribute("href"))
             }
         })
