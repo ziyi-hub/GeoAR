@@ -29,11 +29,15 @@ AFRAME.registerComponent('change-color-on-click', {
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
                 //const title = link.getAttribute("title");
-                let p = document.createElement("p");
                 document.querySelector(".panel").style.display = "block";
-                document.querySelector(".panel").innerHTML = link.dataset.description;
+                let p = document.createElement("p");
+                let p2 = document.createElement("p");
+                
+                p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
+                p2.innerHTML = link.dataset.description;
                 document.querySelector(".panel").appendChild(p);
+                document.querySelector(".panel").appendChild(p2);
             }
         })
     }
