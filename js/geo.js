@@ -34,7 +34,6 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").innerHTML = link.dataset.description;
                 p.innerHTML = link.dataset.titre;
                 document.querySelector(".panel").appendChild(p);
-                
             }
         })
     }
