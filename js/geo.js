@@ -58,6 +58,7 @@ window.onload = () => {
                         text.setAttribute('data-description', place.description);
                         //text.setAttribute('href', place.image);
                         //text.setAttribute('href', "poiDetail.html");
+                        text.setAttribute('href', "javascript:void(0)");
                         text.setAttribute('scale', '120 120 120');
                         text.setAttribute('change-color-on-click', "")
 
