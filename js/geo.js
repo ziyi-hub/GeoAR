@@ -70,6 +70,8 @@ AFRAME.registerComponent('change-color-on-click', {
                 let p3 = document.createElement("p");
                 let button = document.createElement("button");
                 let img = document.createElement("img");
+                let latitude = link.dataset.latitude;
+                let longitude = link.dataset.longitude;
                 
                 img.className = "fit-picture";
                 img.src = link.dataset.image;
@@ -79,7 +81,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
-                p3.innerHTML = "Distances: " + getDistance(48.6835098, 6.1616104, 48.6972554, 6.1660732);
+                p3.innerHTML = "Distances: " + getDistance(latitude, longitude, 48.6972554, 6.1660732);
                 
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
@@ -108,6 +110,8 @@ window.onload = () => {
                         // add place name
                         const text = document.createElement('a-link');
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+                        text.setAttribute('data-latitude', place.latitude);
+                        text.setAttribute('data-longitude', place.longitude);
                         text.setAttribute('data-titre', place.name);
                         text.setAttribute('data-description', place.description);
                         text.setAttribute('data-image', place.image);
