@@ -29,8 +29,12 @@ AFRAME.registerComponent('change-color-on-click', {
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
                 //const title = link.getAttribute("title");
+                let p = document.createElement("p");
                 document.querySelector(".panel").style.display = "block";
                 document.querySelector(".panel").innerHTML = link.dataset.description;
+                p.innerHTML = link.dataset.titre;
+                document.querySelector(".panel").appendChild(p);
+                
             }
         })
     }
@@ -53,7 +57,7 @@ window.onload = () => {
                         // add place name
                         const text = document.createElement('a-link');
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-                        text.setAttribute('title', place.name);
+                        text.setAttribute('data-titre', place.name);
                         text.setAttribute('data-description', place.description);
                         //text.setAttribute('href', place.image);
                         text.setAttribute('href', "javascript:void(0)");
