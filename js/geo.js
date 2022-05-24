@@ -25,17 +25,12 @@ const loadPlaces = function () {
 
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
-        let isOpen = false;
         let scene = document.querySelector('a-scene');
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
-                isOpen = !isOpen;
                 //const title = link.getAttribute("title");
-                if(isOpen === true){
-                    document.querySelector(".panel").style.display = "block";
-                    document.querySelector(".panel").innerHTML = link.dataset.description;
-                }
-                //window.open(link.getAttribute("href"))
+                document.querySelector(".panel").style.display = "block";
+                document.querySelector(".panel").innerHTML = link.dataset.description;
             }
         })
     }
@@ -61,7 +56,6 @@ window.onload = () => {
                         text.setAttribute('title', place.name);
                         text.setAttribute('data-description', place.description);
                         //text.setAttribute('href', place.image);
-                        //text.setAttribute('href', "poiDetail.html");
                         text.setAttribute('href', "javascript:void(0)");
                         text.setAttribute('scale', '120 120 120');
                         text.setAttribute('change-color-on-click', "")
