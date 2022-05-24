@@ -38,14 +38,13 @@ function showPosition(position)
 {
     let lng = position.coords.longitude;
     let lat = position.coords.latitude;
-    let site = lat.toFixed(6)+','+lng.toFixed(6);
-    alert(site);
+    return [lat.toFixed(8), lng.toFixed(8)];
 }
 
 
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
-        getLocation();
+        console.log(getLocation());
         let scene = document.querySelector('a-scene');
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
