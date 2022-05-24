@@ -31,7 +31,13 @@ AFRAME.registerComponent('change-color-on-click', {
                 const title = link.getAttribute("title");
                 //alert(link.dataset.description);
                 //window.open(link.getAttribute("href"))
-                document.querySelector("#panelPoiDetail").style.visibility = "block";
+                const label = document.createElement('span');
+                const container = document.createElement('div');
+                container.setAttribute('id', 'place-label');
+                label.innerText = title;
+                container.style.zIndex = "999";
+                container.appendChild(label);
+                document.body.appendChild(container);
             }
         })
     }
