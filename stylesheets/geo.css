@@ -4,10 +4,10 @@
     z-index: 999; 
     /*background-color: white;*/
     height: 100%;
-    min-width: 30%;
+    min-width: 32%;
     display: none;
     padding: 10px;
-    background-color: #3979db;
+    background-color: orange;
 }
 
 .mdl-button {
@@ -17,6 +17,5 @@
 }
 
 .fit-picture{
-    width: fit-content;
-    height: fit-content;
+    max-width: 30%;
 }
