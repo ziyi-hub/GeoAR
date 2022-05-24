@@ -79,7 +79,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
-                p3.innerHTML = "Distances: " + getDistance(48.6835098, 6.1616104, 48.6842673, 6.1632441);
+                p3.innerHTML = "Distances: " + getDistance(48.6835098, 6.1616104, 48.6972554, 6.1660732);
                 
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
