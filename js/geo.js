@@ -64,14 +64,6 @@ window.onload = () => {
                     text.setAttribute('data-description', place.description);
                     //text.setAttribute('href', place.image);
                     //text.setAttribute('href', "poiDetail.html");
-                    text.setAttribute('scale', '120 120 120');
-                    text.setAttribute('change-color-on-click', "")
-
-                    text.addEventListener('loaded', () => {
-                        window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
-                    });
-
-                    scene.appendChild(text);
                 });
             })
     },
