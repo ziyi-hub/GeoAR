@@ -34,10 +34,6 @@ AFRAME.registerComponent('change-color-on-click', {
                 }
                 
                 //const title = link.getAttribute("title");
-
-                <!--<img class="fit-picture"
-                     src="/media/cc0-images/grapefruit-slice-332-332.jpg"
-                     alt="">-->
                 document.querySelector(".panel").style.display = "block";
                 let p = document.createElement("p");
                 let p2 = document.createElement("p");
