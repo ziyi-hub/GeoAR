@@ -1,4 +1,4 @@
-function getData(){
+/*function getData(){
     debugger;
     let parentWin = window.opener;
     let scene = parentWin.document.querySelector('a-scene');
@@ -33,4 +33,4 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
+*/
