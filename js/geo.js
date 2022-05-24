@@ -25,13 +25,16 @@ const loadPlaces = function () {
 
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
+        let isOpen = false;
         let scene = document.querySelector('a-scene');
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
-                const title = link.getAttribute("title");
-                document.querySelector(".panel").style.display = "block";
-                document.querySelector(".panel").innerHTML = link.dataset.description;
-                //alert(link.dataset.description);
+                isOpen = !isOpen;
+                //const title = link.getAttribute("title");
+                if(isOpen === true){
+                    document.querySelector(".panel").style.display = "block";
+                    document.querySelector(".panel").innerHTML = link.dataset.description;
+                }
                 //window.open(link.getAttribute("href"))
             }
         })
