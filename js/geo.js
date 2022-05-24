@@ -29,15 +29,8 @@ AFRAME.registerComponent('change-color-on-click', {
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
                 const title = link.getAttribute("title");
-                //alert(link.dataset.description);
+                alert(link.dataset.description);
                 //window.open(link.getAttribute("href"))
-                const label = document.createElement('span');
-                const container = document.createElement('div');
-                container.setAttribute('id', 'place-label');
-                label.innerText = title;
-                container.style.zIndex = "999";
-                container.appendChild(label);
-                document.body.appendChild(container);
             }
         })
     }
@@ -75,6 +68,8 @@ window.onload = () => {
         }
     );
 };
+
+/*
 const list = document.querySelectorAll(".list");
 function activeLink(){
     list.forEach((item)=>
@@ -145,3 +140,4 @@ window.onload = () => {
         }
     );
 };
+*/
