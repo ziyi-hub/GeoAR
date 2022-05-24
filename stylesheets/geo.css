@@ -7,11 +7,16 @@
     min-width: 30%;
     display: none;
     padding: 10px;
-    background-color: orange;
+    background-color: #3979db;
 }
 
 .mdl-button {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
+}
+
+.fit-picture{
+    width: fit-content;
+    height: fit-content;
 }
