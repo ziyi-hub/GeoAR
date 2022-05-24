@@ -23,8 +23,29 @@ const loadPlaces = function () {
 };
 
 
+function getLocation()
+{
+    if (navigator.geolocation) 
+    {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } 
+    else{
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position)
+{
+    let lng = position.coords.longitude;
+    let lat = position.coords.latitude;
+    let site = lat.toFixed(6)+','+lng.toFixed(6);
+    alert(site);
+}
+
+
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
+        getLocation();
         let scene = document.querySelector('a-scene');
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
