@@ -27,11 +27,11 @@
         font-size: 1em;
         z-index: 999;
         height: 100%;
-        min-width: 320px;
+        min-width: 450px;
         /*width: 32%;*/
         display: none;
         padding: 10px;
-        background-color: orange;
+        background-color: lightskyblue;
     }
 
     .mdl-button {
