@@ -37,12 +37,17 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").style.display = "block";
                 let p = document.createElement("p");
                 let p2 = document.createElement("p");
+                let button = document.createElement("button");
                 
+                button.className = "mdl-button mdl-button--raised mdl-button--accent";
+                button.innerHTML = "Afficher plus";
                 p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
+                
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
+                document.querySelector(".panel").appendChild(button);
             }
         })
     }
