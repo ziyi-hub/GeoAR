@@ -10,4 +10,8 @@
 
 .close{
     font-size: 48px;
+    color: black;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
