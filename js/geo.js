@@ -41,10 +41,20 @@ function showPosition(position)
     return [lat.toFixed(8), lng.toFixed(8)];
 }
 
+function getDistance(lat1, lng1, lat2, lng2){
+    let radLat1 = lat1 * Math.PI/ 180.0 ;
+    let radLat2 = lat2 * Math.PI/ 180.0 ;
+    let a = radLat1 - radLat2;
+    let b = lng1 * Math.PI/ 180.0 - lng2 * Math.PI/ 180.0 ;
+    let s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.pow(Math.sin(b / 2), 2)))
+    s = s * 6378.137; //Earth radius
+    s = Math.round(s * 10000) / 10000;
+    return s;
+}
+
 
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
-        console.log(getLocation());
         let scene = document.querySelector('a-scene');
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
@@ -57,6 +67,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").style.display = "block";
                 let p = document.createElement("p");
                 let p2 = document.createElement("p");
+                let p3 = document.createElement("p");
                 let button = document.createElement("button");
                 let img = document.createElement("img");
                 
@@ -68,9 +79,11 @@ AFRAME.registerComponent('change-color-on-click', {
                 p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
+                p3.innerHTML = "Distances: " + getDistance(48.6835098, 6.1616104, 48.6842673, 6.1632441);
                 
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
+                document.querySelector(".panel").appendChild(p3);
                 document.querySelector(".panel").appendChild(button);
                 document.querySelector(".panel").appendChild(img);
             }
