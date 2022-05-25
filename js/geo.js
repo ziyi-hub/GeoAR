@@ -84,7 +84,6 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").appendChild(img);
 
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
-                    alert("you click me");
                     window.location.href = "propos.html";  
                 })
             }
