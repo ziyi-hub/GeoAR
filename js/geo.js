@@ -41,7 +41,11 @@ AFRAME.registerComponent('change-color-on-click', {
         let lngCur;
         
         scene.querySelectorAll("a-link").forEach(link => {
-            link.onclick = () => {
+            link.onclick = (ev) => {
+                
+                ev.stopPropagation();
+                ev.preventDefault();
+                
                 if (navigator.geolocation)
                 {
                     navigator.geolocation.getCurrentPosition((position)=>{
