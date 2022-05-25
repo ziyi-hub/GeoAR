@@ -68,7 +68,6 @@ AFRAME.registerComponent('change-color-on-click', {
                     navigator.geolocation.getCurrentPosition((position)=>{
                         latCur = position.coords.latitude;
                         lngCur = position.coords.longitude;
-                        alert(latCur + " " + lngCur);
                     });
                 } else{
                     alert("Geolocation is not supported by this browser.");
@@ -97,6 +96,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
+                alert(latCur + " " + lngCur);
                 //p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur);
                 
                 document.querySelector(".panel").appendChild(p);
