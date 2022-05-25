@@ -42,6 +42,7 @@ document.querySelector(".mdl-button").addEventListener("click", ()=>{
         document.querySelector("#infos").style.visibility = "visible";
         document.querySelector("#googleMap").style.visibility = "hidden";
         document.querySelector(".material-icons").innerHTML = "location_on";
+        document.querySelector(".mdl-button").style.position = "fixed";
 
         /**
          * initialize index
@@ -110,5 +111,6 @@ document.querySelector(".mdl-button").addEventListener("click", ()=>{
         document.querySelector("#infos").style.visibility = "hidden";
         document.querySelector("#googleMap").style.visibility = "visible";
         document.querySelector(".material-icons").innerHTML = "event_note";
+        document.querySelector(".mdl-button").style.position = "absolute";
     }
 })
