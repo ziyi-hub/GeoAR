@@ -100,7 +100,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
-                //document.querySelector(".panel").appendChild(p3);
+                document.querySelector(".panel").appendChild(p3);
                 document.querySelector(".panel").appendChild(button);
                 document.querySelector(".panel").appendChild(img);
             }
