@@ -90,6 +90,10 @@ AFRAME.registerComponent('change-color-on-click', {
 
 window.onload = () => {
     const scene = document.querySelector('a-scene');
+    
+    document.querySelector('.mdl-button').addEventListener("click", ()=>{
+        alert("you click me");
+    })
 
     // first get current user location
     return navigator.geolocation.getCurrentPosition(function (position) {
