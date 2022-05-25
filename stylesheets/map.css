@@ -27,7 +27,8 @@
     left: 0;
     top: 0;
     z-index: 100;
-    visibility: hidden;
+    /*visibility: hidden;*/
+    display: none;
 }
 
 /* Carrousel d'images */
