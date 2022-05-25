@@ -85,8 +85,7 @@ AFRAME.registerComponent('change-color-on-click', {
 
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
                     alert("you click me");
-                    //window.location.href="index.php";  
-                    window.navigate("https://ziyi-hub.github.io/GeoAR/html/propos.html");
+                    window.location.href = "propos.html";  
                 })
             }
         })
