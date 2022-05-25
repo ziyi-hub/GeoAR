@@ -34,7 +34,81 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+let isMap = true;
 
 document.querySelector(".mdl-button").addEventListener("click", ()=>{
-    alert("change infos");
+    isMap = !isMap;
+    if(!isMap){
+        document.querySelector("#infos").style.visibility = "visible";
+        document.querySelector("#googleMap").style.visibility = "hidden";
+        document.querySelector(".material-icons").innerHTML = "location_on";
+
+        /**
+         * initialize index
+         * @type {number}
+         */
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        /**
+         * passer slide suivant
+         * @param n
+         */
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        /**
+         * slide current
+         * @param n
+         */
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        /**
+         * créer dom slider et dot
+         * @param n
+         */
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("custom-slider");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        /**
+         * passer precedent
+         */
+        document.querySelector(".prev").addEventListener('click', ()=>{plusSlides(-1)})
+
+        /**
+         * passer suivant
+         */
+        document.querySelector(".next").addEventListener('click', ()=>{plusSlides(1)})
+
+        /**
+         * passer sur dot
+         */
+        for(let i = 0; i < document.querySelectorAll(".dot").length; i++){
+            document.querySelectorAll(".dot")[i].addEventListener("click", ()=>{currentSlide(i+1);})
+        }
+    }else{
+        /**
+         * cacher informations et afficher map
+         * @type {string}
+         */
+        document.querySelector("#infos").style.visibility = "hidden";
+        document.querySelector("#googleMap").style.visibility = "visible";
+        document.querySelector(".material-icons").innerHTML = "event_note";
+    }
 })
