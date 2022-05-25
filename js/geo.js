@@ -22,7 +22,9 @@ const loadPlaces = function () {
     return Promise.resolve(PLACES);
 };
 
-/*
+let latCur;
+let lngCur;
+
 function getLocation()
 {
     if (navigator.geolocation) 
@@ -38,8 +40,10 @@ function showPosition(position)
 {
     let lng = position.coords.longitude;
     let lat = position.coords.latitude;
-    return [lat.toFixed(8), lng.toFixed(8)];
-}*/
+    //return [lat.toFixed(8), lng.toFixed(8)];
+    latCur = lat.toFixed(8);
+    lngCur = lng.toFixed(8)
+}
 
 function getDistance(lat1, lng1, lat2, lng2){
     let radLat1 = lat1 * Math.PI/ 180.0 ;
@@ -58,6 +62,7 @@ AFRAME.registerComponent('change-color-on-click', {
         let scene = document.querySelector('a-scene');
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
+                getLocation();                
                 let content = document.querySelector(".panel");
                 while (content.hasChildNodes()) {
                     content.removeChild(content.firstChild);
@@ -81,7 +86,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
-                p3.innerHTML = "Distances: " + getDistance(latitude, longitude, 48.6972554, 6.1660732);
+                p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur);
                 
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
