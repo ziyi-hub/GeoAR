@@ -75,8 +75,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
-                //alert(latCur + " " + lngCur);
-                p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur);
+                p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur) + " km";
                 
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
