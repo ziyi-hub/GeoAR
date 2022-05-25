@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/stylesheets/map.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/poiDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/poiDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/geo.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/geo.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -98,7 +101,7 @@
       <workItem from="1653289583589" duration="40246000" />
       <workItem from="1653375758939" duration="26353000" />
       <workItem from="1653412691312" duration="13737000" />
-      <workItem from="1653476650350" duration="933000" />
+      <workItem from="1653476650350" duration="2063000" />
     </task>
     <servers />
   </component>

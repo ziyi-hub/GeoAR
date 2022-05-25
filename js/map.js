@@ -33,3 +33,8 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+
+document.querySelector(".mdl-button").addEventListener("click", ()=>{
+    alert("change infos");
+})
