@@ -39,10 +39,8 @@ let isMap = true;
 document.querySelector(".mdl-button").addEventListener("click", ()=>{
     isMap = !isMap;
     if(!isMap){
-        //document.querySelector("#infos").style.visibility = "visible";
-        //document.querySelector("#googleMap").style.visibility = "hidden";
-        document.querySelector("#infos").style.display = "block";
-        document.querySelector("#googleMap").style.display = "none";
+        document.querySelector("#infos").style.visibility = "visible";
+        document.querySelector("#googleMap").style.visibility = "hidden";
         document.querySelector(".material-icons").innerHTML = "location_on";
 
         /**
@@ -109,10 +107,8 @@ document.querySelector(".mdl-button").addEventListener("click", ()=>{
          * cacher informations et afficher map
          * @type {string}
          */
-        //document.querySelector("#infos").style.visibility = "hidden";
-        //document.querySelector("#googleMap").style.visibility = "visible";
-        document.querySelector("#infos").style.display = "none";
-        document.querySelector("#googleMap").style.display = "block";
+        document.querySelector("#infos").style.visibility = "hidden";
+        document.querySelector("#googleMap").style.visibility = "visible";
         document.querySelector(".material-icons").innerHTML = "event_note";
     }
 })

@@ -27,8 +27,8 @@
     left: 0;
     top: 0;
     z-index: 100;
-    /*visibility: hidden;*/
-    display: none;
+    visibility: hidden;
+    /*display: none;*/
 }
 
 /* Carrousel d'images */
@@ -58,16 +58,6 @@
 .next { right: 15px; }
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.5);
-}
-
-.slide-text {
-    position: absolute;
-    color: #ffffff;
-    font-size: 15px;
-    padding: 15px;
-    bottom: 15px;
-    width: 100%;
-    text-align: center;
 }
 
 .slide-index {
