@@ -12,7 +12,7 @@ const loadPlaces = function () {
     let PLACES;
     let request = new XMLHttpRequest();
 
-    request.open('GET','../datas/places.json', false);
+    request.open('GET','https://ziyi-hub.github.io/GeoAR/datas/places.json', false);
     request.onreadystatechange = function () {
         if (this.readyState === 4) {
             PLACES = JSON.parse(this.responseText);
@@ -84,7 +84,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").appendChild(img);
 
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
-                    window.location.href = "propos.html";  
+                    window.location.href = "poiDetail.html";
                 })
             }
         })
