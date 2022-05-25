@@ -62,7 +62,8 @@ AFRAME.registerComponent('change-color-on-click', {
         let scene = document.querySelector('a-scene');
         scene.querySelectorAll("a-link").forEach(link => {
             link.onclick = () => {
-                getLocation();                
+                getLocation();
+                alert(latCur + "" + lngCur);
                 let content = document.querySelector(".panel");
                 while (content.hasChildNodes()) {
                     content.removeChild(content.firstChild);
@@ -86,11 +87,11 @@ AFRAME.registerComponent('change-color-on-click', {
                 p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
-                p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur);
+                //p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur);
                 
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
-                document.querySelector(".panel").appendChild(p3);
+                //document.querySelector(".panel").appendChild(p3);
                 document.querySelector(".panel").appendChild(button);
                 document.querySelector(".panel").appendChild(img);
             }
