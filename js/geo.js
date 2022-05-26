@@ -86,6 +86,10 @@ AFRAME.registerComponent('change-color-on-click', {
                 p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur) + " km";
                 close.className = "text-large close";
                 close.innerHTML = "&#x2718;";
+                
+                close.addEventListener("click", ()=>{
+                    content.style.display = "none";
+                })
 
                 document.querySelector(".panel").appendChild(close);
                 document.querySelector(".panel").appendChild(p);
