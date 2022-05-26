@@ -87,6 +87,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 close.style.fontSize = "2em";
                 close.position = "fixed";
                 close.right = "0";
+                close.innerHTML = "x";
 
                 document.querySelector(".panel").appendChild(close);
                 document.querySelector(".panel").appendChild(p);
