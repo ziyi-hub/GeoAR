@@ -64,7 +64,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 content.style.display = "block";
                 content.style.position = "absolute";
                 content.style.right = "0";
-                content.style.width =  "320px";
+                content.style.width = "320px";
                 
                 let p = document.createElement("p");
                 let p2 = document.createElement("p");
@@ -85,9 +85,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 p2.innerHTML = link.dataset.description;
                 p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur) + " km";
                 close.className = "text-large close";
-                //close.style.position = "fixed";
-                //close.right = "0";
-                close.innerHTML = "x";
+                close.innerHTML = "&#x2718;";
 
                 document.querySelector(".panel").appendChild(close);
                 document.querySelector(".panel").appendChild(p);

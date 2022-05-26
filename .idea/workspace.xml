@@ -100,7 +100,7 @@
       <workItem from="1653375758939" duration="26353000" />
       <workItem from="1653412691312" duration="13737000" />
       <workItem from="1653476650350" duration="12774000" />
-      <workItem from="1653502259179" duration="2504000" />
+      <workItem from="1653502259179" duration="3078000" />
     </task>
     <servers />
   </component>
@@ -150,32 +150,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>138</line>
+          <line>136</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>143</line>
+          <line>141</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>139</line>
+          <line>137</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>140</line>
+          <line>138</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>142</line>
+          <line>140</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>141</line>
+          <line>139</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -191,21 +191,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>91</line>
+          <line>89</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>88</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>87</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
