@@ -15,15 +15,6 @@
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <title>DEMOES</title>
-    <script>
-        const list = document.querySelectorAll(".list");
-        function activeLink(){
-            list.forEach((item)=>
-                item.classList.remove("active"));
-            this.classList.add("active");
-        }
-        list.forEach((item) => item.addEventListener('click', activeLink));
-    </script>
 </head>
 <body>
 <main class="main">
@@ -114,6 +105,14 @@
         </ul>
     </div>
 </footer>
-
+<script>
+    const list = document.querySelectorAll(".list");
+    function activeLink(){
+        list.forEach((item)=>
+            item.classList.remove("active"));
+        this.classList.add("active");
+    }
+    list.forEach((item) => item.addEventListener('click', activeLink));
+</script>
 </body>
 </html>
