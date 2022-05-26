@@ -22,8 +22,8 @@
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/decouvrir.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/decouvrir.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chercher.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/chercher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/parametre.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/parametre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/propos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,7 @@
       <workItem from="1653375758939" duration="26353000" />
       <workItem from="1653412691312" duration="13737000" />
       <workItem from="1653476650350" duration="12774000" />
-      <workItem from="1653502259179" duration="4095000" />
+      <workItem from="1653502259179" duration="4401000" />
     </task>
     <servers />
   </component>
@@ -144,10 +144,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="455" height="442" key="Diff.GoToChangePopup/0.0.1440.900@0.0.1440.900" timestamp="1653319432090" />
-    <state x="84" y="143" width="1356" height="700" key="DiffContextDialog" timestamp="1653597576295">
+    <state x="84" y="143" width="1356" height="700" key="DiffContextDialog" timestamp="1653597844757">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="84" y="143" width="1356" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1653597576295" />
+    <state x="84" y="143" width="1356" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1653597844757" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1653403108075">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
