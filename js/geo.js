@@ -61,8 +61,11 @@ AFRAME.registerComponent('change-color-on-click', {
                     content.removeChild(content.firstChild);
                 }
                 
-                //const title = link.getAttribute("title");
-                document.querySelector(".panel").style.display = "block";
+                content.style.display = "block";
+                content.style.position = "absolute";
+                content.style.right = "0";
+                content.style.width =  "320px";
+                
                 let p = document.createElement("p");
                 let p2 = document.createElement("p");
                 let p3 = document.createElement("p");
