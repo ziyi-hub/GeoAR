@@ -69,6 +69,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 let p = document.createElement("p");
                 let p2 = document.createElement("p");
                 let p3 = document.createElement("p");
+                let close = document.createElement("span");
                 let button = document.createElement("button");
                 let img = document.createElement("img");
                 let latitude = link.dataset.latitude;
@@ -83,7 +84,11 @@ AFRAME.registerComponent('change-color-on-click', {
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
                 p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur) + " km";
-                
+                close.style.fontSize = "2em";
+                close.position = "fixed";
+                close.right = "0";
+
+                document.querySelector(".panel").appendChild(close);
                 document.querySelector(".panel").appendChild(p);
                 document.querySelector(".panel").appendChild(p2);
                 document.querySelector(".panel").appendChild(p3);
