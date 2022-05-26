@@ -22,3 +22,8 @@
 .text-large{
     font-size: 2em;
 }
+
+.close{
+    position: fixed;
+    right: 0;
+}
