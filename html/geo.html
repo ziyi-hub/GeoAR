@@ -21,6 +21,15 @@
     
     <script type="application/javascript" src="../js/geo.js"></script>
     <title>DEMOES</title>
+    <script>
+        const list = document.querySelectorAll(".list");
+        function activeLink(){
+            list.forEach((item)=>
+                item.classList.remove("active"));
+            this.classList.add("active");
+        }
+        list.forEach((item) => item.addEventListener('click', activeLink));
+    </script>
 </head>
 <body>
 
