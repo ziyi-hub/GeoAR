@@ -80,11 +80,13 @@ AFRAME.registerComponent('change-color-on-click', {
                 img.alt = link.dataset.image;
                 button.className = "mdl-button mdl-button--raised mdl-button--accent";
                 button.innerHTML = "Afficher plus";
-                p.style.fontSize = "2em";
+                p.className = "text-large";
+                //p.style.fontSize = "2em";
                 p.innerHTML = link.dataset.titre;
                 p2.innerHTML = link.dataset.description;
                 p3.innerHTML = "Distances: " + getDistance(latitude, longitude, latCur, lngCur) + " km";
-                close.style.fontSize = "2em";
+                close.className = "text-large";
+                //close.style.fontSize = "2em";
                 close.position = "fixed";
                 close.right = "0";
                 close.innerHTML = "x";
