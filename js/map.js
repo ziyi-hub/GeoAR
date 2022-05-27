@@ -13,28 +13,13 @@ function getCookieString(cname) {
     return "";
 }
 
-function getCookieArray(cname) {
-    let name = cname + "=";
-    let ca = document.cookie.split(';');
-    for(let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-            console.log(c);
-        }
-        if (c.indexOf(name) == 0) {
-            console.log(c);
-        }
-    }
-    return "";
-}
-
 console.log(getCookieString("titre"));
 console.log(getCookieString("description"));
 console.log(getCookieString("latitude"));
 console.log(getCookieString("longitude"));
 console.log(getCookieString("adresse"));
 console.log(getCookieString("site"));
-console.log(getCookieArray("carousel"));
+console.log(getCookieString("carousel"));
 
 
 function initialize() {
