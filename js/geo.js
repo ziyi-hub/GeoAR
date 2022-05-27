@@ -32,7 +32,7 @@ function setCookie(cname, cvalue, exdays) {
 }
 
 
-AFRAME.registerComponent('change-color-on-click', {
+AFRAME.registerComponent('open-window-on-click', {
     init: function () {
         let scene = document.querySelector('a-scene');
         let latCur;
@@ -122,6 +122,7 @@ window.onload = () => {
                         // add place name
                         const text = document.createElement('a-link');
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+                        text.setAttribute('title', place.name);
                         text.setAttribute('data-id', place.id);
                         text.setAttribute('data-latitude', place.latitude);
                         text.setAttribute('data-longitude', place.longitude);
@@ -131,7 +132,7 @@ window.onload = () => {
 
                         text.setAttribute('href', "javascript:void(0)");
                         text.setAttribute('scale', '120 120 120');
-                        text.setAttribute('change-color-on-click', "")
+                        text.setAttribute('open-window-on-click', "")
 
                         text.addEventListener('loaded', () => {
                             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
