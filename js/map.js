@@ -26,8 +26,8 @@ function loadPlaces() {
     request.send();
     return places;
 }
-
-console.log(loadPlaces().description);
+let place = loadPlaces();
+console.log(place.description);
 
 
 function initialize() {
@@ -57,10 +57,10 @@ document.querySelector(".mdl-button").addEventListener("click", ()=>{
          * @type {string}
          */
         document.querySelector("#infos").style.visibility = "visible";
-        document.querySelector(".titre").innerHTML = `${titre}`;
-        document.querySelector(".description").innerHTML = `${description}`;
-        document.querySelector(".adresse").innerHTML = `${adresse}`;
-        document.querySelector(".site").innerHTML = `${site}`;
+        document.querySelector(".titre").innerHTML = `${place.name}`;
+        document.querySelector(".description").innerHTML = `${place.description}`;
+        document.querySelector(".adresse").innerHTML = `${place.adresse}`;
+        document.querySelector(".site").innerHTML = `${place.site}`;
         
         document.querySelector("#googleMap").style.visibility = "hidden";
         document.querySelector(".material-icons").innerHTML = "location_on";
