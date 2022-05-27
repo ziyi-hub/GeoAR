@@ -97,6 +97,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").appendChild(img);
 
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
+                    setCookie("id", link.dataset.id, 1);
                     setCookie("titre", link.dataset.titre, 1);
                     setCookie("description", link.dataset.description, 1);
                     setCookie("latitude", latitude, 1);
@@ -127,6 +128,7 @@ window.onload = () => {
                         // add place name
                         const text = document.createElement('a-link');
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+                        text.setAttribute('data-id', place.id);
                         text.setAttribute('data-latitude', place.latitude);
                         text.setAttribute('data-longitude', place.longitude);
                         text.setAttribute('data-titre', place.name);
