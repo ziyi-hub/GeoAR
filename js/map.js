@@ -13,6 +13,7 @@ function getCookie(cname) {
     return "";
 }
 console.log(getCookie("titre"));
+console.log(getCookie("description"));
 
 
 function initialize() {
