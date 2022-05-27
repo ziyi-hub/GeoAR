@@ -1,4 +1,4 @@
-function getCookie(cname) {
+function getCookieString(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
     for(let i = 0; i < ca.length; i++) {
@@ -12,13 +12,29 @@ function getCookie(cname) {
     }
     return "";
 }
-console.log(getCookie("titre"));
-console.log(getCookie("description"));
-console.log(getCookie("latitude"));
-console.log(getCookie("longitude"));
-console.log(getCookie("adresse"));
-console.log(getCookie("site"));
-console.log(getCookie("carousel"));
+
+function getCookieArray(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            console.log(c);
+        }
+        if (c.indexOf(name) == 0) {
+            console.log(c);
+        }
+    }
+    return "";
+}
+
+console.log(getCookieString("titre"));
+console.log(getCookieString("description"));
+console.log(getCookieString("latitude"));
+console.log(getCookieString("longitude"));
+console.log(getCookieString("adresse"));
+console.log(getCookieString("site"));
+console.log(getCookieArray("carousel"));
 
 
 function initialize() {
