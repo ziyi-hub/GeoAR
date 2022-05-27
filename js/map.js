@@ -13,14 +13,20 @@ function getCookie(cname) {
     return "";
 }
 
-function getCookiArr(cname) {
-    let name = cname + "=";
-    let arr = document.cookie.split(',');
-    for(let i = 0; i < arr.length; i++) {
-        console.log(arr[i]);
-    }
-    return "";
-}
+function loadPlaces() {
+
+    let places;
+    let request = new XMLHttpRequest();
+
+    request.open('GET','https://ziyi-hub.github.io/GeoAR/datas/places.json', false);
+    request.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            places = JSON.parse(this.responseText);
+        }
+    };
+    request.send();
+    return Promise.resolve(places);
+};
 
 let titre = getCookie("titre");
 let description = getCookie("description");
@@ -28,8 +34,7 @@ let latitude = getCookie("latitude");
 let longitude = getCookie("longitude");
 let adresse = getCookie("adresse");
 let site = getCookie("site");
-//let carousel = getCookie("carousel")
-console.log(getCookiArr("carousel"));
+loadPlaces().then((places) => {places.forEach((place) => {console.log(place);});})
 
 
 function initialize() {

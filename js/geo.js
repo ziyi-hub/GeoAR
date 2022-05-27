@@ -103,7 +103,6 @@ AFRAME.registerComponent('change-color-on-click', {
                     setCookie("longitude", longitude, 1);
                     setCookie("adresse", link.dataset.adresse, 1);
                     setCookie("site", link.dataset.site, 1);
-                    setCookie("carousel", JSON.stringify(link.dataset.carousel), 1);
                     window.location.href = "poiDetail.html";
                 })
             }
