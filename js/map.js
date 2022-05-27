@@ -74,6 +74,7 @@ function createSlide(nbImage){
         slideImg.className = "slide-img";
         slideImg.src = "https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg";
 
+        console.log(place[i]);
         customSlider.appendChild(slideIndex);
         customSlider.appendChild(slideImg);
         slideContainer.appendChild(customSlider);
