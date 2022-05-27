@@ -91,7 +91,10 @@ AFRAME.registerComponent('change-color-on-click', {
 
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
                     const expires = new Date(Date.now() + 1000).toUTCString()
-                    document.cookie = `titre=${link.dataset.titre}; expires=${expires}`
+                    document.cookie = `
+                                    titre=${link.dataset.titre}; 
+                                    description=${link.dataset.description}; 
+                                    expires=${expires}`
                     window.location.href = "poiDetail.html";
                 })
             }

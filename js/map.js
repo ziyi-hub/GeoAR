@@ -1,4 +1,4 @@
-console.log(document.cookie);
+alert(document.cookie);
 
 
 function initialize() {
