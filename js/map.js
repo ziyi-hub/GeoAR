@@ -54,6 +54,14 @@ function createSlide(nbImage){
     let slideContainer = document.querySelector(".slide-container");
     let place = loadPlaces();
     
+    let prev = document.createElement("a");
+    prev.className = "prev";
+    prev.innerHTML = "&#10094;";
+
+    let next = document.createElement("a");
+    next.className = "next";
+    next.innerHTML = "&#10095;";
+    
     for (let i = 0; i < nbImage; i++){
         let customSlider = document.createElement("div");
         customSlider.className = "custom-slider fade";
@@ -64,11 +72,23 @@ function createSlide(nbImage){
 
         let slideImg = document.createElement("img");
         slideImg.className = "slide-img";
-        slideImg.src = place[i];
+        slideImg.src = "https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg";
 
         customSlider.appendChild(slideIndex);
         customSlider.appendChild(slideImg);
         slideContainer.appendChild(customSlider);
+    }
+    slideContainer.appendChild(prev);
+    slideContainer.appendChild(next);
+}
+
+
+function createDot(nbImage){
+    let slideDot = document.querySelector(".slide-dot");
+    for (let i = 0; i < nbImage; i++){
+        let span = document.createElement("span");
+        span.className = "dot";
+        slideDot.appendChild(span);
     }
 }
 
@@ -88,6 +108,7 @@ document.querySelector(".mdl-button").addEventListener("click", ()=>{
         document.querySelector(".adresse").innerHTML = `${place.adresse}`;
         document.querySelector(".site").innerHTML = `${place.site}`;
         createSlide(place.carousel.length);
+        createDot(place.carousel.length);
         
         document.querySelector("#googleMap").style.visibility = "hidden";
         document.querySelector(".material-icons").innerHTML = "location_on";
