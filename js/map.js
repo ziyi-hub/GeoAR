@@ -17,13 +17,7 @@ function getCookiArr(cname) {
     let name = cname + "=";
     let arr = document.cookie.split(',');
     for(let i = 0; i < arr.length; i++) {
-        let c = arr[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
+        console.log(arr[i]);
     }
     return "";
 }
