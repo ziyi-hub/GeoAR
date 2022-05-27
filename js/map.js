@@ -1,13 +1,4 @@
-/*function getData(){
-    debugger;
-    let parentWin = window.opener;
-    let scene = parentWin.document.querySelector('a-scene');
-    scene.querySelectorAll("a-link").forEach(link => {
-        console.log(link.dataset.description);
-    })
-}
-
-window.onload = getData;*/
+console.log(document.cookie);
 
 
 function initialize() {

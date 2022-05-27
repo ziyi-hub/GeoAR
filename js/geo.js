@@ -90,6 +90,8 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").appendChild(img);
 
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
+                    const expires = new Date(Date.now() + 1000).toUTCString()
+                    document.cookie = `titre=${link.dataset.titre}; expires=${expires}`
                     window.location.href = "poiDetail.html";
                 })
             }
