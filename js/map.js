@@ -27,8 +27,8 @@ function loadPlaces() {
     request.send();
     return places;
 }
-
-images = loadPlaces().carousel;
+let place = loadPlaces();
+images = place.carousel;
 
 
 function initialize() {
