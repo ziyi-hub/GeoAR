@@ -17,6 +17,7 @@ console.log(getCookie("description"));
 console.log(getCookie("latitude"));
 console.log(getCookie("longitude"));
 console.log(getCookie("adresse"));
+console.log(getCookie("site"));
 
 
 function initialize() {

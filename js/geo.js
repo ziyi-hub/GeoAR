@@ -102,6 +102,7 @@ AFRAME.registerComponent('change-color-on-click', {
                     setCookie("latitude", latitude, 1);
                     setCookie("longitude", longitude, 1);
                     setCookie("adresse", link.dataset.adresse, 1);
+                    setCookie("site", link.dataset.site, 1)
                     window.location.href = "poiDetail.html";
                 })
             }
@@ -132,7 +133,8 @@ window.onload = () => {
                         text.setAttribute('data-description', place.description);
                         text.setAttribute('data-image', place.image);
                         text.setAttribute('data-adresse', place.adresse);
-                        //text.setAttribute('href', place.image);
+                        text.setAttribute('data-site', place.site);
+
                         text.setAttribute('href', "javascript:void(0)");
                         text.setAttribute('scale', '120 120 120');
                         text.setAttribute('change-color-on-click', "")
