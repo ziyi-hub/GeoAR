@@ -27,8 +27,8 @@ function loadPlaces() {
     request.send();
     return places;
 }
-let place = loadPlaces();
-images = place.carousel;
+
+images = loadPlaces().carousel;
 
 
 function initialize() {
@@ -51,8 +51,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 function createSlide(nbImage){
     let slideContainer = document.querySelector(".slide-container");
-    //let place = loadPlaces();
-    
     let prev = document.createElement("a");
     prev.className = "prev";
     prev.innerHTML = "&#10094;";
@@ -71,9 +69,8 @@ function createSlide(nbImage){
 
         let slideImg = document.createElement("img");
         slideImg.className = "slide-img";
-        slideImg.src = "https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg";
-
-        console.log(images[i]);
+        slideImg.src = images[i];
+        
         customSlider.appendChild(slideIndex);
         customSlider.appendChild(slideImg);
         slideContainer.appendChild(customSlider);
