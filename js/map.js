@@ -16,6 +16,7 @@ function getCookie(cname) {
 function loadPlaces() {
     let places;
     let request = new XMLHttpRequest();
+    let id = getCookie('id');
 
     request.open('GET','https://ziyi-hub.github.io/GeoAR/datas/places.json', false);
     request.onreadystatechange = function () {

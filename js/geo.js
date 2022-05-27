@@ -123,6 +123,11 @@ window.onload = () => {
                         const text = document.createElement('a-link');
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                         text.setAttribute('data-id', place.id);
+                        text.setAttribute('data-latitude', place.latitude);
+                        text.setAttribute('data-longitude', place.longitude);
+                        text.setAttribute('data-titre', place.name);
+                        text.setAttribute('data-description', place.description);
+                        text.setAttribute('data-image', place.image);
 
                         text.setAttribute('href', "javascript:void(0)");
                         text.setAttribute('scale', '120 120 120');
