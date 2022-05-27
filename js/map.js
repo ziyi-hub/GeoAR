@@ -26,7 +26,7 @@ function loadPlaces() {
     };
     request.send();
     return Promise.resolve(places);
-};
+}
 
 let id = getCookie('id');
 let titre = getCookie("titre");
@@ -36,7 +36,7 @@ let longitude = getCookie("longitude");
 let adresse = getCookie("adresse");
 let site = getCookie("site");
 console.log(id);
-loadPlaces().then((places) => {places.forEach((place) => {console.log(place);});})
+loadPlaces().then((places) => {places.forEach((place) => {console.log(place.id === id);});})
 
 
 function initialize() {
