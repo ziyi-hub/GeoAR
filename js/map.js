@@ -34,7 +34,7 @@ images = place.carousel;
 function initMap(content) {
     let mapProp = {
         center: new google.maps.LatLng(parseFloat(place.latitude), parseFloat(place.longitude)),
-        zoom: 8,
+        zoom: 12,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
@@ -43,10 +43,6 @@ function initMap(content) {
     let marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        icon: {
-            origin: new google.maps.MarkerLabel({color: "black"}),
-            labelOrigin: new google.maps.Point(60, 30)
-        }
     });
 
     let infoWindow = new google.maps.InfoWindow();
