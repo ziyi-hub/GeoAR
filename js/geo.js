@@ -98,12 +98,6 @@ AFRAME.registerComponent('change-color-on-click', {
 
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
                     setCookie("id", link.dataset.id, 1);
-                    setCookie("titre", link.dataset.titre, 1);
-                    setCookie("description", link.dataset.description, 1);
-                    setCookie("latitude", latitude, 1);
-                    setCookie("longitude", longitude, 1);
-                    setCookie("adresse", link.dataset.adresse, 1);
-                    setCookie("site", link.dataset.site, 1);
                     window.location.href = "poiDetail.html";
                 })
             }
@@ -129,14 +123,6 @@ window.onload = () => {
                         const text = document.createElement('a-link');
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                         text.setAttribute('data-id', place.id);
-                        text.setAttribute('data-latitude', place.latitude);
-                        text.setAttribute('data-longitude', place.longitude);
-                        text.setAttribute('data-titre', place.name);
-                        text.setAttribute('data-description', place.description);
-                        text.setAttribute('data-image', place.image);
-                        text.setAttribute('data-adresse', place.adresse);
-                        text.setAttribute('data-site', place.site);
-                        text.setAttribute('data-carousel', place.carousel);
 
                         text.setAttribute('href', "javascript:void(0)");
                         text.setAttribute('scale', '120 120 120');

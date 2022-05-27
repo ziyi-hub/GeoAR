@@ -27,14 +27,7 @@ function loadPlaces() {
     return places;
 }
 
-let id = getCookie('id');
-let titre = getCookie("titre");
-let description = getCookie("description");
-let latitude = getCookie("latitude");
-let longitude = getCookie("longitude");
-let adresse = getCookie("adresse");
-let site = getCookie("site");
-console.log(loadPlaces());
+console.log(loadPlaces().description);
 
 
 function initialize() {
