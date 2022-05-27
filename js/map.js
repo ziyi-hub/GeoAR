@@ -37,8 +37,8 @@ let adresse = getCookie("adresse");
 let site = getCookie("site");
 //loadPlaces().then((places) => {places.forEach((place) => {console.log(parseInt(place.id) == id);});})
 let places = loadPlaces();
-let place = places.find(place => parseInt(place.id) == id)
-console.log(place);
+//let place = places.find(place => parseInt(place.id) == id)
+console.log(places);
 
 
 function initialize() {
