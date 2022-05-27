@@ -1,4 +1,4 @@
-/*function getCookieString(cname) {
+function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
     for(let i = 0; i < ca.length; i++) {
@@ -13,36 +13,28 @@
     return "";
 }
 
-console.log(getCookieString("titre"));
-console.log(getCookieString("description"));
-console.log(getCookieString("latitude"));
-console.log(getCookieString("longitude"));
-console.log(getCookieString("adresse"));
-console.log(getCookieString("site"));
-console.log(getCookieString("carousel"));
-*/
-console.log(document.cookie);
+let titre = getCookie("titre");
+let description = getCookie("description");
+let latitude = getCookie("latitude");
+let longitude = getCookie("longitude");
+let adresse = getCookie("adresse");
+let site = getCookie("site");
+let carousel = getCookie("carousel");
+
 
 function initialize() {
     let mapProp = {
-        center:new google.maps.LatLng(48.684457, 6.163311),
-        zoom:4,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
+        center: new google.maps.LatLng(48.684457, 6.163311),
+        zoom: 4,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-    let myLatLng = {lat: 48.684457, lng: 6.163311};
+    let myLatLng = {lat: parseFloat(latitude), lng: parseFloat(longitude)};
     let marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
     });
-
-    let myLatLng2 = {lat: 50.684457, lng: 7.163311};
-    let marker2 = new google.maps.Marker({
-        position: myLatLng2,
-        map: map,
-    });
-
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
