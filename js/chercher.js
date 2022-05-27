@@ -30,13 +30,6 @@ function loadPlaces() {
     return Promise.resolve(PLACES);
 }
 
-
-function openDetails() {
-    document.querySelectorAll(".text-truncate").forEach(link => {
-        alert("you click me");
-    })
-}
-
 window.onload = () => {
     const ul = document.querySelector('#myUL');
     ul.style.position = "relative";
@@ -60,6 +53,7 @@ window.onload = () => {
                 
                 a.setAttribute("class", "fond");
                 a.setAttribute("class", "text-truncate");
+                a.setAttribute("href", "poiDetail.html");
                 a.style.backgroundImage = "url(" + image + ")";
                 a.style.backgroundSize = "cover";
                 
@@ -82,8 +76,6 @@ window.onload = () => {
         .catch((error) => {
             console.log(error.message);
         })
-
-    openDetails();
 };
 
 
