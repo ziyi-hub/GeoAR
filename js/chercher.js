@@ -16,7 +16,7 @@ function chercher() {
 }
 
 
-const loadPlaces = function () {
+function loadPlaces() {
     let PLACES;
     let request = new XMLHttpRequest();
 
@@ -28,8 +28,14 @@ const loadPlaces = function () {
     };
     request.send();
     return Promise.resolve(PLACES);
-};
+}
 
+
+function openDetails() {
+    document.querySelectorAll(".text-truncate").forEach(link => {
+        alert("you click me");
+    })
+}
 
 window.onload = () => {
     const ul = document.querySelector('#myUL');
@@ -76,6 +82,8 @@ window.onload = () => {
         .catch((error) => {
             console.log(error.message);
         })
+
+    openDetails();
 };
 
 
