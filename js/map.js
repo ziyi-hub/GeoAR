@@ -18,7 +18,7 @@ console.log(getCookie("latitude"));
 console.log(getCookie("longitude"));
 console.log(getCookie("adresse"));
 console.log(getCookie("site"));
-console.log(JSON.parse(getCookie("carousel")));
+console.log(getCookie("carousel"));
 
 
 function initialize() {
