@@ -44,7 +44,16 @@ let isMap = true;
 document.querySelector(".mdl-button").addEventListener("click", ()=>{
     isMap = !isMap;
     if(!isMap){
+        /**
+         * cacher map et afficher description textuelle
+         * @type {string}
+         */
         document.querySelector("#infos").style.visibility = "visible";
+        document.querySelector(".titre").innerHTML = `${titre}`;
+        document.querySelector(".description").innerHTML = `${description}`;
+        document.querySelector(".adresse").innerHTML = `${adresse}`;
+        document.querySelector(".site").innerHTML = `${site}`;
+        
         document.querySelector("#googleMap").style.visibility = "hidden";
         document.querySelector(".material-icons").innerHTML = "location_on";
         document.querySelector(".mdl-button").style.position = "fixed";
@@ -110,7 +119,7 @@ document.querySelector(".mdl-button").addEventListener("click", ()=>{
         }
     }else{
         /**
-         * cacher informations et afficher map
+         * cacher description textuelle et afficher map
          * @type {string}
          */
         document.querySelector("#infos").style.visibility = "hidden";
