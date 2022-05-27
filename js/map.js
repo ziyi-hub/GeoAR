@@ -28,7 +28,8 @@ function loadPlaces() {
     return places;
 }
 let place = loadPlaces();
-console.log(place.description);
+console.log(place.carousel);
+console.log(place.carousel.length);
 
 
 function initialize() {
