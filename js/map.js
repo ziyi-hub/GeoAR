@@ -1,4 +1,4 @@
-function getCookieString(cname) {
+/*function getCookieString(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
     for(let i = 0; i < ca.length; i++) {
@@ -20,7 +20,8 @@ console.log(getCookieString("longitude"));
 console.log(getCookieString("adresse"));
 console.log(getCookieString("site"));
 console.log(getCookieString("carousel"));
-
+*/
+console.log(document.cookie);
 
 function initialize() {
     let mapProp = {

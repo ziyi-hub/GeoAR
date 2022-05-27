@@ -97,13 +97,14 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").appendChild(img);
 
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
-                    setCookie("titre", link.dataset.titre, 1);
+                    /*setCookie("titre", link.dataset.titre, 1);
                     setCookie("description", link.dataset.description, 1);
                     setCookie("latitude", latitude, 1);
                     setCookie("longitude", longitude, 1);
                     setCookie("adresse", link.dataset.adresse, 1);
                     setCookie("site", link.dataset.site, 1);
-                    setCookie("carousel", JSON.stringify(link.dataset.carousel), 1);
+                    setCookie("carousel", JSON.stringify(link.dataset.carousel), 1);*/
+                    setCookie("datas", link.dataset, 1);
                     window.location.href = "poiDetail.html";
                 })
             }
