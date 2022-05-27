@@ -53,9 +53,14 @@ window.onload = () => {
                 
                 a.setAttribute("class", "fond");
                 a.setAttribute("class", "text-truncate");
-                a.setAttribute("href", "poiDetail.html");
+                //a.setAttribute("href", "poiDetail.html");
                 a.style.backgroundImage = "url(" + image + ")";
                 a.style.backgroundSize = "cover";
+                
+                a.addEventListener("click", ()=>{
+                    setCookie("id", place.id, 1);
+                    window.location.href = "poiDetail.html";
+                })
                 
                 p.setAttribute("class", "text-truncate");
                 p.style.fontSize = "13px";
