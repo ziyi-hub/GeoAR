@@ -30,26 +30,8 @@ function loadPlaces() {
 let place = loadPlaces();
 images = place.carousel;
 
-/*
-function initMap() {
-    let mapProp = {
-        center: new google.maps.LatLng(parseFloat(place.latitude), parseFloat(place.longitude)),
-        zoom: 8,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-    let myLatLng = {lat: parseFloat(place.latitude), lng: parseFloat(place.longitude)};
-    let marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-    });
-}
-
-google.maps.event.addDomListener(window, 'load', initMap);
-*/
-
-function initMap() {
+function initMap(content) {
     let mapProp = {
         center: new google.maps.LatLng(parseFloat(place.latitude), parseFloat(place.longitude)),
         zoom: 8,
@@ -64,7 +46,7 @@ function initMap() {
     });
 
     let infowindow = new google.maps.InfoWindow({
-        content:"Hello World!"
+        content: content
     });
 
     google.maps.event.addListener(marker, 'click', function() {
@@ -72,7 +54,7 @@ function initMap() {
     });
 }
 
-google.maps.event.addDomListener(window, 'load', initMap);
+google.maps.event.addDomListener(window, 'load', initMap(place.name));
 
 
 function createSlide(nbImage){
