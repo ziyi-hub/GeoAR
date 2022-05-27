@@ -49,6 +49,29 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+
+function createSlide(nbImage){
+    let slideContainer = document.querySelector(".slide-container");
+    
+    for (let i = 0; i < nbImage; i++){
+        let customSlider = document.createElement("div");
+        customSlider.className = "custom-slider fade";
+        
+        let slideIndex = document.createElement("div");
+        slideIndex.className = "slide-index";
+        slideIndex.innerHTML = `${i + 1}/${nbImage + 1}`;
+
+        let slideImg = document.createElement("img");
+        slideImg.className = "slide-img";
+        slideImg.src = place[i];
+
+        customSlider.appendChild(slideIndex);
+        customSlider.appendChild(slideImg);
+        slideContainer.appendChild(customSlider);
+    }
+}
+
+
 let isMap = true;
 
 document.querySelector(".mdl-button").addEventListener("click", ()=>{
@@ -63,6 +86,7 @@ document.querySelector(".mdl-button").addEventListener("click", ()=>{
         document.querySelector(".description").innerHTML = `${place.description}`;
         document.querySelector(".adresse").innerHTML = `${place.adresse}`;
         document.querySelector(".site").innerHTML = `${place.site}`;
+        createSlide(place.carousel.length);
         
         document.querySelector("#googleMap").style.visibility = "hidden";
         document.querySelector(".material-icons").innerHTML = "location_on";
