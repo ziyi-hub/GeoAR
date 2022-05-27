@@ -13,15 +13,29 @@ function getCookie(cname) {
     return "";
 }
 
+function getCookiArr(cname) {
+    let name = cname + "=";
+    let arr = document.cookie.split(',');
+    for(let i = 0; i < arr.length; i++) {
+        let c = arr[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 let titre = getCookie("titre");
 let description = getCookie("description");
 let latitude = getCookie("latitude");
 let longitude = getCookie("longitude");
 let adresse = getCookie("adresse");
 let site = getCookie("site");
-//let carousel = getCookie("carousel");
-getCookie("carousel")
-console.log(document.cookie.match("carousel"));
+//let carousel = getCookie("carousel")
+console.log(getCookiArr("carousel"));
 
 
 function initialize() {
