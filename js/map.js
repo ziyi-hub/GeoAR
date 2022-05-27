@@ -52,6 +52,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 function createSlide(nbImage){
     let slideContainer = document.querySelector(".slide-container");
+    let place = loadPlaces();
     
     for (let i = 0; i < nbImage; i++){
         let customSlider = document.createElement("div");
