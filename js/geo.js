@@ -99,6 +99,8 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
                     setCookie("titre", link.dataset.titre, 1);
                     setCookie("description", link.dataset.description, 1);
+                    setCookie("latitude", latitude, 1);
+                    setCookie("longitude", longitude, 1);
                     window.location.href = "poiDetail.html";
                 })
             }
