@@ -100,7 +100,7 @@
       <workItem from="1653375758939" duration="26353000" />
       <workItem from="1653412691312" duration="13737000" />
       <workItem from="1653476650350" duration="12774000" />
-      <workItem from="1653502259179" duration="11267000" />
+      <workItem from="1653502259179" duration="11576000" />
     </task>
     <servers />
   </component>
@@ -195,6 +195,29 @@
           <line>99</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/map.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/map.js</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/map.js</url>
+          <line>25</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/map.js</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

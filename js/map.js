@@ -1,3 +1,4 @@
+let carousel = [];
 function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
@@ -5,6 +6,7 @@ function getCookie(cname) {
         let c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
+            carousel.push(c);
         }
         if (c.indexOf(name) == 0) {
             return c.substring(name.length, c.length);
@@ -19,7 +21,9 @@ let latitude = getCookie("latitude");
 let longitude = getCookie("longitude");
 let adresse = getCookie("adresse");
 let site = getCookie("site");
-let carousel = getCookie("carousel");
+//let carousel = getCookie("carousel");
+getCookie("carousel")
+console.log(carousel);
 
 
 function initialize() {
