@@ -99,7 +99,7 @@
       <workItem from="1653375758939" duration="26353000" />
       <workItem from="1653412691312" duration="13737000" />
       <workItem from="1653476650350" duration="12774000" />
-      <workItem from="1653502259179" duration="21112000" />
+      <workItem from="1653502259179" duration="22424000" />
     </task>
     <servers />
   </component>
@@ -179,21 +179,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/map.js</url>
-          <line>128</line>
+          <line>131</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/map.js</url>
-          <line>56</line>
+          <line>59</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/map.js</url>
-          <line>48</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/map.js</url>

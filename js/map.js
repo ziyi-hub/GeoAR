@@ -43,14 +43,17 @@ function initMap(content) {
     let marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
+        icon: {
+            origin: new google.maps.MarkerLabel({color: "black"}),
+            labelOrigin: new google.maps.Point(60, 30)
+        }
     });
 
-    let infowindow = new google.maps.InfoWindow({
-        content: content
-    });
-
+    let infoWindow = new google.maps.InfoWindow();
+    
     google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
+        infoWindow.setContent("<h6>" + content + "</h6>");
+        infoWindow.open(map,marker);
     });
 }
 
