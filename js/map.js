@@ -31,7 +31,7 @@ let place = loadPlaces();
 images = place.carousel;
 
 
-function initialize() {
+function initializeMap() {
     let mapProp = {
         center: new google.maps.LatLng(48.684457, 6.163311),
         zoom: 8,
@@ -46,7 +46,7 @@ function initialize() {
     });
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initializeMap);
 
 
 function createSlide(nbImage){
@@ -70,7 +70,7 @@ function createSlide(nbImage){
         
         let slideIndex = document.createElement("div");
         slideIndex.className = "slide-index";
-        slideIndex.innerHTML = `${i + 1}/${nbImage + 1}`;
+        slideIndex.innerHTML = `${i + 1}/${nbImage}`;
 
         let slideImg = document.createElement("img");
         slideImg.className = "slide-img";
