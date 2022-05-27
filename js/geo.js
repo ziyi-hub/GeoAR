@@ -24,6 +24,13 @@ function getDistance(lat1, lng1, lat2, lng2){
     return s;
 }
 
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
 
 AFRAME.registerComponent('change-color-on-click', {
     init: function () {
@@ -90,11 +97,7 @@ AFRAME.registerComponent('change-color-on-click', {
                 document.querySelector(".panel").appendChild(img);
 
                 document.querySelector('.mdl-button').addEventListener("click", ()=>{
-                    const expires = new Date(Date.now() + 1000).toUTCString()
-                    document.cookie = `
-                                    titre=${link.dataset.titre}; 
-                                    description=${link.dataset.description}; 
-                                    expires=${expires}`
+                    setCookie("titre", link.dataset.titre, 1);
                     window.location.href = "poiDetail.html";
                 })
             }
