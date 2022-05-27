@@ -34,12 +34,12 @@ console.log(place.description);
 function initialize() {
     let mapProp = {
         center: new google.maps.LatLng(48.684457, 6.163311),
-        zoom: 4,
+        zoom: 8,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-    let myLatLng = {lat: parseFloat(latitude), lng: parseFloat(longitude)};
+    let myLatLng = {lat: parseFloat(place.latitude), lng: parseFloat(place.longitude)};
     let marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
