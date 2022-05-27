@@ -51,6 +51,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 function createSlide(nbImage){
     let slideContainer = document.querySelector(".slide-container");
+
+    while (slideContainer.hasChildNodes()) {
+        slideContainer.removeChild(slideContainer.firstChild);
+    }
+    
     let prev = document.createElement("a");
     prev.className = "prev";
     prev.innerHTML = "&#10094;";
@@ -82,6 +87,11 @@ function createSlide(nbImage){
 
 function createDot(nbImage){
     let slideDot = document.querySelector(".slide-dot");
+
+    while (slideDot.hasChildNodes()) {
+        slideDot.removeChild(slideDot.firstChild);
+    }
+    
     for (let i = 0; i < nbImage; i++){
         let span = document.createElement("span");
         span.className = "dot";
