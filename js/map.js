@@ -30,10 +30,10 @@ function loadPlaces() {
 let place = loadPlaces();
 images = place.carousel;
 
-
-function initializeMap() {
+/*
+function initMap() {
     let mapProp = {
-        center: new google.maps.LatLng(48.684457, 6.163311),
+        center: new google.maps.LatLng(parseFloat(place.latitude), parseFloat(place.longitude)),
         zoom: 8,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
@@ -46,7 +46,33 @@ function initializeMap() {
     });
 }
 
-google.maps.event.addDomListener(window, 'load', initializeMap);
+google.maps.event.addDomListener(window, 'load', initMap);
+*/
+
+function initMap() {
+    let mapProp = {
+        center: new google.maps.LatLng(parseFloat(place.latitude), parseFloat(place.longitude)),
+        zoom: 8,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+    let myLatLng = {lat: parseFloat(place.latitude), lng: parseFloat(place.longitude)};
+    let marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+    });
+
+    let infowindow = new google.maps.InfoWindow({
+        content:"Hello World!"
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+    });
+}
+
+google.maps.event.addDomListener(window, 'load', initMap);
 
 
 function createSlide(nbImage){
