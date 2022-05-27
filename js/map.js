@@ -36,7 +36,8 @@ let longitude = getCookie("longitude");
 let adresse = getCookie("adresse");
 let site = getCookie("site");
 //loadPlaces().then((places) => {places.forEach((place) => {console.log(parseInt(place.id) == id);});})
-let place = loadPlaces().find(place => parseInt(place.id) == id)
+let places = loadPlaces();
+let place = places.find(place => parseInt(place.id) == id)
 console.log(place);
 
 
