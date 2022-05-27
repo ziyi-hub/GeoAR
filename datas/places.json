@@ -299,7 +299,6 @@
         "site": "https://ensem.univ-lorraine.fr/",
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=onsq0LIES-S-ajYPH99tSg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=339.42722&pitch=0&thumbfov=100",
-            "https://scontent-cdt1-1.xx.fbcdn.net/v/t39.30808-6/278735092_661230155189430_6133418018911943160_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=8J6qXnGtB8gAX9YatN8&_nc_ht=scontent-cdt1-1.xx&oh=00_AT_aDk20PKP1z6cQuDFIFgygmW16a6G7JfvRYvAcXzN_JA&oe=6276639A",
             "https://scontent-cdt1-1.xx.fbcdn.net/v/t1.18169-9/1374957_562477223811420_1871962886_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=r73cylIaITEAX8BQq1Q&_nc_oc=AQkS3slikco8mYNH8PqwW79luNjdhP5wYoN12cwiadx__q31v9TczcB4psgGzAWt4JY&_nc_ht=scontent-cdt1-1.xx&oh=00_AT8jDdpJMb7BiLQlkG67wFlWlkI1K5rPpcjmRomKhCXKAw&oe=629714FE"
         ],
         "icon": "assets/icon/ENSEM.png"
@@ -395,7 +394,6 @@
         "site": "http://www.la-prepa-des-inp.fr/",
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=LxD-xR7_A1KVe1HJb3AmUQ&w=1177&h=580&thumb=2&yaw=94.39351&pitch=0",
-            "https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/279029366_2348573591964147_371779963298291530_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=jPwmFJJkLR8AX-HPW8v&_nc_oc=AQm8RA_6SgWqgCQlJ8UmZOu21V0LF6ZfMdvjxfaxf87CI8EMVnjO2Ya-cpUCN1whPtg&_nc_ht=scontent-cdg2-1.xx&oh=00_AT8EN_DdtLUvIetnU2yGpO32P8ubMDlPLP_IZ6P7zjz7vA&oe=6276B738"
         ],
         "icon": "assets/icon/LaPrepadesINP.png"
     },
