@@ -14,14 +14,13 @@ function getCookie(cname) {
 }
 
 function loadPlaces() {
-
     let places;
     let request = new XMLHttpRequest();
 
     request.open('GET','https://ziyi-hub.github.io/GeoAR/datas/places.json', false);
     request.onreadystatechange = function () {
         if (this.readyState === 4) {
-            places = JSON.parse(this.responseText);
+            places = JSON.parse(this.responseText).find(place => parseInt(place.id) == id);
         }
     };
     request.send();
@@ -35,9 +34,7 @@ let latitude = getCookie("latitude");
 let longitude = getCookie("longitude");
 let adresse = getCookie("adresse");
 let site = getCookie("site");
-//loadPlaces().then((places) => {places.forEach((place) => {console.log(parseInt(place.id) == id);});})
-let place = loadPlaces().find(place => parseInt(place.id) == id)
-console.log(place);
+console.log(loadPlaces());
 
 
 function initialize() {
