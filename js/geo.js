@@ -22,7 +22,12 @@ function getDistance(lat1, lng1, lat2, lng2){
     let s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.pow(Math.sin(b / 2), 2)))
     s = s * 6378.137; //Earth radius
     s = Math.round(s * 10000) / 10000;
-    return s;
+    if (s < 1){
+        return s * 1000 + "m"
+    }else{
+        return s + "km";
+    }
+    
 }
 
 
@@ -100,7 +105,7 @@ window.onload = () => {
                             p.className = "text-large";
                             p.innerHTML = link.dataset.titre;
                             p2.innerHTML = link.dataset.description;
-                            p3.innerHTML = "Distances: " + getDistance(latitude, longitude, position.coords.latitude, position.coords.longitude) +" km";
+                            p3.innerHTML = "Distances: " + getDistance(latitude, longitude, position.coords.latitude, position.coords.longitude);
                             close.className = "text-large close";
                             close.innerHTML = "&#x2718;";
 
