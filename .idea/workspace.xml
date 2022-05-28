@@ -20,8 +20,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/icon/ENSEM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ENSTIB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/LaPrepadesINP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ceu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/eeigm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/enim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ensaia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ensg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ensgsi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ensic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/faculte-d-odontologie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/faculte-de-droit-metz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/faculte-de-droit-nancy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/faculte-de-pharmacie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/faculte-des-sc-et-technologies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/faculte-des-sciences-du-sport.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/faculte-medecine-seul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iae-metz-school-of-managament.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iae-nancy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/idmc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ieca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/inspe-de-lorraine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ipag-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/irt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/isfates.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iut-de-metz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iut-de-moselle-est.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iut-de-saint-die-des-vosges.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iut-de-thionville-yutz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iut-henri-poincare-longwy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iut-hubert-curien-epinal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iut-nancy-brabois.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/iut-nancy-charlemagne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/logoCL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/logoUL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/mines-nancy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/polytech-nancy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/telecom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ufr-all-metz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ufr-all-nancy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ufr-lansad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ufr-mim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ufr-scifa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ufr-shs-metz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ufr-shs-nancy.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datas/places.json" beforeDir="false" afterPath="$PROJECT_DIR$/datas/places.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/decouvrir.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/decouvrir.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/chercher.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/decouvrir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/decouvrir.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/decouvrir.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +148,7 @@
       <workItem from="1653375758939" duration="26353000" />
       <workItem from="1653412691312" duration="13737000" />
       <workItem from="1653476650350" duration="12774000" />
-      <workItem from="1653502259179" duration="24568000" />
+      <workItem from="1653502259179" duration="26506000" />
     </task>
     <servers />
   </component>

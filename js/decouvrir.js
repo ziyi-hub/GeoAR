@@ -1,4 +1,4 @@
-function chercher() {
+function filtrer() {
     let input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
@@ -59,6 +59,7 @@ window.onload = () => {
                 let a = document.createElement("a");
                 let p = document.createElement("p");
                 let div = document.createElement("div");
+                let logo = document.createElement("img");
                 
                 a.setAttribute("class", "fond");
                 a.setAttribute("class", "text-truncate");
@@ -75,13 +76,17 @@ window.onload = () => {
                 p.setAttribute("class", "text-truncate");
                 p.style.fontSize = "13px";
                 p.innerHTML = description;
+
+                logo.className = "logo";
+                logo.src = place.icon;
                 
                 div.style.position = "relative";
-                div.style.top = "70px";
+                div.style.top = "40px";
                 div.style.fontWeight = "bolder";
                 div.innerHTML = name;
                 
                 div.appendChild(p);
+                a.appendChild(logo);
                 a.appendChild(div);
                 li.appendChild(a);
                 ul.appendChild(li);

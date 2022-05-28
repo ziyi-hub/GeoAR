@@ -15,7 +15,7 @@
             "https://ieca.univ-lorraine.fr/files/2022/05/VpourV_FB.jpg",
             "https://ieca.univ-lorraine.fr/files/2022/04/Snowpiercer_FB.jpg"
         ],
-        "icon": "assets/icon/ieca.png"
+        "icon": "../assets/icon/ieca.png"
     },
     {
         "id": 1,
@@ -34,7 +34,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipN6fVCnFks2Fuhq6fqPUxQ2qBu5VwDy3nw88tQo=s854-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipON19ogCmB5E0QzDzKmn1te9JR6vN0o82U6qH0K=s773-k-no"
         ],
-        "icon": "assets/icon/ufr-all-metz.png"
+        "icon": "../assets/icon/ufr-all-metz.png"
     },
     {
         "id": 2,
@@ -53,7 +53,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipMKVWFcME-8_XunMq08D00LrVqieoNCec5Oa3tL=s823-k",
             "https://lh5.googleusercontent.com/p/AF1QipOKq7ffzJyMXDsT_YoDJpS_uraMHJJs1B7Kbx8s=w312-h228-p-k-no"
         ],
-        "icon": "assets/icon/ufr-all-nancy.png"
+        "icon": "../assets/icon/ufr-all-nancy.png"
     },
     {
         "id": 3,
@@ -71,7 +71,7 @@
             "http://ceu.univ-lorraine.fr/files/2018/03/BDE-2016.jpg",
             "https://lh5.googleusercontent.com/p/AF1QipNtJPt8cTa51-xpiwWIFZzeOfdxHGWRawtGVMl8=w203-h203-k"
         ],
-        "icon": "assets/icon/ceu.png"
+        "icon": "../assets/icon/ceu.png"
     },
     {
         "id": 4,
@@ -90,7 +90,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipMNGLjRoMFsHvzK2Ob2MV4eClj6Iy33knFPQxto=s1242-k",
             "https://lh5.googleusercontent.com/p/AF1QipNrElgQ2AO68tXPvfvXskNq3GQSTMJhXOmdiYe5=s870-k"
         ],
-        "icon": "assets/icon/faculte-de-droit-metz.png"
+        "icon": "../assets/icon/faculte-de-droit-metz.png"
     },
     {
         "id": 5,
@@ -109,7 +109,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipM4fFo9IhFOEDdUwEIaYCy-m2X3r5_EhKDeFhAO=s870-k",
             "https://lh5.googleusercontent.com/p/AF1QipO5aBP1Edb-Aw0KKPR1T-jm_Oae4urbL2JAk0Rn=s773-k"
         ],
-        "icon": "assets/icon/faculte-de-droit-nancy.png"
+        "icon": "../assets/icon/faculte-de-droit-nancy.png"
     },
     {
         "id": 6,
@@ -128,7 +128,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipM7_HoC1RinFm_YF_7vBfx_hp9sQo0WDMsvG27H=s773-k",
             "https://lh5.googleusercontent.com/p/AF1QipO8KFsLSheQtpAlF72S0dmuMjCOMZ1gNWBKSdq7=s901-k"
         ],
-        "icon": "assets/icon/ipag-1.png"
+        "icon": "../assets/icon/ipag-1.png"
     },
     {
         "id": 7,
@@ -147,7 +147,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipP8WH7iS_K_xsxDyK3d3P2MRqUoAui81GIB9nhX=s773-k",
             "https://lh5.googleusercontent.com/p/AF1QipNRH0DPN5_THf2WyZ-77rrjWvPOJE88Jq1yR4EW=s1014-k"
         ],
-        "icon": "assets/icon/irt.png"
+        "icon": "../assets/icon/irt.png"
     },
     {
         "id": 8,
@@ -166,7 +166,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=xrj2bbpf1TLaZPwl-vtFNw&w=1177&h=580&thumb=2&yaw=71.83403&pitch=0",
             "https://lh5.googleusercontent.com/p/AF1QipONkl2j6G1CH7LkrIEg-7KXd47YAJG8q-OwflML=s870-k"
         ],
-        "icon": "assets/icon/inspe-de-lorraine.png"
+        "icon": "../assets/icon/inspe-de-lorraine.png"
     },
     {
         "id": 9,
@@ -186,7 +186,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipMCBDJja-jotQDOW2KYDAwaT5m-ExqEqRcMM2w9=s870-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipM_RYgtl_R9Fh3hTh3aOOBTkQHBdepI4G9UcooK=s901-k-no"
         ],
-        "icon": "assets/icon/inspe-de-lorraine.png"
+        "icon": "../assets/icon/inspe-de-lorraine.png"
     },
     {
         "id": 10,
@@ -206,7 +206,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipMeEo8BG_TYlLkl5neT8q_OCQGb6dm8zgiBpxWK=s773-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipNexgXUTTZxPFpfcSaYcWqQv7YEcObGPdQprpI7=s901-k-no"
         ],
-        "icon": "assets/icon/isfates.png"
+        "icon": "../assets/icon/isfates.png"
     },
     {
         "id": 11,
@@ -226,7 +226,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipPGOku-UZdJ_u0hzW8wHB3IgJJCTFbIw8z6iC-_=s957-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipPjrO2imDsyqFjamUby1ltyvX3hvFWUz9wfonDo=s1264-k-no"
         ],
-        "icon": "assets/icon/ufr-lansad.png"
+        "icon": "../assets/icon/ufr-lansad.png"
     },
     {
         "id": 12,
@@ -244,7 +244,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=UUX0hkOsdEJfMF2UtUssUg&w=1177&h=580&thumb=2&yaw=39.89766&pitch=0",
             "https://lh3.ggpht.com/p/AF1QipOzWY3av579OOLXG14C1MuMzdYqb8lSCJ0f0SYP=s1024"
         ],
-        "icon": "assets/icon/eeigm.png"
+        "icon": "../assets/icon/eeigm.png"
     },
     {
         "id": 13,
@@ -263,7 +263,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipNv4PByOkjXxmccasQHM1PqJLT2PdkyUSYMOgL9=s870-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipNBrGiF6FZfFw5MBwnOPRyD58WJqVwVBaheGIk=s968-k-no"
         ],
-        "icon": "assets/icon/enim.png"
+        "icon": "../assets/icon/enim.png"
     },
     {
         "id": 14,
@@ -283,7 +283,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipNpqtapaWmHDeMQF4-V3M75J524o1kQqeJp-wA_=s773-k-no",
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=onsq0LIES-S-ajYPH99tSg&w=1177&h=580&thumb=2&yaw=339.5428&pitch=0"
         ],
-        "icon": "assets/icon/ensaia.png"
+        "icon": "../assets/icon/ensaia.png"
     },
     {
         "id": 15,
@@ -301,7 +301,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=onsq0LIES-S-ajYPH99tSg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=339.42722&pitch=0&thumbfov=100",
             "https://scontent-cdt1-1.xx.fbcdn.net/v/t1.18169-9/1374957_562477223811420_1871962886_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=r73cylIaITEAX8BQq1Q&_nc_oc=AQkS3slikco8mYNH8PqwW79luNjdhP5wYoN12cwiadx__q31v9TczcB4psgGzAWt4JY&_nc_ht=scontent-cdt1-1.xx&oh=00_AT8jDdpJMb7BiLQlkG67wFlWlkI1K5rPpcjmRomKhCXKAw&oe=629714FE"
         ],
-        "icon": "assets/icon/ENSEM.png"
+        "icon": "../assets/icon/ENSEM.png"
     },
     {
         "id": 16,
@@ -320,7 +320,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipNF1KJ-8yAqdDYM5fNeWCN3fZ-lgmAcRiP--12f=s1031-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipNqHGr94jujNCgp7_Agiki-_QiOvswWXSnCTHEU=s1031-k-no"
         ],
-        "icon": "assets/icon/ensg.png"
+        "icon": "../assets/icon/ensg.png"
     },
     {
         "id": 17,
@@ -339,7 +339,7 @@
             "https://ensic.univ-lorraine.fr/sites/ensic.univ-lorraine.fr/files/users/actualites/photos/image_resultats_admissibles_2020.jpg",
             "https://ensic.univ-lorraine.fr/sites/ensic.univ-lorraine.fr/files/users/images/ensic-rentree.jpg"
         ],
-        "icon": "assets/icon/ensic.png"
+        "icon": "../assets/icon/ensic.png"
     },
     {
         "id": 18,
@@ -358,7 +358,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipO1GNd3H9XTDJQ-Ur1JMJ23voLCvkf7IFHhMJqi=s869-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipMdSsDIjkkreQzBsRB5g1m1E7WGTW5pLZuGqokm=s869-k-no"
         ],
-        "icon": "assets/icon/ENSTIB.png"
+        "icon": "../assets/icon/ENSTIB.png"
     },
     {
         "id": 19,
@@ -378,7 +378,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipOA1oy0BlajEjaqLvUr2FiQgwxxK-YkyThqOeQp=s750-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipNjyqvDZ2Y4__MfK-UV-BXZ6qfndyhoN9nrowoS=s1160-k-no-pi0-ya231.8287-ro0-fo100"
         ],
-        "icon": "assets/icon/ensgsi.png"
+        "icon": "../assets/icon/ensgsi.png"
     },
     {
         "id": 20,
@@ -395,7 +395,7 @@
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=LxD-xR7_A1KVe1HJb3AmUQ&w=1177&h=580&thumb=2&yaw=94.39351&pitch=0"
         ],
-        "icon": "assets/icon/LaPrepadesINP.png"
+        "icon": "../assets/icon/LaPrepadesINP.png"
     },
     {
         "id": 21,
@@ -414,7 +414,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipONw8jgEfQGsDW8x36n-qq61R75LkAgf20HmLxf=s1160-k-no-pi0-ya0-ro0-fo100",
             "https://lh5.googleusercontent.com/p/AF1QipO-f2dOoUSNi4kaQrP2-TTZDqK9dZ5Mq1Nu8MOF=s870-k-no"
         ],
-        "icon": "assets/icon/mines-nancy.png"
+        "icon": "../assets/icon/mines-nancy.png"
     },
     {
         "id": 22,
@@ -433,7 +433,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipOgCnXo2nSFhjo4F54b4EA6OHFU_HGbmBpVWXgd=s904-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipNHlRATdYYkA1m5NYx8EwIY-qF0Mus2O-LJYxfT=s775-k-no"
         ],
-        "icon": "assets/icon/polytech-nancy.png"
+        "icon": "../assets/icon/polytech-nancy.png"
     },
     {
         "id": 23,
@@ -451,7 +451,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipPm3-aI5IoL7PWzGNSdA3T3Uiyyw87U8Ohxd_mD=s1031-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipP26XLl8WNWOek7hyXrSKACevsYzpcMmCI89R-h=s1029-k-no"
         ],
-        "icon": "assets/icon/telecom.png"
+        "icon": "../assets/icon/telecom.png"
     },
     {
         "id": 24,
@@ -470,7 +470,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipM7BWt8CvvuN0x5IjLdLz8T3D17C1AHBGZidwIM=s1013-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipMc4OX5Umsj9DHo1JO_79agF_HHum5OyDgEEMg7=w800-h298-k-no"
         ],
-        "icon": "assets/icon/iae-metz-school-of-managament.png"
+        "icon": "../assets/icon/iae-metz-school-of-managament.png"
     },
     {
         "id": 25,
@@ -489,7 +489,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=-um2nXpENt8oa21GSLNg-w&w=1177&h=580&thumb=2&yaw=276.11548&pitch=0",
             "https://lh5.googleusercontent.com/p/AF1QipMOpQr6G4n9K49LrxI7l5GjhccXN4Gx2crwBgQl=s773-k"
         ],
-        "icon": "assets/icon/iae-nancy.png"
+        "icon": "../assets/icon/iae-nancy.png"
     },
     {
         "id": 26,
@@ -508,7 +508,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=-um2nXpENt8oa21GSLNg-w&w=1177&h=580&thumb=2&yaw=276.11548&pitch=0",
             "https://lh5.googleusercontent.com/p/AF1QipNRiYK1r4jkTzRCqi8pwOx6hc25HYg0DKShGpFl=s1031-k-no"
         ],
-        "icon": "assets/icon/idmc.png"
+        "icon": "../assets/icon/idmc.png"
     },
     {
         "id": 27,
@@ -527,7 +527,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipPDGxusFdm7oNVpNfU9PRT18BR9BHj_DZIxfoJC=s1746-k-no-pi0-ya180-ro0-fo100",
             "https://lh5.googleusercontent.com/p/AF1QipOfGc4Opryf0tUzFowDBlIXCw-wcgwsCAvmYohl=s1682-k-no-pi-20-ya194.25-ro0-fo100"
         ],
-        "icon": "assets/icon/faculte-d-odontologie.png"
+        "icon": "../assets/icon/faculte-d-odontologie.png"
     },
     {
         "id": 28,
@@ -546,7 +546,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipPmbDiVOYyNQHrBzT9o4qVXDDFyM3LO_B4-aAM=s901-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipOiD99fHMamotAgGAbKlPmxkT8ABpBO8w797qk=s870-k-no"
         ],
-        "icon": "assets/icon/faculte-medecine-seul.png"
+        "icon": "../assets/icon/faculte-medecine-seul.png"
     },
     {
         "id": 29,
@@ -564,7 +564,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipOfGc4Opryf0tUzFowDBlIXCw-wcgwsCAvmYohl=s1682-k-no-pi-20-ya194.25-ro0-fo100",
             "https://lh5.googleusercontent.com/p/AF1QipNQlEnEC6GWKr-G_9dl1YHEw4f-jYeqiXPrca-r=s1702-k-no-pi0-ya189.5-ro0-fo100"
         ],
-        "icon": "assets/icon/faculte-de-pharmacie.png"
+        "icon": "../assets/icon/faculte-de-pharmacie.png"
     },
     {
         "id": 30,
@@ -582,7 +582,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=aRVhPWRQR-DjosoYKKm_Fg&w=1177&h=580&thumb=2&yaw=303.0411&pitch=0",
             "https://lh5.googleusercontent.com/p/AF1QipP7xMmkqAvQozDWF5WsumS-7Dn87TqJDUsUa6R-=s1031-k-no"
         ],
-        "icon": "assets/icon/faculte-des-sciences-du-sport.png"
+        "icon": "../assets/icon/faculte-des-sciences-du-sport.png"
     },
     {
         "id": 31,
@@ -601,7 +601,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipN7DfIa9UXz68-9ybSRptRj9dVPuuiDMQnpwJpi=s775-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipMh-uyHNKO5XFEfYnfZ7MN1RqUVHgBpSnwaVM2q=s1054-k-no"
         ],
-        "icon": "assets/icon/ufr-shs-metz.png"
+        "icon": "../assets/icon/ufr-shs-metz.png"
     },
     {
         "id": 32,
@@ -620,7 +620,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipMKVWFcME-8_XunMq08D00LrVqieoNCec5Oa3tL=s823-k",
             "https://lh5.googleusercontent.com/p/AF1QipOKq7ffzJyMXDsT_YoDJpS_uraMHJJs1B7Kbx8s=w312-h228-p-k-no"
         ],
-        "icon": "assets/icon/ufr-shs-nancy.png"
+        "icon": "../assets/icon/ufr-shs-nancy.png"
     },
     {
         "id": 33,
@@ -639,7 +639,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipNQO8M1I_BG7jT7kMwL7UpU_F-92HqW6kwEu_ro=s773-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipObvDckxJgutnqZRfMRr2nwpfVwCpWRo9R69syU=w397-h298-k-no"
         ],
-        "icon": "assets/icon/faculte-des-sc-et-technologies.png"
+        "icon": "../assets/icon/faculte-des-sc-et-technologies.png"
     },
     {
         "id": 34,
@@ -658,7 +658,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipPRPzs9IBrtsfXuvDvKA3PzC2gqq3LbPTAHsrCz=s1031-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipM7ymnINKwYjnnKKfU6pw91dgnc5jYw_rJ_rCRK=s1031-k-no"
         ],
-        "icon": "assets/icon/ufr-mim.png"
+        "icon": "../assets/icon/ufr-mim.png"
     },
     {
         "id": 35,
@@ -677,7 +677,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipN9mAidSXiPG2MW85IPu0nPp52ZnGgX8PBtKoSK=s1354-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipNj8kvUPNpejvy5_YX2_OyybX53vNv0b_cmdh73=s1031-k-no"
         ],
-        "icon": "assets/icon/ufr-scifa.png"
+        "icon": "../assets/icon/ufr-scifa.png"
     },
     {
         "id": 36,
@@ -696,7 +696,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipNiU8P2A_vVorLviDslzxlC4FNuOVzrih88U-mb=s901-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipNPO8O9Fjf4QWdJFjmR6UUcUTPc9_N7UigUADep=s903-k-no"
         ],
-        "icon": "assets/icon/iut-de-metz.png"
+        "icon": "../assets/icon/iut-de-metz.png"
     },
     {
         "id": 37,
@@ -715,7 +715,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=NidAQJ5EA--BWQ8jLltcBw&w=1177&h=580&thumb=2&yaw=213.09663&pitch=0",
             "http://iut-moselle-est.univ-lorraine.fr/sites/default/files/styles/bandeau_accueil/public/2017-12/sta.jpg?itok=mD3q6uGY"
         ],
-        "icon": "assets/icon/iut-de-moselle-est.png"
+        "icon": "../assets/icon/iut-de-moselle-est.png"
     },
     {
         "id": 38,
@@ -733,7 +733,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=rTX0uLVARUGubKImol66Vg&w=1177&h=580&thumb=2&yaw=266.65817&pitch=0",
             "https://pbs.twimg.com/media/D3S-HBbW4AAZLrZ?format=jpg&name=900x900"
         ],
-        "icon": "assets/icon/iut-de-saint-die-des-vosges.png"
+        "icon": "../assets/icon/iut-de-saint-die-des-vosges.png"
     },
     {
         "id": 39,
@@ -752,7 +752,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipPh3IONRbRqNSAQLiA1NJdHElmtZzCLeti-V9NQ=s901-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipMM1ajsnKZb2QZIjjC7toPphsgAbm3CKJyYaW1L=s1160-k-no-pi0-ya200-ro0-fo100"
         ],
-        "icon": "assets/icon/iut-de-thionville-yutz.png"
+        "icon": "../assets/icon/iut-de-thionville-yutz.png"
     },
     {
         "id": 40,
@@ -771,7 +771,7 @@
             "https://lh3.ggpht.com/p/AF1QipMZKQ_UQBJE2J0LWPyr3mO9lBYZnhD7kpjO3xWa=s1024",
             "https://lh5.googleusercontent.com/p/AF1QipP9TdEiwoG4D2Iy_k4cyiY5M5OH7EpURw-PlfGR=s773-k-no"
         ],
-        "icon": "assets/icon/iut-henri-poincare-longwy.png"
+        "icon": "../assets/icon/iut-henri-poincare-longwy.png"
     },
     {
         "id": 41,
@@ -790,7 +790,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=sSBAig4oFgxg9GVs7G6qyw&w=1177&h=580&thumb=2&yaw=54.3832&pitch=0",
             "http://iut-epinal.univ-lorraine.fr/sites/iut-epinal.univ-lorraine.fr/files/users/images/dut_techniques_de_commercialisation_tc_0.jpg"
         ],
-        "icon": "assets/icon/iut-hubert-curien-epinal.png"
+        "icon": "../assets/icon/iut-hubert-curien-epinal.png"
     },
     {
         "id": 42,
@@ -810,7 +810,7 @@
             "https://lh5.googleusercontent.com/p/AF1QipPUj1YOY6I38atpcrK7jOO4uevMj-J6GtVVEJeQ=s812-k-no",
             "https://lh5.googleusercontent.com/p/AF1QipPiVjXYHIGVZevMKyscBouWXCguBKL2xpVzSK_u=s773-k-no"
         ],
-        "icon": "assets/icon/iut-nancy-brabois.png"
+        "icon": "../assets/icon/iut-nancy-brabois.png"
     },
     {
         "id": 43,
@@ -834,6 +834,6 @@
             "https://iut-charlemagne.univ-lorraine.fr/wp-content/uploads/2018/12/iut_slider2_1_02.jpg",
             "https://iut-charlemagne.univ-lorraine.fr/wp-content/uploads/2018/12/iut_slider2_divers_04.jpg"
         ],
-        "icon": "assets/icon/iut-nancy-charlemagne.png"
+        "icon": "../assets/icon/iut-nancy-charlemagne.png"
     }
 ]
