@@ -23,9 +23,9 @@ function getDistance(lat1, lng1, lat2, lng2){
     s = s * 6378.137; //Earth radius
     s = Math.round(s * 10000) / 10000;
     if (s < 1){
-        return s * 1000 + "m"
+        return (s * 1000).toFixed(0) + "m"
     }else{
-        return s + "km";
+        return s.toFixed(2) + "km";
     }
     
 }
