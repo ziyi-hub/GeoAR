@@ -9,3 +9,43 @@ body{
     justify-content: initial;
     background-color: initial;
 }
+
+#myUL > li {
+    height: 150px;
+}
+
+.logo{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+#myUL li a {
+    width: 85%;
+    margin: 30px auto 40px;
+    height: inherit;
+    border-radius: 10px;
+    border: 1px solid #ddd; /* Add a border to all links */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: white; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+footer{
+    z-index: 100;
+}

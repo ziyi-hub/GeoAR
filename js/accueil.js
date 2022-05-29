@@ -15,7 +15,24 @@ function selectionSort(arr) {
     return arr;
 }
 
-function getDistance(lat1, lng1, lat2, lng2){
+function selectionSort2(arr) {
+    let len = arr.length;
+    let minIndex, temp;
+    for (let i = 0; i < len - 1; i++) {
+        minIndex = i;
+        for (let j = i + 1; j < len; j++) {
+            if (arr[j][2] < arr[minIndex][2]) {
+                minIndex = j;
+            }
+        }
+        temp = arr[i][2];
+        arr[i][2] = arr[minIndex][2];
+        arr[minIndex][2] = temp;
+    }
+    return arr;
+}
+
+function clacDistance(lat1, lng1, lat2, lng2){
     let radLat1 = lat1 * Math.PI/ 180.0 ;
     let radLat2 = lat2 * Math.PI/ 180.0 ;
     let a = radLat1 - radLat2;
@@ -40,22 +57,17 @@ function loadPlaces() {
     return Promise.resolve(PLACES);
 };
 
-
 window.onload = () => {
     let arr = [];
-    
-    // first get current user location
     return navigator.geolocation.getCurrentPosition(function (position) {
-        loadPlaces()
-            .then((places) => {
-                places.forEach((place) => {
-                    let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
-                    arr.push(dis);
-                });
-                selectionSort(arr);
+        loadPlaces().then((places) => {
+            places.forEach((place) => {
+                let distance = clacDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
+                arr.push([place.name, place.image, distance]);
             });
-        console.log(arr);
+            //console.log(arr[0][2]);
+            console.log(selectionSort2(arr));
+        });
     })
-
 }
 
