@@ -81,7 +81,7 @@ window.onload = () => {
                 logo.src = place.icon;
                 
                 div.style.position = "relative";
-                div.style.top = "40px";
+                div.style.top = "70px";
                 div.style.fontWeight = "bolder";
                 div.innerHTML = name;
                 
