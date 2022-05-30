@@ -108,6 +108,7 @@ window.onload = () => {
                             p3.innerHTML = "Distances: " + getDistance(latitude, longitude, position.coords.latitude, position.coords.longitude);
                             close.className = "text-large close";
                             close.innerHTML = "&#x2718;";
+                            alert(latitude + longitude);
 
                             close.addEventListener("click", ()=>{
                                 content.style.display = "none";
