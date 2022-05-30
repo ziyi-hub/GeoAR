@@ -42,6 +42,12 @@ body{
     display: block; /* Make it into a block element to fill the whole list */
 }
 
+/* avoid to hidden by header */
+#myUL li:nth-child(1) a {
+    margin-top: 100px;
+}
+
+
 #myUL li a:hover:not(.header) {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
 }

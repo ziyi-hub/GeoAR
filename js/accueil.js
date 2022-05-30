@@ -4,30 +4,13 @@ function selectionSort(arr) {
     for (let i = 0; i < len - 1; i++) {
         minIndex = i;
         for (let j = i + 1; j < len; j++) {
-            if (arr[j] < arr[minIndex]) {
+            if (arr[j][2] < arr[minIndex][2]) {
                 minIndex = j;
             }
         }
         temp = arr[i];
         arr[i] = arr[minIndex];
         arr[minIndex] = temp;
-    }
-    return arr;
-}
-
-function selectionSort2(arr) {
-    let len = arr.length;
-    let minIndex, temp;
-    for (let i = 0; i < len - 1; i++) {
-        minIndex = i;
-        for (let j = i + 1; j < len; j++) {
-            if (arr[j][2] < arr[minIndex][2]) {
-                minIndex = j;
-            }
-        }
-        temp = arr[i][2];
-        arr[i][2] = arr[minIndex][2];
-        arr[minIndex][2] = temp;
     }
     return arr;
 }
@@ -55,7 +38,67 @@ function loadPlaces() {
     };
     request.send();
     return Promise.resolve(PLACES);
-};
+}
+
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+
+function generatePlaces(arrSort) {
+    for (let i = 0; i < 5; i++){
+        let nom = arrSort[i][0];
+        let image = arrSort[i][1];
+        let distance = arrSort[i][2];
+        let icon = arrSort[i][3];
+        let adresse = arrSort[i][4];
+        let id = arrSort[i][6];
+
+        const ul = document.querySelector('#myUL');
+        ul.style.position = "relative";
+        ul.style.bottom = "100px";
+
+        let li = document.createElement("li");
+        let a = document.createElement("a");
+        let p = document.createElement("p");
+        let div = document.createElement("div");
+        let logo = document.createElement("img");
+
+        a.setAttribute("class", "fond");
+        a.setAttribute("class", "text-truncate");
+        a.style.backgroundImage = "url(" + image + ")";
+        a.style.backgroundSize = "cover";
+        
+        a.addEventListener("click", ()=>{
+            setCookie("id", id, 1);
+            console.log("ok");
+            window.location.href = "poiDetail.html";
+        })
+        
+        p.setAttribute("class", "text-truncate");
+        p.style.fontSize = "13px";
+        p.innerHTML = adresse;
+
+        logo.className = "logo";
+        logo.src = icon;
+
+        div.style.position = "relative";
+        div.style.top = "40px";
+        div.style.fontWeight = "bolder";
+        div.innerHTML = nom;
+
+        div.appendChild(p);
+        a.appendChild(logo);
+        a.appendChild(div);
+        li.appendChild(a);
+        ul.appendChild(li);
+    }
+}
+
 
 window.onload = () => {
     let arr = [];
@@ -63,10 +106,12 @@ window.onload = () => {
         loadPlaces().then((places) => {
             places.forEach((place) => {
                 let distance = clacDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
-                arr.push([place.name, place.image, distance]);
+                arr.push([place.name, place.image, parseFloat(distance), place.icon, place.adresse, place.description, place.id]);
             });
-            //console.log(arr[0][2]);
-            console.log(selectionSort2(arr));
+            console.log(selectionSort(arr));
+            let arrSort = selectionSort(arr);
+            generatePlaces(arrSort);
+            
         });
     })
 }
