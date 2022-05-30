@@ -89,7 +89,8 @@ function generatePlaces(arrSort) {
         div.style.position = "relative";
         div.style.top = "40px";
         div.style.fontWeight = "bolder";
-        div.innerHTML = nom;
+        distance < 1?div.innerHTML = nom + " (" + distance * 1000 + "m)":div.innerHTML = nom + " (" + distance + "km)"
+        //div.innerHTML = nom + "(" + distance + ")";
 
         div.appendChild(p);
         a.appendChild(logo);

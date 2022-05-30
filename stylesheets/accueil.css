@@ -10,6 +10,10 @@ body{
     background-color: initial;
 }
 
+body > h1{
+    text-align:center;
+}
+
 #myUL > li {
     height: 150px;
 }
