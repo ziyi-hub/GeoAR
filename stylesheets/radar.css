@@ -208,7 +208,6 @@
 }
 
 .show{
-    overflow-y: scroll;
     font-size: 1em;
     height: fit-content;
     min-width: 32%;
