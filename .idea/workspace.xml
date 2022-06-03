@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/image/radar_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/radar_north.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/boussole.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/radar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/radar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +104,7 @@
       <workItem from="1653476650350" duration="12774000" />
       <workItem from="1653502259179" duration="40127000" />
       <workItem from="1653858190490" duration="13633000" />
+      <workItem from="1654265117519" duration="2487000" />
     </task>
     <servers />
   </component>
