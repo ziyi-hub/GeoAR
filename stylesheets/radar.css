@@ -113,7 +113,7 @@
 
 .box .dial .scale {
     position: absolute;
-    height: 300px;
+    height: fit-content;
     width: 300px;
     border-radius: 50%;
     transform-origin: 150px 150px;
@@ -211,8 +211,6 @@
     font-size: 1em;
     height: fit-content;
     min-width: 32%;
-    padding: 10px;
-
     position: absolute;
     z-index: 10000;
     transform: translate3D(0px, 20px, 0px);
