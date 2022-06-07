@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/orientation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/orientation.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -105,8 +105,16 @@
       <workItem from="1654265117519" duration="3641000" />
       <workItem from="1654585662318" duration="2980000" />
       <workItem from="1654588751308" duration="5531000" />
-      <workItem from="1654600815244" duration="4080000" />
+      <workItem from="1654600815244" duration="5293000" />
     </task>
+    <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
+      <created>1654606176633</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654606176633</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add fonctionnalité orientationchange" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fonctionnalité orientationchange" />
   </component>
   <component name="WindowStateProjectService">
     <state x="436" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652446115536">
@@ -136,14 +146,24 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="455" height="442" key="Diff.GoToChangePopup/0.0.1440.900@0.0.1440.900" timestamp="1653319432090" />
-    <state x="84" y="162" width="1356" height="700" key="DiffContextDialog" timestamp="1653773795112">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog" timestamp="1654609296584">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="84" y="162" width="1356" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1653773795112" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1653403108075">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654609296584" />
+    <state x="469" y="176" key="SettingsEditor" timestamp="1654606191223">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654606191223" />
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1654606197375">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654606197375" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654606194850">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1653403108075" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654606194850" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

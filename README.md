@@ -43,29 +43,3 @@ It requires latitude and longitude as a single string parameter (example with `a
 ```HTML
 <a-box color="yellow" gps-entity-place="latitude: <your-latitude>; longitude: <your-longitude>"/>
 ```
-
-### `gps-camera-debug`
-
-**Required**: no  
-**Max allowed per scene**: 1
-
-This component has to be added only in development environments, not production ones.
-It shows a debug UI with camera informations and a list of registered `gps-entity-place` entities, showing also distance from the user for each one.
-
-It has to be added to the `a-scene`:
-
-```HTML
-<a-scene gps-camera-debug embedded arjs='sourceType: webcam; debugUIEnabled: false;'></a-scene>
-```
-
-## Support
-
-Tried on Huawei P20, works like charm.
-
-Works good also on iPhone 6.
-
-On iOS, from 12.2, Motion sensors on Safari has be to activated from Settings. If not, GeoAR.js will prompt the user to do so.
-This [may change with final release of iOS 13](https://developer.apple.com/documentation/safari_release_notes/safari_13_beta_6_release_notes) but as September 2019 is not yet out.
-
-We need a lot of more tests, but the first impression is: the more advanced the phone (so newer) the better. This because of better quality sensors.
-
