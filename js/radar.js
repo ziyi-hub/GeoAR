@@ -59,7 +59,7 @@ window.setInterval(()=>{
 
             let curLatitude = position.coords.latitude;
             let curLongitude = position.coords.longitude;
-
+            //transformPosition(aleatoire(), curLatitude, curLongitude);
             transformPosition(data, curLatitude, curLongitude);
             createChart(data2, [{x: curLatitude, y: curLongitude}]);
         },
@@ -73,7 +73,7 @@ window.setInterval(()=>{
 
 function aleatoire(){
     let dataAle = [];
-    for (let i = 0; i < 40; i++){
+    for (let i = 0; i < 1500; i++){
         dataAle.push({x: Math.random() + 48, y: Math.random() + 6})
     }
     return dataAle;

@@ -71,9 +71,15 @@
 #chartContainer{
     height: 300px;
     width: 500px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.middle{
     left: -93px;
     top: -40px;
-    overflow: hidden;
-    position: relative;
+    position: absolute;
+    clip: rect(65px, 335px, 365px, 165px);
     border-radius: 50%;
 }
