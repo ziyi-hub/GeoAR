@@ -122,6 +122,7 @@ window.onload = () => {
 
                             document.querySelector('.mdl-button').addEventListener("click", ()=>{
                                 setCookie("id", link.dataset.id, 1);
+                                setCookie("returnGeo", "true", 1);
                                 window.location.href = "poiDetail.html";
                             })
                         }

@@ -69,7 +69,7 @@ window.onload = () => {
                 
                 a.addEventListener("click", ()=>{
                     setCookie("id", place.id, 1);
-                    console.log("ok");
+                    setCookie("returnGeo", "false", 1);
                     window.location.href = "poiDetail.html";
                 })
                 

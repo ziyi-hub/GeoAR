@@ -198,3 +198,12 @@ document.querySelector(".mdl-button").addEventListener("click", ()=>{
         document.querySelector(".mdl-button").style.position = "absolute";
     }
 })
+
+document.querySelector(".btn-close").addEventListener("click", ()=>{
+    let returnGeo = getCookie('returnGeo');
+    if (returnGeo === "true"){
+        window.location.href = "geo.html";
+    }else{
+        window.location.href = "decouvrir.html";
+    }
+})
