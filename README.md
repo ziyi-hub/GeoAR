@@ -4,8 +4,6 @@ To better introduce this library I wrote an [article on Medium](https://medium.c
 
 ## Components
 
->Work In Progress
-
 ### `gps-camera`
 
 **Required**: yes  
