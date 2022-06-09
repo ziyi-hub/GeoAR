@@ -63,7 +63,7 @@ window.onload = () => {
                 
                 a.setAttribute("class", "fond");
                 a.setAttribute("class", "text-truncate");
-                //a.setAttribute("href", "poiDetail.html");
+ 
                 a.style.backgroundImage = "url(" + image + ")";
                 a.style.backgroundSize = "cover";
                 
