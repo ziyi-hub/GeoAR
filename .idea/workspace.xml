@@ -20,9 +20,128 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/jarallax-element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax-element.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax-element.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax-element.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax-video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax-video.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax-video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax-video.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.cjs.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jarallax.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/parallexe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GeoAR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GeoAR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ENSEM.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ENSEM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ENSTIB.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ENSTIB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/LaPrepadesINP.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/LaPrepadesINP.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ceu.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ceu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/eeigm.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/eeigm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/enim.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/enim.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ensaia.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ensaia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ensg.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ensg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ensgsi.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ensgsi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ensic.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ensic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/faculte-d-odontologie.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/faculte-d-odontologie.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/faculte-de-droit-metz.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/faculte-de-droit-metz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/faculte-de-droit-nancy.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/faculte-de-droit-nancy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/faculte-de-pharmacie.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/faculte-de-pharmacie.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/faculte-des-sc-et-technologies.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/faculte-des-sc-et-technologies.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/faculte-des-sciences-du-sport.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/faculte-des-sciences-du-sport.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/faculte-medecine-seul.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/faculte-medecine-seul.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iae-metz-school-of-managament.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iae-metz-school-of-managament.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iae-nancy.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iae-nancy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/idmc.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/idmc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ieca.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ieca.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/inspe-de-lorraine.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/inspe-de-lorraine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ipag-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ipag-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/irt.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/irt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/isfates.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/isfates.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iut-de-metz.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iut-de-metz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iut-de-moselle-est.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iut-de-moselle-est.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iut-de-saint-die-des-vosges.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iut-de-saint-die-des-vosges.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iut-de-thionville-yutz.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iut-de-thionville-yutz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iut-henri-poincare-longwy.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iut-henri-poincare-longwy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iut-hubert-curien-epinal.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iut-hubert-curien-epinal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iut-nancy-brabois.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iut-nancy-brabois.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/iut-nancy-charlemagne.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/iut-nancy-charlemagne.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/logoCL.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/logoCL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/logoUL.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/logoUL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/mines-nancy.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/mines-nancy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/polytech-nancy.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/polytech-nancy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/telecom.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/telecom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ufr-all-metz.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ufr-all-metz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ufr-all-nancy.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ufr-all-nancy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ufr-lansad.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ufr-lansad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ufr-mim.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ufr-mim.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ufr-scifa.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ufr-scifa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ufr-shs-metz.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ufr-shs-metz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ufr-shs-nancy.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon/ufr-shs-nancy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/intro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/intro.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/intro2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/intro2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/introBack.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/introBack.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/radar_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/radar_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/radar_north.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/radar_north.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/splashscreen/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/splashscreen/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/places.json" beforeDir="false" afterPath="$PROJECT_DIR$/datas/places.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/condition.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/condition.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/decouvrir.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/decouvrir.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/logicielTiers.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logicielTiers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/parametre.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/parametre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/poiDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/poiDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/politique.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/politique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/propos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/reglement.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/reglement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/accueil.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/accueil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/boussole.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/boussole.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/decouvrir.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/decouvrir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/gps-camera-debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/gps-camera-debug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/gps-camera.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/gps-camera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/gps-entity-place.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/gps-entity-place.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/radar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/radar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/accueil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/decouvrir.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/decouvrir.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/geo.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/geo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/map.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/parametre.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/parametre.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/parametre_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/parametre_detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/propos.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/propos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/radar.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/radar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sun-light-estimation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sun-light-estimation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sun-light-estimation/google-map-geocoder.html" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sun-light-estimation/google-map-geocoder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sun-light-estimation/sun-position.html" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sun-light-estimation/sun-position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sun-light-estimation/vendor/suncalc.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sun-light-estimation/vendor/suncalc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +154,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -58,7 +177,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -106,7 +225,8 @@
       <workItem from="1654585662318" duration="2980000" />
       <workItem from="1654588751308" duration="5531000" />
       <workItem from="1654600815244" duration="10575000" />
-      <workItem from="1654758179680" duration="1056000" />
+      <workItem from="1654758179680" duration="2137000" />
+      <workItem from="1654764345212" duration="3824000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>

@@ -60,9 +60,11 @@ window.onload = () => {
                 let p = document.createElement("p");
                 let div = document.createElement("div");
                 let logo = document.createElement("img");
+
+                li.className = "jarallax";
+                li.setAttribute("data-speed", "3.0");
                 
-                a.setAttribute("class", "fond");
-                a.setAttribute("class", "text-truncate");
+                a.setAttribute("class", "fond text-truncate jarallax-img");
  
                 a.style.backgroundImage = "url(" + image + ")";
                 a.style.backgroundSize = "cover";
@@ -90,6 +92,8 @@ window.onload = () => {
                 a.appendChild(div);
                 li.appendChild(a);
                 ul.appendChild(li);
+
+                jarallax(document.querySelectorAll(".jarallax"));
                 
             });
         })
