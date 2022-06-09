@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/jarallax.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/jarallax.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/decouvrir.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/decouvrir.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/decouvrir.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/decouvrir.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/decouvrir.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/decouvrir.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/parallexe.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +108,7 @@
       <workItem from="1654600815244" duration="10575000" />
       <workItem from="1654758179680" duration="2137000" />
       <workItem from="1654764345212" duration="3978000" />
-      <workItem from="1654768372004" duration="1815000" />
+      <workItem from="1654768372004" duration="7041000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -119,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654606176633</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix jarallax">
+      <created>1654771099865</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654771099865</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +145,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add fonctionnalité orientationchange" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fonctionnalité orientationchange" />
+    <MESSAGE value="fix jarallax" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix jarallax" />
   </component>
   <component name="WindowStateProjectService">
     <state x="436" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652446115536">
@@ -155,29 +161,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="455" height="442" key="Diff.GoToChangePopup/0.0.1440.900@0.0.1440.900" timestamp="1653319432090" />
-    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog" timestamp="1654758792243">
-      <screen x="0" y="25" width="1920" height="1055" />
+    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog" timestamp="1654777805255">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="84" y="162" width="1356" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1653773795112" />
     <state x="112" y="463" width="1808" height="571" key="DiffContextDialog/265.1105.1440.801/0.25.1920.1055@0.25.1920.1055" timestamp="1654758792243" />
-    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654609296584" />
-    <state x="705" y="246" key="RollbackChangesDialog" timestamp="1654611898140">
+    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654777805255" />
+    <state x="705" y="246" key="RollbackChangesDialog" timestamp="1654774369172">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="705" y="246" key="RollbackChangesDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654611898140" />
+    <state x="705" y="246" key="RollbackChangesDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654774369172" />
     <state x="469" y="176" key="SettingsEditor" timestamp="1654606191223">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654606191223" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1654606197375">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1654771111080">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654606197375" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654606194850">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654771111080" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654774050926">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1653403108075" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654606194850" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654774050926" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

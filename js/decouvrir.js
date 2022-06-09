@@ -43,58 +43,54 @@ window.onload = () => {
     const ul = document.querySelector('#myUL');
     ul.style.position = "relative";
     ul.style.bottom = "100px";
-    
+
     const myInput = document.querySelector('#myInput');
     myInput.style.zIndex = "100";
 
-     loadPlaces()
+    loadPlaces()
         .then((places) => {
             places.forEach((place) => {
 
                 const image = place.image;
                 const name = place.name;
                 const description = place.description;
-                
+
                 let li = document.createElement("li");
                 let a = document.createElement("a");
                 let p = document.createElement("p");
                 let div = document.createElement("div");
                 let logo = document.createElement("img");
 
-                li.className = "jarallax";
-                li.setAttribute("data-speed", "3.0");
-                
-                a.setAttribute("class", "fond text-truncate jarallax-img");
- 
+                a.setAttribute("class", "fond");
+                a.setAttribute("class", "text-truncate");
+                //a.setAttribute("href", "poiDetail.html");
                 a.style.backgroundImage = "url(" + image + ")";
                 a.style.backgroundSize = "cover";
-                
+
                 a.addEventListener("click", ()=>{
                     setCookie("id", place.id, 1);
                     setCookie("returnGeo", "false", 1);
                     window.location.href = "poiDetail.html";
                 })
-                
+
                 p.setAttribute("class", "text-truncate");
                 p.style.fontSize = "13px";
                 p.innerHTML = description;
 
                 logo.className = "logo";
                 logo.src = place.icon;
-                
+
                 div.style.position = "relative";
                 div.style.top = "70px";
                 div.style.fontWeight = "bolder";
                 div.innerHTML = name;
-                
+
                 div.appendChild(p);
                 a.appendChild(logo);
                 a.appendChild(div);
                 li.appendChild(a);
                 ul.appendChild(li);
 
-                jarallax(document.querySelectorAll(".jarallax"));
-                
             });
         })
         .catch((error) => {
