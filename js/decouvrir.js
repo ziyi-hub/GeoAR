@@ -5,7 +5,7 @@ function filtrer() {
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
+        a = li[i].getElementsByTagName("div")[0];
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
@@ -50,47 +50,46 @@ window.onload = () => {
     loadPlaces()
         .then((places) => {
             places.forEach((place) => {
-
+                const id = place.id;
                 const image = place.image;
                 const name = place.name;
                 const description = place.description;
+                const icon = place.icon;
 
                 let li = document.createElement("li");
-                let a = document.createElement("a");
+                let img = document.createElement("img");
                 let p = document.createElement("p");
                 let div = document.createElement("div");
                 let logo = document.createElement("img");
+                
+                li.className = "jarallax row";
+                li.setAttribute("data-speed", "1.4");
 
-                a.setAttribute("class", "fond");
-                a.setAttribute("class", "text-truncate");
-                //a.setAttribute("href", "poiDetail.html");
-                a.style.backgroundImage = "url(" + image + ")";
-                a.style.backgroundSize = "cover";
+                img.className = "text-truncate jarallax-img";
+                img.src = image;
 
-                a.addEventListener("click", ()=>{
-                    setCookie("id", place.id, 1);
+                logo.className = "logo col-3";
+                logo.src = icon;
+                
+                p.setAttribute("class", "col-20 text-truncate");
+                p.innerHTML = description;
+                
+                div.className = "text-truncate description";
+                div.innerHTML = name;
+
+                div.appendChild(p);
+                li.appendChild(img);
+                li.appendChild(logo);
+                li.appendChild(div);
+                ul.appendChild(li);
+                
+                li.addEventListener("click", ()=>{
+                    setCookie("id", id, 1);
                     setCookie("returnGeo", "false", 1);
                     window.location.href = "poiDetail.html";
                 })
 
-                p.setAttribute("class", "text-truncate");
-                p.style.fontSize = "13px";
-                p.innerHTML = description;
-
-                logo.className = "logo";
-                logo.src = place.icon;
-
-                div.style.position = "relative";
-                div.style.top = "70px";
-                div.style.fontWeight = "bolder";
-                div.innerHTML = name;
-
-                div.appendChild(p);
-                a.appendChild(logo);
-                a.appendChild(div);
-                li.appendChild(a);
-                ul.appendChild(li);
-
+                jarallax(document.querySelectorAll(".jarallax"));
             });
         })
         .catch((error) => {

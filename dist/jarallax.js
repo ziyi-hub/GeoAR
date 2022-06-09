@@ -399,7 +399,8 @@
       if ('fixed' === this.image.position) {
         self.css(self.image.$container, {
           '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-          'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'
+          'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', 
+          'border-radius': '10px',
         });
       }
 
@@ -408,7 +409,7 @@
 
       if (self.image.useImgTag) {
         imageStyles = self.extend({
-          'object-fit': self.options.imgSize,
+          //'object-fit': self.options.imgSize,
           'object-position': self.options.imgPosition,
           'max-width': 'none'
         }, containerStyles, imageStyles); // use div with background image

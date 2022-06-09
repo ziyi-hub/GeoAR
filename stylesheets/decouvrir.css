@@ -43,10 +43,9 @@ body{
     margin: 50px 0 0;
 }
 
-#myUL li a {
+#myUL li {
     width: 85%;
-    margin: 30px auto 40px;
-    height: inherit;
+    margin: 30px auto 30px;
     border-radius: 10px;
     border: 1px solid #ddd; /* Add a border to all links */
     background-color: #f6f6f6; /* Grey background color */
@@ -57,13 +56,30 @@ body{
     display: block; /* Make it into a block element to fill the whole list */
 }
 
+#myUL li a {
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: white; /* Add a black text color */
+}
+
 /* avoid to hidden by header */
-#myUL li:nth-child(1) a {
+#myUL li:nth-child(1){
     margin-top: 100px;
 }
 
 #myUL li a:hover:not(.header) {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+.description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 10px 0 10px;
+}
+
+p{
+    font-size: 13px;
 }
 
 footer{
