@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/poiDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/poiDetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/decouvrir.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/decouvrir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/map.css" afterDir="false" />
-    </list>
+    <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +101,7 @@
       <workItem from="1654265117519" duration="3641000" />
       <workItem from="1654585662318" duration="2980000" />
       <workItem from="1654588751308" duration="5531000" />
-      <workItem from="1654600815244" duration="10522000" />
+      <workItem from="1654600815244" duration="10575000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
