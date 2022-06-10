@@ -51,30 +51,23 @@ section.module p:last-child{
 
 section.module.parallax {
     height: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 section.module.parallax-1{
-    background: url(../assets/image/gCanyon.jpg) no-repeat fixed center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(https://source.unsplash.com/random/2401x1200/?rocks) no-repeat fixed center;
 }
 
 section.module.parallax-2{
-    background: url(../assets/image/rMountains.jpg) no-repeat fixed center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(https://source.unsplash.com/random/2401x1200/?masks) no-repeat fixed center;
+
 }
 
 section.module.parallax-3{
-    background: url(../assets/image/rMountains.jpg) no-repeat fixed center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(https://source.unsplash.com/random/2001x1201/?hills) no-repeat fixed center;
 }
 
 @media all and (min-width: 600px) {
