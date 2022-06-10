@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/icon/faculte-medecine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icon/ipag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icon/prepaINP.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon/LaPrepadesINP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon/faculte-medecine-seul.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon/ipag-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/places.json" beforeDir="false" afterPath="$PROJECT_DIR$/datas/places.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/radar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/radar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +110,7 @@
       <workItem from="1654768372004" duration="7336000" />
       <workItem from="1654779661632" duration="3804000" />
       <workItem from="1654804228562" duration="7775000" />
-      <workItem from="1654844680155" duration="2171000" />
+      <workItem from="1654844680155" duration="2430000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>

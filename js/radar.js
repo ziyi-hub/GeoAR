@@ -155,23 +155,23 @@ function createChart(data1, data2) {
         data: [
             {
                 type: "scatter",
-                toolTipContent: "<span style=\"color:#4F81BC \"><b>{name}</b></span><br/><b> Lat:</b> {x} TPS<br/><b> Lng:</b></span> {y} ms",
+                //toolTipContent: "<span style=\"color:#4F81BC \"><b>{name}</b></span><br/><b> Lat:</b> {x} TPS<br/><b> Lng:</b></span> {y} ms",
                 name: "UL",
                 showInLegend: false,
                 dataPoints: data1
             },
             {
                 type: "scatter",
-                name: "my Current position",
+                name: "Position courant",
                 showInLegend: false,
-                toolTipContent: "<span style=\"color:#C0504E \"><b>{name}</b></span><br/><b> Lat:</b> {x} TPS<br/><b> Lng:</b></span> {y} ms",
+                //toolTipContent: "<span style=\"color:#C0504E \"><b>{name}</b></span><br/><b> Lat:</b> {x} TPS<br/><b> Lng:</b></span> {y} ms",
                 dataPoints: data2
             },
             {
                 type: "scatter",
-                name: "Fix",
+                name: "Position Fixé",
                 showInLegend: false,
-                toolTipContent: "<span style=\"color:transparent \"><b>{name}</b></span><br/><b> Load:</b> {x} TPS<br/><b> Response Time:</b></span> {y} ms",
+                //toolTipContent: "<span style=\"color:transparent \"><b>{name}</b></span><br/><b> Load:</b> {x} TPS<br/><b> Response Time:</b></span> {y} ms",
                 dataPoints: [{x: data2[0].x - (0.0219579), y: data2[0].y - (0.0219579) / 1.2}, {x: data2[0].x + (0.0219579), y: data2[0].y + (0.0219579) / 1.2}],
             },
         ]
