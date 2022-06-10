@@ -20,12 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/icon/faculte-medecine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/ipag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/prepaINP.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/jarallax-element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/jarallax-video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/jarallax.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/jarallax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/decouvrir.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/decouvrir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/decouvrir.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/decouvrir.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/LaPrepadesINP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/faculte-medecine-seul.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon/ipag-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/places.json" beforeDir="false" afterPath="$PROJECT_DIR$/datas/places.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +116,8 @@
       <workItem from="1654764345212" duration="3978000" />
       <workItem from="1654768372004" duration="7336000" />
       <workItem from="1654779661632" duration="3804000" />
-      <workItem from="1654804228562" duration="7707000" />
+      <workItem from="1654804228562" duration="7775000" />
+      <workItem from="1654844680155" duration="2171000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -136,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654778548762</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add parallaxes">
+      <created>1654813938519</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654813938519</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +170,8 @@
     <MESSAGE value="add fonctionnalité orientationchange" />
     <MESSAGE value="fix jarallax" />
     <MESSAGE value="init app" />
-    <option name="LAST_COMMIT_MESSAGE" value="init app" />
+    <MESSAGE value="add parallaxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add parallaxes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="436" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652446115536">
@@ -189,15 +201,16 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654606191223" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1654778554846">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="420" y="231" key="Vcs.Push.Dialog.v2" timestamp="1654813946966">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1654813946966" />
     <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654778554846" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654778553035">
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654846258909">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1653403108075" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654778553035" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1654813945283" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654846258909" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
