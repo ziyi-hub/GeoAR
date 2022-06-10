@@ -58,7 +58,7 @@ function generatePlaces(arrSort) {
         let adresse = arrSort[i][4];
         let id = arrSort[i][6];
 
-        const ul = document.querySelector('#myUL');
+        const ul = document.querySelector('#listeUL');
         ul.style.position = "relative";
         ul.style.bottom = "100px";
 
