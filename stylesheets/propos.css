@@ -59,15 +59,15 @@ section.module.parallax {
 }
 
 section.module.parallax-1{
-    background-image: url(../assets/image/gCanyon.jpg);
+    background: url(../assets/image/gCanyon.jpg) no-repeat fixed center;
 }
 
 section.module.parallax-2{
-    background-image: url(../assets/image/rMountains.jpg);
+    background: url(../assets/image/rMountains.jpg) no-repeat fixed center;
 }
 
 section.module.parallax-3{
-    background-image: url(../assets/image/rMountains.jpg);
+    background: url(../assets/image/rMountains.jpg) no-repeat fixed center;
 }
 
 @media all and (min-width: 600px) {
