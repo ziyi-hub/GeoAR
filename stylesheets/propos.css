@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&display=swap');
-
+/*
 html, body, div, span, applet, object, iframe, h2, h3, h4, h5,
 h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub,
@@ -13,7 +13,7 @@ ruby, section, summary, time, mark, audio, video {
     vertical-align: baseline;
     font-family: 'Lato', sans-serif;
 }
-
+*/
 body{
     display: unset;
 }
