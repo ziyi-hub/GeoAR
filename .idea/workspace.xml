@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/propos.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/propos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/propos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,8 @@
       <workItem from="1654768372004" duration="7336000" />
       <workItem from="1654779661632" duration="3804000" />
       <workItem from="1654804228562" duration="7775000" />
-      <workItem from="1654844680155" duration="11207000" />
+      <workItem from="1654844680155" duration="11478000" />
+      <workItem from="1654859214136" duration="193000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -154,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654856395822</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="corrige à propos">
+      <created>1654857156246</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654857156246</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,16 +222,16 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654606191223" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1654850461845">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1654857162500">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1654813946966" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654850461845" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654850460394">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654857162500" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654857160689">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1654813945283" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654850460394" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654857160689" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
