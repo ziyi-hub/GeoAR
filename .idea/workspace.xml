@@ -110,7 +110,7 @@
       <workItem from="1654768372004" duration="7336000" />
       <workItem from="1654779661632" duration="3804000" />
       <workItem from="1654804228562" duration="7775000" />
-      <workItem from="1654844680155" duration="2430000" />
+      <workItem from="1654844680155" duration="4587000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -179,12 +179,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="455" height="442" key="Diff.GoToChangePopup/0.0.1440.900@0.0.1440.900" timestamp="1653319432090" />
-    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog" timestamp="1654777805255">
+    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog" timestamp="1654847508865">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="84" y="162" width="1356" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1653773795112" />
     <state x="112" y="463" width="1808" height="571" key="DiffContextDialog/265.1105.1440.801/0.25.1920.1055@0.25.1920.1055" timestamp="1654758792243" />
-    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654777805255" />
+    <state x="112" y="463" width="1808" height="571" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654847508865" />
     <state x="529" y="205" key="RollbackChangesDialog" timestamp="1654808244360">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
