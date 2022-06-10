@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/propos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/accueil.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,7 @@
       <workItem from="1654779661632" duration="3804000" />
       <workItem from="1654804228562" duration="7775000" />
       <workItem from="1654844680155" duration="11478000" />
-      <workItem from="1654859214136" duration="193000" />
+      <workItem from="1654859214136" duration="395000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654857156246</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="optimise propos">
+      <created>1654859458135</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654859458135</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +195,8 @@
     <MESSAGE value="add parallaxes" />
     <MESSAGE value="fix toolTipContent to remove content of label" />
     <MESSAGE value="corrige à propos" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrige à propos" />
+    <MESSAGE value="optimise propos" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimise propos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1654855942263">
@@ -218,20 +226,20 @@
     </state>
     <state x="529" y="205" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1654808244360" />
     <state x="705" y="246" key="RollbackChangesDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654782378522" />
-    <state x="469" y="176" key="SettingsEditor" timestamp="1654606191223">
+    <state x="469" y="176" key="SettingsEditor" timestamp="1654859467779">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654606191223" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1654857162500">
+    <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654859467779" />
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1654859471828">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1654813946966" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654857162500" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654857160689">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654859471828" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654859470573">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1654813945283" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654857160689" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654859470573" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
