@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&display=swap');
-/*
-html, body, div, span, applet, object, iframe, h2, h3, h4, h5,
-h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub,
-sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, menu, nav, output,
-ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    font-family: 'Lato', sans-serif;
-}
-*/
+
 body{
     display: unset;
 }
@@ -49,25 +35,8 @@ section.module p:last-child{
     margin-bottom: 0;
 }
 
-section.module.parallax {
-    height: 400px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-section.module.parallax-1{
-    background: url(https://source.unsplash.com/random/2401x1200/?rocks) no-repeat fixed center;
-}
-
-section.module.parallax-2{
-    background: url(https://source.unsplash.com/random/2401x1200/?masks) no-repeat fixed center;
-
-}
-
-section.module.parallax-3{
-    background: url(https://source.unsplash.com/random/2001x1201/?hills) no-repeat fixed center;
+.jarallax{
+    height: 500px;
 }
 
 @media all and (min-width: 600px) {

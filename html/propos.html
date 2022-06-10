@@ -9,6 +9,9 @@
     <!-- css -->
     <link rel="stylesheet" href="../stylesheets/bar.css">
     <link rel="stylesheet" href="../stylesheets/propos.css">
+
+    <!-- Jarallax -->
+    <script src="../dist/jarallax.js"></script>
     
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -16,13 +19,17 @@
 
     <!-- js -->
     <script type="module" src="../js/nav.js"></script>
-    <title>DEMOES</title>
+    <script type="module" src="../js/propos.js"></script>
+    
+    <title>A propos</title>
 </head>
 <body>
     <!-- À propos -->
     <div class="principal">
         <!-- Université de Lorraine -->
-        <section class="module parallax parallax-1"></section>
+        <div class="jarallax" data-speed="1.4">
+            <img class="jarallax-img" src="https://source.unsplash.com/random/2401x1200/?rocks" alt="Université de Lorraine" loading="lazy" />
+        </div>
         <section class="module content">
             <div class="container">
                 <h2>Université de Lorraine</h2>
@@ -32,7 +39,9 @@
         </section>
 
         <!-- CharlyLab -->
-        <section class="module parallax parallax-2"></section>
+        <div class="jarallax" data-speed="1.4">
+            <img class="jarallax-img" src="https://source.unsplash.com/random/2401x1200/?masks" alt="CharlyLab" loading="lazy" />
+        </div>
         <section class="module content">
             <div class="container">
                 <h2>LE CHARLYLAB</h2>
@@ -42,7 +51,9 @@
         </section>
 
         <!-- Projet PLEIADES -->
-        <section class="module parallax parallax-3"></section>
+        <div class="jarallax" data-speed="1.4">
+            <img class="jarallax-img" src="https://source.unsplash.com/random/2001x1201/?hills" alt="Projet PLEIADES" loading="lazy" />
+        </div>
         <section class="module content">
             <div class="container">
                 <h2>Projet PLEIADES</h2>
