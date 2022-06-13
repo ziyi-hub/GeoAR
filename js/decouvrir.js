@@ -68,7 +68,7 @@ window.onload = () => {
                 img.className = "text-truncate jarallax-img";
                 img.src = image;
 
-                logo.className = "logo col-3";
+                logo.className = "logo col-2";
                 logo.src = icon;
                 
                 p.setAttribute("class", "col-20 text-truncate");

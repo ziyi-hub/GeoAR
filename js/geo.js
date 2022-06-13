@@ -99,7 +99,7 @@ window.onload = () => {
 
                             img.className = "fit-picture";
                             img.src = link.dataset.image;
-                            img.alt = link.dataset.image;
+                            img.alt = link.dataset.titre;
                             button.className = "mdl-button mdl-button--raised mdl-button--accent";
                             button.innerHTML = "Afficher plus";
                             p.className = "text-large";

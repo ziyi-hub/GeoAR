@@ -21,11 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/poiDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/poiDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/logicielTiers.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logicielTiers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/decouvrir.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/decouvrir.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/introduction.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/introduction.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/map.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/geo.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/geo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/propos.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/propos.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,8 @@
       <workItem from="1654844680155" duration="11478000" />
       <workItem from="1654859214136" duration="500000" />
       <workItem from="1654859797692" duration="13364000" />
-      <workItem from="1655106595557" duration="3388000" />
+      <workItem from="1655106595557" duration="4802000" />
+      <workItem from="1655113875549" duration="5216000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -301,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654873377004</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="init app">
+      <created>1655110092594</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1655110092594</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +331,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add fonctionnalité orientationchange" />
     <MESSAGE value="fix jarallax" />
-    <MESSAGE value="init app" />
     <MESSAGE value="add parallaxes" />
     <MESSAGE value="fix toolTipContent to remove content of label" />
     <MESSAGE value="corrige à propos" />
@@ -336,13 +343,14 @@
     <MESSAGE value="optimise gps-camera" />
     <MESSAGE value="update xml" />
     <MESSAGE value="delete image" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete image" />
+    <MESSAGE value="init app" />
+    <option name="LAST_COMMIT_MESSAGE" value="init app" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1654855942263">
+    <state x="424" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1655111082934">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="424" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654855942263" />
+    <state x="424" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655111082934" />
     <state x="436" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652446115536">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -370,15 +378,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654859467779" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1654873381156">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1655110102229">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1654813946966" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654873381156" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1654873379878">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655110102229" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1655110100579">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1654813945283" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654873379878" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655110100579" />
   </component>
 </project>

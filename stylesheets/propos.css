@@ -16,6 +16,74 @@ body{
     padding: 50px;
 }
 
+/* Animation */
+@keyframes fade-in{
+    0%{ 
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{ 
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@-ms-keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@-o-keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@-moz-keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+section.module{
+    opacity: 0;
+    animation: fade-in 4s ease 0s 1;
+    -webkit-animation: fade-in 4s ease 0s 1;
+    -moz-animation: fade-in 4s ease 0s 1;
+    -o-animation: fade-in 4s ease 0s 1;
+
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
 section.module:last-child{
     margin-bottom: 0;
 }
