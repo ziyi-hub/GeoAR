@@ -136,3 +136,11 @@ div.debug {
 center{
     padding-bottom: 5%;
 }
+
+@media all and (min-width: 600px) {
+    .titre_2 {
+        font-size: 1.5em;
+        text-align: justify;
+        padding-top: 0;
+    }
+}

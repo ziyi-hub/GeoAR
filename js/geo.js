@@ -107,7 +107,7 @@ window.onload = () => {
                             p2.innerHTML = link.dataset.description;
                             p3.innerHTML = "Distances: " + getDistance(latitude, longitude, position.coords.latitude, position.coords.longitude);
                             close.className = "text-large close";
-                            close.innerHTML = "&#x2718;";
+                            close.innerHTML = "&#x2715;";
 
                             close.addEventListener("click", ()=>{
                                 content.style.display = "none";
