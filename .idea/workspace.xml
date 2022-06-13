@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/logicielTiers.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logicielTiers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/decouvrir.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/decouvrir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/geo.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/geo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/propos.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/propos.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +114,7 @@
       <workItem from="1654859214136" duration="500000" />
       <workItem from="1654859797692" duration="13364000" />
       <workItem from="1655106595557" duration="4802000" />
-      <workItem from="1655113875549" duration="5216000" />
+      <workItem from="1655113875549" duration="6352000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -309,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655110092594</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="init app">
+      <created>1655122655985</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1655122655985</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,15 +381,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654859467779" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1655110102229">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1655122665663">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1654813946966" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655110102229" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1655110100579">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655122665663" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1655122663717">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1654813945283" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655110100579" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655122663717" />
   </component>
 </project>
