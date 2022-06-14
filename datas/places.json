@@ -27,7 +27,7 @@
         "name": "UFR ALL-METZ",
         "adresse": "Prom. du Saulcy, 57000 Metz",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipPGOku-UZdJ_u0hzW8wHB3IgJJCTFbIw8z6iC-_=s957-k",
+        "../assets/image/UFR_ALL_METZ.jpeg",
         "site": "http://all-metz.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipO-3kcnNX-iiU1UrpzSK6tIZRJCpUCSImo0V3ZQ=s890-k",
@@ -46,7 +46,7 @@
         "name": "UFR ALL-NANCY",
         "adresse": "23 Bd Albert 1er, 54000 Nancy",
         "image":
-        "https://lh3.ggpht.com/p/AF1QipO0LdBBrT7jEw49wKo-wffkSALVqDTpRt4DFv1w=s1024",
+        "../assets/image/UFR_ALL_NANCY.jpeg",
         "site": "http://all-nancy.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipO1YO04QHoiAbMWVDaqx3f-qSDxNGaBVfElt19V=s901-k-no",
@@ -64,7 +64,7 @@
         "Le Centre européen universitaire est né il y a plus de soixante ans, alors que l’Union européenne émergeait. Le Centre Européen Universitaire de Nancy compte parmi les plus anciennes formations à vocation européenne. Une des valeurs premières du CEU est d’être et d’avoir toujours été un lieu de brassage entre l’Europe de l’Est et de l’Europe de l’Ouest.",
         "name": "CEU",
         "adresse": "15 Pl. Carnot, 54042 Nancy",
-        "image": "http://ceu.univ-lorraine.fr/files/2018/02/MG_0005.jpg",
+        "image": "../assets/image/CEU.jpeg",
         "site": "http://ceu.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipOldKgEr2naBMRU0QXuaF1pHqfp5Y9ISS0sxeCm=w748-h298-k",
@@ -83,7 +83,7 @@
         "name": "FACULTÉ DE DROIT, ÉCONOMIE ET ADMINISTRATION DE METZ",
         "adresse": "Ile du Saulcy, 57000 Metz",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipNaBBF3isEAIXntEtsgm_TT3hpnl2ndEzOEqPv4=s775-k",
+        "../assets/image/faculte-de-droit-metz.jpeg",
         "site": "http://fac-droit-economie-administration.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipPO77a3PPzyFW2-1gOxGi2oWG6CqVEhiJfRFvbL=s773-k",
@@ -102,7 +102,7 @@
         "name": "FACULTÉ DE DROIT, SCIENCES ÉCONOMIQUES ET GESTION - NANCY",
         "adresse": "13 Pl. Carnot, 54000 Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipOA8KF0bP6WZkNLnKGQKKwGOu2qaTWvLaTzZ40I=w408-h306-k-no",
+        "../assets/image/faculte-de-droit-nancy.jpeg",
         "site": "https://fac-droit.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipOA8KF0bP6WZkNLnKGQKKwGOu2qaTWvLaTzZ40I=s901-k-no",
@@ -121,7 +121,7 @@
         "name": "IPAG Nancy",
         "adresse": "4 Rue de la Ravinelle, 54000 Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipM7_HoC1RinFm_YF_7vBfx_hp9sQo0WDMsvG27H=s773-k",
+        "../assets/image/IPAG_Nancy.jpeg",
         "site": "http://ipag.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipMvaCDPtQKGyDnzk6FAfjyUx12w3sCHbTVeFBtf=s991-k",
@@ -140,7 +140,7 @@
         "name": "INSTITUT RÉGIONAL DU TRAVAIL",
         "adresse": "54000 Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipNmGpzsM2186uDxU4fMQPUbJHYDMyhjE4LQr-Wp=s773-k",
+        "../assets/image/IRT.jpeg",
         "site": "http://irt.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipO2nq1n5H6NBxVkxZ57IyLdTNN5vTRszw-A3ARY=s901-k",
@@ -160,7 +160,7 @@
         "INSTITUT NATIONAL SUPÉRIEUR DU PROFESSORAT ET DE L'ÉDUCATION Nancy",
         "adresse": "54b Bd de Scarpone, 54000 Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipONkl2j6G1CH7LkrIEg-7KXd47YAJG8q-OwflML=s870-k",
+        "../assets/image/INSPE_Nancy.jpeg",
         "site": "http://inspe.univ-lorraine.fr/",
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=xrj2bbpf1TLaZPwl-vtFNw&w=1177&h=580&thumb=2&yaw=71.83403&pitch=0",
@@ -179,7 +179,7 @@
         "INSTITUT NATIONAL SUPÉRIEUR DU PROFESSORAT ET DE L'ÉDUCATION Maxéville",
         "adresse": "5 Rue Paul Richard, 54320 Maxéville",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipMoC6ukDi3DlttdV4SjpwTnu7qY-AvnWzTbNtFb=s773-k-no",
+        "../assets/image/INSPE_Maxeville.jpeg",
         "site": "http://inspe.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipMbOlD_QlPbRgPilvOhTLDRVKo3yAfVk43aIkL2=s879-k-no",
@@ -199,7 +199,7 @@
         "INSTITUT SUPÉRIEUR FRANCO-ALLEMAND DE TECHNIQUES, D'ÉCONOMIE ET DE SCIENCES",
         "adresse": "Rue Augustin Fresnel, 57073 Metz",
         "image":
-        "https://lh3.ggpht.com/p/AF1QipM6rBuvo0Q_TFYW02hzyca7KQLJwRdWnoMBmm1W=s1024",
+        "../assets/image/ISFATES.jpeg",
         "site": "http://www.isfates-dfhi.eu/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipMc4OX5Umsj9DHo1JO_79agF_HHum5OyDgEEMg7=w312-h228-p-k-no",
@@ -219,7 +219,7 @@
         "adresse":
         "Bâtiment A de l'ex-ISGMP Bureau 111 - 1er étage île du Saulcy, 57045 METZ",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipN6fVCnFks2Fuhq6fqPUxQ2qBu5VwDy3nw88tQo=s854-k-no",
+        "../assets/image/UFR_LANSAD.jpeg",
         "site": "https://lansad.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipOJ_3h2jVwrrQejjNh08HsOAOfN4jVvS5DJaBw=s773-k-no",
@@ -238,7 +238,7 @@
         "name": "ÉCOLE EUROPÉENNE D'INGÉNIEURS EN GÉNIE DES MATÉRIAUX (EEIGM)",
         "adresse": "6 Rue Bastien-Lepage, 54000 Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipOzWY3av579OOLXG14C1MuMzdYqb8lSCJ0f0SYP=s534-k-no",
+        "../assets/image/EEIGM.jpeg",
         "site": "http://eeigm.univ-lorraine.fr/",
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=UUX0hkOsdEJfMF2UtUssUg&w=1177&h=580&thumb=2&yaw=39.89766&pitch=0",
@@ -256,7 +256,7 @@
         "name": "ÉCOLE NATIONALE D'INGÉNIEURS DE METZ",
         "adresse": "1 Rte d'Ars Laquenexy, 57078 Metz",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipNBrGiF6FZfFw5MBwnOPRyD58WJqVwVBaheGIk=s968-k-no",
+        "../assets/image/ENIM.jpeg",
         "site": "http://enim.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipPMpOzZyDDAG_7jZQFR9JgorTeD3Sb2dGGd6I45=s1033-k-no",
@@ -276,7 +276,7 @@
         "ÉCOLE NATIONALE SUPÉRIEURE D'AGRONOMIE ET DES INDUSTRIES ALIMENTAIRES",
         "adresse": "2 Av. de la Forêt de Haye, 54505 Vandœuvre-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipMigNhDQm7eJVbY7PKg68MbvW_gvpmVXsob7zhK=s879-k-no",
+        "../assets/image/ENSAIA.jpeg",
         "site": "http://ensaia.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipOQgBZ9Utbfae6IWj-4jOFN9-gcJN1vMrqWoIsi=w397-h298-k-no",
@@ -295,7 +295,7 @@
         "name": "ÉCOLE NATIONALE SUPÉRIEURE D'ÉLECTRICITÉ ET DE MÉCANIQUE",
         "adresse": "2 Av. de la Forêt de Haye, 54500 Vandœuvre-lès-Nancy",
         "image":
-        "https://streetviewpixels-pa.googleapis.com/v1/tile?cb_client=unknown_client.imagery_viewer&panoid=onsq0LIES-S-ajYPH99tSg&x=2&y=1&zoom=3&nbt=1&fover=2",
+        "../assets/image/ENSEM.jpeg",
         "site": "https://ensem.univ-lorraine.fr/",
         "carousel": [
             "https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/285659554_1441746082925642_4501969706027859200_n.jpg?stp=dst-jpg_p720x720&_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=PDoVzzWVYgsAX8hMTgY&_nc_oc=AQn-9a81YeCQJtoY6r3CLRFrxCYGM_GIzUUc6xuM7c_9c71TUjBgyqbUxo33d_at5nE&_nc_ht=scontent-cdg2-1.xx&oh=00_AT9hiAhbb2XHtE6oYv9Po5zP_O5eEpcbcotNI-z12RuXNQ&oe=62A81EEB",
@@ -315,7 +315,7 @@
         "name": "ÉCOLE NATIONALE SUPÉRIEURE DE GÉOLOGIE",
         "adresse": "2 Rue du doyen Marcel Roubault, 54518 Vandœuvre-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipMS4qbOnKfQbjnAvBaHHn7pwL2-9QYxCVGA3i1y=w397-h298-k-no",
+        "../assets/image/ENSG.jpeg",
         "site": "http://www.ensg.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipOrOkEieSiJqBkfd_vOHcdPQ5Thy39K5AAPGzN9=w1200-h900-p-k-no",
@@ -334,7 +334,7 @@
         "name": "ÉCOLE NATIONALE SUPÉRIEURE DES INDUSTRIES CHIMIQUES",
         "adresse": "1 Rue Grandville, 54000 Nancy",
         "image":
-        "https://ensic.univ-lorraine.fr/sites/ensic.univ-lorraine.fr/files/users/actualites/documents/image_resultats_admis_i2c_2020_1.jpg",
+        "../assets/image/ENSIC.jpeg",
         "site": "http://ensicprocess.ensic.univ-lorraine.fr/",
         "carousel": [
             "https://ensic.univ-lorraine.fr/sites/ensic.univ-lorraine.fr/files/users/images/ecole/bu-ensic.jpg",
@@ -353,7 +353,7 @@
         "name": "ÉCOLE NATIONALE SUPÉRIEURE DES TECHNOLOGIES ET INDUSTRIES DU BOIS",
         "adresse": "27 Rue Philippe Séguin, 88000 Épinal",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipOFLH-WQ0YqhYgweIzUHL4tcy4TGQCxisDNbtH6=s869-k-no",
+        "../assets/image/ENSTIB.jpeg",
         "site": "https://www.enstib.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipOwe1MNPhXpgtK_P9i3F9vDBMsZqaE5FuMCC8E9=s1014-k-no",
@@ -373,7 +373,7 @@
         "ÉCOLE NATIONALE SUPÉRIEURE EN GÉNIE DES SYSTÈMES ET DE L'INNOVATION",
         "adresse": "27 Rue Philippe Séguin, 88000 Épinal",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipP42ZBRPRB1s2AjD-lzDKxkYNawiebSSxCRLkKR=s760-k-no",
+        "../assets/image/ENSGSI.jpeg",
         "site": "https://www.enstib.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipMHVc2-jj6E7Q2ETFJqhkt6g4t6XnQ0qXu-aUnx=s1160-k-no-pi0-ya97.739975-ro0-fo100",
@@ -392,7 +392,7 @@
         "name": "CPP - La Prépa des INP",
         "adresse": "2 Rue du Doyen Marcel Roubault, 54500 Vandœuvre-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipO5kd5pf-ykra8wCi97u12tsG4_TDb19CqbquIi=s1354-k-no",
+        "../assets/image/CPPINP.jpeg",
         "site": "http://www.la-prepa-des-inp.fr/",
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=LxD-xR7_A1KVe1HJb3AmUQ&w=1177&h=580&thumb=2&yaw=94.39351&pitch=0"
@@ -409,7 +409,7 @@
         "name": "MINES NANCY",
         "adresse": "Campus Artem - CS 14 234, 92 Rue Sergent Blandan, 54042 Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipPK50u4rIS57n8-wE5zkgmnhA3IeaUlmu4zNSH7=s1354-k-no",
+        "../assets/image/mines_nancy.jpeg",
         "site": "http://www.mines-nancy.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipP9C449SCFvoFOztn2KGKhPVwpA9N9-NTOO9PN9=s870-k-no",
@@ -428,7 +428,7 @@
         "name": "POLYTECH NANCY",
         "adresse": "2 Rue Jean Lamour, 54519 Vandœuvre-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipMBsfKFMwQNURfIRbDoVkr4pCU7xby8f2EaPeoQ=s904-k-no",
+        "../assets/image/polytech-nancy.jpeg",
         "site": "http://www.polytech-nancy.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipPN7K9_c5vG5LADMYyuydBS_Lw9uWYJvATBk8ez=s904-k-no",
@@ -447,7 +447,7 @@
         "name": "TELECOM NANCY",
         "adresse": "193 Av. Paul Muller, 54602 Villers-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipPm3-aI5IoL7PWzGNSdA3T3Uiyyw87U8Ohxd_mD=s1031-k-no",
+        "../assets/image/telecom.jpeg",
         "site": "http://www.telecomnancy.eu/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipPm3-aI5IoL7PWzGNSdA3T3Uiyyw87U8Ohxd_mD=s1031-k-no",
@@ -465,7 +465,7 @@
         "name": "IAE METZ - SCHOOL OF MANAGAMENT",
         "adresse": "1 Rue Augustin Fresnel, 57070 Metz",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipMDb7efLxSL4iPARap0kw71lsiSwUX9n8Ph_eEu=s871-k-no",
+        "../assets/image/iae-metz-school-of-managament.jpeg",
         "site": "http://iaemetz.univ-lorraine.fr/",
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=F-l1ritloeO0_Lnd8aMkFA&w=1177&h=580&thumb=2&yaw=100.18836&pitch=0",
@@ -484,7 +484,7 @@
         "name": "IAE NANCY School of Management - Campus Manufacture",
         "adresse": "13 Rue Michel Ney, 54000 Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipPejS7QqAw69vIvx_0ZsHeLBBUIG0sC2lk7m-OQ=s1031-k",
+        "../assets/image/IAE_Nancy.jpeg",
         "site": "http://iae-nancy.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipPejS7QqAw69vIvx_0ZsHeLBBUIG0sC2lk7m-OQ=s1031-k",
@@ -503,7 +503,7 @@
         "name": "INSTITUT DES SCIENCES DU DIGITAL, MANAGEMENT & COGNITION",
         "adresse": "Pôle Herbert Simon, 13 Rue Michel Ney, 54000 Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipNRiYK1r4jkTzRCqi8pwOx6hc25HYg0DKShGpFl=s1031-k-no",
+        "../assets/image/IDMC.jpeg",
         "site": "http://idmc.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipNFfvcMIsFw67Sfx18a9EaxOEA0qYhhgdrQQEkB=s1031-k-no",
@@ -522,7 +522,7 @@
         "name": "FACULTÉ D'ODONTOLOGIE",
         "adresse": "7 Av. de la Forêt de Haye, 54500 Vandœuvre-lès-Nancy",
         "image":
-        "https://lh3.ggpht.com/p/AF1QipODKunt4qmJ8-DDZ9iBAKJaUNgb1f-82PdIqafS=s1024",
+        "../assets/image/faculte-d-odontologie.jpeg",
         "site": "http://odonto.univ-lorraine.fr/",
         "carousel": [
             "https://lh3.ggpht.com/p/AF1QipODKunt4qmJ8-DDZ9iBAKJaUNgb1f-82PdIqafS=s1024",
@@ -541,7 +541,7 @@
         "name": "FACULTÉ DE MÉDECINE, MAÏEUTIQUE ET MÉTIERS DE LA SANTÉ À NANCY",
         "adresse": "9 Av. de la Forêt de Haye, 54500 Vandœuvre-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipMyFTQlxOtVcQropi-eyVKAssIfoeev_my7nFU=s1031-k-no",
+        "../assets/image/faculte-medecine.jpeg",
         "site": "http://www.medecine.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipOH0FePMDLMmREITFsU4OkSVAKrr0rJWuU591M=s773-k-no",
@@ -560,7 +560,7 @@
         "name": "FACULTÉ DE PHARMACIE",
         "adresse": "7 Av. de la Forêt de Haye, 54500 Vandœuvre-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipNEtu6V7Rg9iYSfch4XI5Xdo7xChP4G8ojzjPJU=s1016-k-no",
+        "../assets/image/faculte-de-pharmacie.jpeg",
         "site": "http://pharma.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipOfGc4Opryf0tUzFowDBlIXCw-wcgwsCAvmYohl=s1682-k-no-pi-20-ya194.25-ro0-fo100",
@@ -578,7 +578,7 @@
         "name": "FACULTÉ DES SCIENCES DU SPORT",
         "adresse": "30 Rue du Jardin-Botanique, 54600 Villers-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipP7xMmkqAvQozDWF5WsumS-7Dn87TqJDUsUa6R-=s1031-k-no",
+        "../assets/image/faculte-des-sciences-du-sport.jpeg",
         "site": "https://staps-nancy.univ-lorraine.fr/",
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=aRVhPWRQR-DjosoYKKm_Fg&w=1177&h=580&thumb=2&yaw=303.0411&pitch=0",
@@ -596,7 +596,7 @@
         "name": "UFR SCIENCES HUMAINES ET SOCIALES - METZ",
         "adresse": "30 Rue du Jardin-Botanique, 54600 Villers-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipPDLjYpdBgDijyVktaN1xPcsIfCEC8z3HM7jsId=s775-k-no",
+        "../assets/image/ufr-shs-metz.jpeg",
         "site": "https://staps-nancy.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipP4SxY9i71_yGiKJnhb4IDJhu3TeBDAojucNE-6=s773-k-no",
@@ -615,7 +615,7 @@
         "name": "UFR SCIENCES HUMAINES ET SOCIALES - NANCY",
         "adresse": "23 Bd Albert 1er, 54000 Nancy",
         "image":
-        "https://lh3.ggpht.com/p/AF1QipO0LdBBrT7jEw49wKo-wffkSALVqDTpRt4DFv1w=s1024",
+        "../assets/image/ufr-shs-nancy.jpeg",
         "site": "http://campus-lettres.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipO1YO04QHoiAbMWVDaqx3f-qSDxNGaBVfElt19V=s901-k-no",
@@ -634,7 +634,7 @@
         "name": "FACULTÉ DES SCIENCES ET TECHNOLOGIES",
         "adresse": "Campus, Bd des Aiguillettes, 54506 Vandœuvre-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipM-J9KFTqatWm6ogYWmbwJ-1A_ihivjlc9BOPc=s933-k-no",
+        "../assets/image/faculte-des-science-et-technologies.jpeg",
         "site": "http://fst.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipMal6eObSPO73VBz188tU4zt_RA_-C-TuXtHMU=w448-h298-k-no",
@@ -653,7 +653,7 @@
         "name": "UFR DE MATHÉMATIQUES, INFORMATIQUE, MÉCANIQUE",
         "adresse": "3 Rue Augustin Fresnel, 57070 Metz",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipMVbbAiLpnv0adP1WkUS1EbtjXKt_J8F_SseMhI=s1031-k-no",
+        "../assets/image/ufr-mim.jpeg",
         "site": "http://mim.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipMSZx1YKHx9N-0Roj50j4FT5PXXDxs89quhOx0X=s1031-k-no",
@@ -672,7 +672,7 @@
         "name": "UFR SCIENCES FONDAMENTALES ET APPLIQUÉES",
         "adresse": "Campus Bridoux, Rue du Général Delestraint, 57070 Metz",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipN9p_GKOsZ587yBy_JuRpwdjTSlWHCN3VMijl8N=s1031-k-no",
+        "../assets/image/ufr-scifa.jpeg",
         "site": "https://scifa.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipMcgcVRVUEqQsqSkhzsrQTKz0p0EqtUiQN0kcsy=s1031-k-no",
@@ -691,7 +691,7 @@
         "name": "IUT DE METZ",
         "adresse": "57000 Metz",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipO_XVIKmy3kbaWrp53Yy1ThBWzduHstdInSyTy7=s773-k-no",
+        "../assets/image/iut-de-metz.jpeg",
         "site": "http://www.iut-metz.univ-lorraine.fr/",
         "carousel": [
             "https://lh3.ggpht.com/p/AF1QipNc6cg8SO5SnnwipkpHGgD0DnpU17VT6x-XR4U=s1024",
@@ -710,7 +710,7 @@
         "adresse": "7 Rue Alexandre de Geiger, 57200 Sarreguemines",
         "name": "IUT DE MOSELLE-EST",
         "image":
-        "http://iut-moselle-est.univ-lorraine.fr/sites/default/files/styles/bandeau_accueil/public/2017-12/B%C3%A2timent%20SAR.jpeg?itok=DHzbXn2f",
+        "../assets/image/iut-de-moselle-est.jpeg",
         "site": "http://iut-moselle-est.univ-lorraine.fr/",
         "carousel": [
             "http://iut-moselle-est.univ-lorraine.fr/sites/default/files/styles/bandeau_accueil/public/2017-12/FOR.JPG?itok=V_0Qc6w8",
@@ -729,7 +729,7 @@
         "name": "IUT DE SAINT-DIÉ-DES-VOSGES",
         "adresse": "11 Rue de l'Université, 88100 Saint-Dié-des-Vosges",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipOssDFQnSLLxSaqT3yh6HJZshq-Q2femeMU86J8=s866-k-no",
+        "../assets/image/IUT_STDIE.jpeg",
         "site": "http://www.iutsd.univ-lorraine.fr/",
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=rTX0uLVARUGubKImol66Vg&w=1177&h=580&thumb=2&yaw=266.65817&pitch=0",
@@ -747,7 +747,7 @@
         "name": "IUT DE THIONVILLE-YUTZ",
         "adresse": "Imp. Alfred Kastler, 57970 Yutz",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipNV9SrCNvxmhceQznpe7hfi0fykbA5Bx_z1HDgc=s828-k-no",
+        "../assets/image/iut-de-thionville-yutz.jpeg",
         "site": "http://iut-thionville-yutz.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipMx7-FUWXQxIW2UTC8r8EMMT1SqH2N4O3RgsWXp=s1354-k-no",
@@ -766,7 +766,7 @@
         "name": "IUT HENRI POINCARÉ - LONGWY",
         "adresse": "186 Rue de Lorraine, 54400 Cosnes-et-Romain",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipM-Q35lYaA51USLCQKCg-idj_Z5w5V0QeBZBcn7=s1031-k-no",
+        "../assets/image/iut-henri-poincare-longwy.jpeg",
         "site": "http://www.iut-longwy.univ-lorraine.fr/",
         "carousel": [
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=SbRGuPp68_dHXeXne7eZdg&w=1177&h=580&thumb=2&yaw=96.978294&pitch=0",
@@ -785,7 +785,7 @@
         "name": "IUT HUBERT CURIEN - EPINAL",
         "adresse": "7 Rue Fusillés Résistance 88000 Épinal",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipNKpIpUWm7uqX8z09_7cjlLv2TjQoPP5CLavgDh=s812-k-no",
+        "../assets/image/iut-hubert-curien-epinal.jpeg",
         "site": "https://iut-epinal.univ-lorraine.fr/",
         "carousel": [
             "https://iut-epinal.univ-lorraine.fr/sites/iut-epinal.univ-lorraine.fr/files/users/images/inscription.jpg",
@@ -805,7 +805,7 @@
         "adresse":
         "Lieu-dit Le Montet, Rue du Doyen Urion, 54600 Villers-lès-Nancy",
         "image":
-        "https://lh5.googleusercontent.com/p/AF1QipNYsZq8usDkHx50LtN4G9n8UkiR-GyipV4q_t1T=s901-k-no",
+        "../assets/image/iut-nancy-brabois.jpeg",
         "site": "http://iutnb.univ-lorraine.fr/",
         "carousel": [
             "https://lh5.googleusercontent.com/p/AF1QipMOOGoJrhvILdcH6TVkKJWm4IPIMcUOi3BS06AI=s870-k-no",

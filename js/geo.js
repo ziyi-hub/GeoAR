@@ -7,6 +7,7 @@ function sendXhrPromise(url){
 
         //Les données arrivent correctement
         xhr.addEventListener("load", function (response){
+            console.log(response.target.response);
             resolve(response.target.response);
         });
 
@@ -48,9 +49,8 @@ function generatePOIS(places){
         // add place name
         const image = document.createElement('a-image');
         image.setAttribute('gps-entity-place', `latitude: ${place.latitude}; longitude: ${place.longitude};`);
-        image.setAttribute('src', "url(https://i.ytimg.com/vi/1OaBoi9kRzw/maxresdefault.jpg)");
+        image.setAttribute('src', place.image);
         image.setAttribute('alt', place.name);
-        image.setAttribute('crossOrigin', "anonymous");
         image.setAttribute('data-id', place.id);
         image.setAttribute('data-latitude', place.latitude);
         image.setAttribute('data-longitude', place.longitude);
