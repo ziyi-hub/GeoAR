@@ -2,7 +2,6 @@ function sendXhrPromise(url){
     return new Promise(function (resolve, reject) {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', url);
-        //xhr.setRequestHeader('Host', 'http://localhost');
         xhr.responseType = 'json';
         xhr.send();
 
