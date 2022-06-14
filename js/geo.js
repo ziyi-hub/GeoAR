@@ -1,8 +1,8 @@
-function sendXhrPromise(){
+function sendXhrPromise(url){
     return new Promise(function (resolve, reject) {
         let xhr = new XMLHttpRequest();
-        xhr.open('GET', "https://ziyi-hub.github.io/GeoAR/datas/places.json");
-        //xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.open('GET', url);
+        //xhr.setRequestHeader('Host', 'http://localhost');
         xhr.responseType = 'json';
         xhr.send();
 
@@ -51,6 +51,7 @@ function generatePOIS(places){
         image.setAttribute('gps-entity-place', `latitude: ${place.latitude}; longitude: ${place.longitude};`);
         image.setAttribute('src', "url(https://i.ytimg.com/vi/1OaBoi9kRzw/maxresdefault.jpg)");
         image.setAttribute('alt', place.name);
+        image.setAttribute('crossOrigin', "anonymous");
         image.setAttribute('data-id', place.id);
         image.setAttribute('data-latitude', place.latitude);
         image.setAttribute('data-longitude', place.longitude);
@@ -137,7 +138,7 @@ window.onload = () => {
             });
 
             // than use it to load from remote APIs some places nearby
-            sendXhrPromise().then((places) => {generatePOIS(places);})
+            sendXhrPromise("https://ziyi-hub.github.io/GeoAR/datas/places.json").then((places) => {generatePOIS(places);})
         },
         (err) => console.error('Error in retrieving position', err),
         {
