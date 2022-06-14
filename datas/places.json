@@ -8,7 +8,7 @@
         "L’Institut européen de cinéma et d’audiovisuel est une des rares structures universitaires et publiques en France à dispenser un Master Cinéma et Audiovisuel ouvert à tout étudiant détenteur d’une Licence (ou d’un diplôme équivalent) en formation initiale, et dans le cadre de la formation continue, aux salariés et aux personnes à la recherche d’un emploi dès lors que leur formation antérieure est jugée éligible.",
         "name": "IECA",
         "adresse": "10 Rue Michel Ney, 54000 Nancy",
-        "image": "https://i.ytimg.com/vi/1OaBoi9kRzw/maxresdefault.jpg",
+        "image": "../assets/image/maxresdefault.jpg",
         "site": "http://ieca.univ-lorraine.fr/",
         "carousel": [
             "https://ieca.univ-lorraine.fr/files/2022/04/Bannie%CC%80re-site-JACES.png",
@@ -824,7 +824,7 @@
         "name": "IUT NANCY-CHARLEMAGNE",
         "adresse": "2Ter Bd Charlemagne, 54000 Nancy",
         "image":
-        "https://iut-charlemagne.univ-lorraine.fr/wp-content/uploads/2018/11/IUT_SLIDER1_GENERIQUE_06.jpg",
+        "../assets/image/IUT_SLIDER1_GENERIQUE.jpeg",
         "site": "http://iut-charlemagne.univ-lorraine.fr/",
         "carousel": [
             "https://iut-charlemagne.univ-lorraine.fr/wp-content/uploads/2018/11/IUT_SLIDER1_GENERIQUE_24.jpg",
