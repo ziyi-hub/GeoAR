@@ -7,7 +7,6 @@ function sendXhrPromise(url){
 
         //Les données arrivent correctement
         xhr.addEventListener("load", function (response){
-            console.log(response.target.response);
             resolve(response.target.response);
         });
 
@@ -137,7 +136,7 @@ window.onload = () => {
             });
 
             // than use it to load from remote APIs some places nearby
-            sendXhrPromise("https://ziyi-hub.github.io/GeoAR/datas/places.json").then((places) => {generatePOIS(places);})
+            sendXhrPromise("../datas/places.json").then((places) => {generatePOIS(places);})
         },
         (err) => console.error('Error in retrieving position', err),
         {

@@ -20,50 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/image/CEU.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/CPPINP.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/EEIGM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ENIM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ENSAIA.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ENSEM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ENSG.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ENSGSI.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ENSIC.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ENSTIB.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/IAE_Nancy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/IDMC.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/INSPE_Maxeville.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/INSPE_NANCY.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/IPAG_Nancy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/IRT.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ISFATES.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/IUT_STDIE.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/UFR_ALL_METZ.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/UFR_ALL_NANCY.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/UFR_LANSAD.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/faculte-d-odontologie.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/faculte-de-droit-metz.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/faculte-de-droit-nancy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/faculte-de-pharmacie.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/faculte-des-science-et-technologies.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/faculte-des-sciences-du-sport.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/faculte-medecine.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/iae-metz-school-of-managament.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/iut-de-metz.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/iut-de-moselle-est.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/iut-de-thionville-yutz.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/iut-henri-poincare-longwy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/iut-hubert-curien-epinal.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/iut-nancy-brabois.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/mines_nancy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/polytech-nancy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/telecom.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ufr-mim.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ufr-scifa.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ufr-shs-metz.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/ufr-shs-nancy.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/places.json" beforeDir="false" afterPath="$PROJECT_DIR$/datas/places.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +117,7 @@
       <workItem from="1655113875549" duration="6518000" />
       <workItem from="1655125013288" duration="8222000" />
       <workItem from="1655190367595" duration="2017000" />
-      <workItem from="1655194480078" duration="14485000" />
+      <workItem from="1655194480078" duration="14860000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -400,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655204480686</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add image">
+      <created>1655209771184</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1655209771184</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +415,8 @@
     <MESSAGE value="supprime simulatePosition" />
     <MESSAGE value="fix fonctionnalité senXhrPromise" />
     <MESSAGE value="test image" />
-    <option name="LAST_COMMIT_MESSAGE" value="test image" />
+    <MESSAGE value="add image" />
+    <option name="LAST_COMMIT_MESSAGE" value="add image" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1655111082934">
@@ -470,30 +435,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="455" height="442" key="Diff.GoToChangePopup/0.0.1440.900@0.0.1440.900" timestamp="1653319432090" />
-    <state x="112" y="110" width="1808" height="970" key="DiffContextDialog" timestamp="1655204440679">
+    <state x="109" y="110" width="1808" height="970" key="DiffContextDialog" timestamp="1655210045312">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="84" y="162" width="1356" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1653773795112" />
     <state x="112" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.801/0.25.1920.1055@0.25.1920.1055" timestamp="1654866494389" />
-    <state x="112" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655204440679" />
-    <state x="705" y="246" key="RollbackChangesDialog" timestamp="1655203700115">
+    <state x="109" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655210045312" />
+    <state x="705" y="246" key="RollbackChangesDialog" timestamp="1655210065607">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="529" y="205" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1654808244360" />
-    <state x="705" y="246" key="RollbackChangesDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655203700115" />
+    <state x="705" y="246" key="RollbackChangesDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655210065607" />
     <state x="469" y="176" key="SettingsEditor" timestamp="1654859467779">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654859467779" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1655204485918">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1655209775807">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1654813946966" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655204485918" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1655204484392">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655209775807" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1655209774456">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1654813945283" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655204484392" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655209774456" />
   </component>
 </project>
