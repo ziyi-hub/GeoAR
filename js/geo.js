@@ -25,13 +25,7 @@ function getDistance(lat1, lng1, lat2, lng2){
     let b = lng1 * Math.PI/ 180.0 - lng2 * Math.PI/ 180.0 ;
     let s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.pow(Math.sin(b / 2), 2)))
     s = s * 6378.137; //Earth radius
-    s = Math.round(s * 10000) / 10000;
-    if (s < 1){
-        return (s * 1000).toFixed(0) + "m"
-    }else{
-        return s.toFixed(2) + "km";
-    }
-    
+    return Math.round(s * 10000) / 10000;
 }
 
 
@@ -49,6 +43,16 @@ function generatePOIS(places){
         const image = document.createElement('a-image');
         image.setAttribute('gps-entity-place', `latitude: ${place.latitude}; longitude: ${place.longitude};`);
         image.setAttribute('src', place.image);
+        navigator.geolocation.getCurrentPosition(function (position) {
+            let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
+            if(dis > 1){
+                image.setAttribute("width", "10");
+                image.setAttribute("height", "10");
+            }else{
+                image.setAttribute("width", "0.5");
+                image.setAttribute("height", "0.5");
+            }
+        });
         image.setAttribute('alt', place.name);
         image.setAttribute('data-id', place.id);
         image.setAttribute('data-latitude', place.latitude);
@@ -110,7 +114,13 @@ window.onload = () => {
                             p.className = "text-large";
                             p.innerHTML = link.dataset.titre;
                             p2.innerHTML = link.dataset.description;
-                            p3.innerHTML = "Distances: " + getDistance(latitude, longitude, position.coords.latitude, position.coords.longitude);
+                            let distance = getDistance(latitude, longitude, position.coords.latitude, position.coords.longitude);
+                            if (distance < 1){
+                                p3.innerHTML = "Distances: " +  (distance * 1000).toFixed(0) + "m"
+                            }else{
+                                p3.innerHTML = "Distances: " +  distance.toFixed(2) + "km";
+                            }
+                            
                             close.className = "text-large close";
                             close.innerHTML = "&#x2715;";
 

@@ -98,6 +98,7 @@ section.module p{
     margin-bottom: 40px;
     font-size: 16px;
     font-weight: 300;
+    text-align: justify;
 }
 
 section.module p:last-child{
@@ -105,7 +106,7 @@ section.module p:last-child{
 }
 
 .jarallax{
-    height: 500px;
+    height: 400px;
 }
 
 @media all and (min-width: 600px) {
