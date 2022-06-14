@@ -1,17 +1,22 @@
-const loadPlaces = function () {
+function sendXhrPromise(){
+    return new Promise(function (resolve, reject) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', "https://ziyi-hub.github.io/GeoAR/datas/places.json");
+        //xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.responseType = 'json';
+        xhr.send();
 
-    let PLACES;
-    let request = new XMLHttpRequest();
+        //Les données arrivent correctement
+        xhr.addEventListener("load", function (response){
+            resolve(response.target.response);
+        });
 
-    request.open('GET','https://ziyi-hub.github.io/GeoAR/datas/places.json', false);
-    request.onreadystatechange = function () {
-        if (this.readyState === 4) {
-            PLACES = JSON.parse(this.responseText);
-        }
-    };
-    request.send();
-    return Promise.resolve(PLACES);
-};
+        //On a un code d'erreur du serveur
+        xhr.addEventListener("error", function (response){
+            reject("data transfert error : " + response);
+        });
+    })
+}
 
 
 function getDistance(lat1, lng1, lat2, lng2){
@@ -42,24 +47,25 @@ function generatePOIS(places){
     const scene = document.querySelector('a-scene');
     places.forEach((place) => {
         // add place name
-        const text = document.createElement('a-link');
-        text.setAttribute('gps-entity-place', `latitude: ${place.latitude}; longitude: ${place.longitude};`);
-        text.setAttribute('title', place.name);
-        text.setAttribute('data-id', place.id);
-        text.setAttribute('data-latitude', place.latitude);
-        text.setAttribute('data-longitude', place.longitude);
-        text.setAttribute('data-titre', place.name);
-        text.setAttribute('data-description', place.description);
-        text.setAttribute('data-image', place.image);
+        const image = document.createElement('a-image');
+        image.setAttribute('gps-entity-place', `latitude: ${place.latitude}; longitude: ${place.longitude};`);
+        image.setAttribute('src', "url(https://i.ytimg.com/vi/1OaBoi9kRzw/maxresdefault.jpg)");
+        image.setAttribute('alt', place.name);
+        image.setAttribute('data-id', place.id);
+        image.setAttribute('data-latitude', place.latitude);
+        image.setAttribute('data-longitude', place.longitude);
+        image.setAttribute('data-titre', place.name);
+        image.setAttribute('data-description', place.description);
+        image.setAttribute('data-image', place.image);
 
-        text.setAttribute('href', "javascript:void(0)");
-        text.setAttribute('scale', '120 120 120');
-        text.setAttribute('open-window-on-click', "")
+        image.setAttribute('href', "javascript:void(0)");
+        image.setAttribute('scale', '120 120 120');
+        image.setAttribute('open-window-on-click', "")
 
-        text.addEventListener('loaded', () => {
+        image.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
         });
-        scene.appendChild(text);
+        scene.appendChild(image);
     });
 }
 
@@ -72,7 +78,7 @@ window.onload = () => {
             AFRAME.registerComponent('open-window-on-click', {
                 init: function () {
                     let scene = document.querySelector('a-scene');
-                    scene.querySelectorAll("a-link").forEach(link => {
+                    scene.querySelectorAll("a-image").forEach(link => {
                         link.onclick = (ev) => {
 
                             ev.stopPropagation();
@@ -131,10 +137,7 @@ window.onload = () => {
             });
 
             // than use it to load from remote APIs some places nearby
-            loadPlaces()
-                .then((places) => {
-                    generatePOIS(places);
-                })
+            sendXhrPromise().then((places) => {generatePOIS(places);})
         },
         (err) => console.error('Error in retrieving position', err),
         {

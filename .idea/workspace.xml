@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/propos.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/propos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +115,10 @@
       <workItem from="1654859214136" duration="500000" />
       <workItem from="1654859797692" duration="13364000" />
       <workItem from="1655106595557" duration="4802000" />
-      <workItem from="1655113875549" duration="6352000" />
+      <workItem from="1655113875549" duration="6518000" />
+      <workItem from="1655125013288" duration="8222000" />
+      <workItem from="1655190367595" duration="2017000" />
+      <workItem from="1655194480078" duration="5110000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -312,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655122655985</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="init app">
+      <created>1655124269111</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1655124269111</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +334,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="image" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -366,12 +389,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="455" height="442" key="Diff.GoToChangePopup/0.0.1440.900@0.0.1440.900" timestamp="1653319432090" />
-    <state x="112" y="110" width="1808" height="970" key="DiffContextDialog" timestamp="1654868421610">
+    <state x="112" y="110" width="1808" height="970" key="DiffContextDialog" timestamp="1655195946775">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="84" y="162" width="1356" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1653773795112" />
     <state x="112" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.801/0.25.1920.1055@0.25.1920.1055" timestamp="1654866494389" />
-    <state x="112" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654868421610" />
+    <state x="112" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655195946775" />
     <state x="705" y="246" key="RollbackChangesDialog" timestamp="1654873144021">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -381,15 +404,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="176" key="SettingsEditor/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1654859467779" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1655122665663">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2" timestamp="1655124276262">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1654813946966" />
-    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655122665663" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1655122663717">
+    <state x="560" y="277" key="Vcs.Push.Dialog.v2/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655124276262" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1655124274985">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1654813945283" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655122663717" />
+    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655124274985" />
   </component>
 </project>
