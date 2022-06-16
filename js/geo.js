@@ -1,3 +1,8 @@
+/**
+ * il permet de récupérer des datas
+ * @param url url d'un fichier data
+ * @return {Promise<String[]>}
+ */
 function sendXhrPromise(url){
     return new Promise(function (resolve, reject) {
         let xhr = new XMLHttpRequest();
@@ -17,7 +22,14 @@ function sendXhrPromise(url){
     })
 }
 
-
+/**
+ * il permet de calculer la distance de l'Université de Lorraine
+ * @param lat1 latitude de l'Université de Lorraine
+ * @param lng1 longitude de l'Université de Lorraine
+ * @param lat2 latitude de ma position courant
+ * @param lng2 longitude de ma position courant
+ * @return {number}
+ */
 function getDistance(lat1, lng1, lat2, lng2){
     let radLat1 = lat1 * Math.PI/ 180.0 ;
     let radLat2 = lat2 * Math.PI/ 180.0 ;
@@ -28,7 +40,12 @@ function getDistance(lat1, lng1, lat2, lng2){
     return Math.round(s * 10000) / 10000;
 }
 
-
+/**
+ * il permet d'enregistrer un valeur dans un cookie
+ * @param cname nom de cookie
+ * @param cvalue valeur de cookie
+ * @param exdays date d'expiration
+ */
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -36,6 +53,10 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
+/**
+ * il permet de générer des points d'intérêt
+ * @param places array[]
+ */
 function generatePOIS(places){
     const scene = document.querySelector('a-scene');
     places.forEach((place) => {
@@ -46,11 +67,12 @@ function generatePOIS(places){
         navigator.geolocation.getCurrentPosition(function (position) {
             let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
             if(dis > 1){
-                image.setAttribute("width", "10");
-                image.setAttribute("height", "10");
+                // 7 fois de taille original
+                image.setAttribute("width", "5.9"); 
+                image.setAttribute("height", "5.9");
             }else{
-                image.setAttribute("width", "0.5");
-                image.setAttribute("height", "0.5");
+                image.setAttribute("width", "0.3");
+                image.setAttribute("height", "0.3");
             }
         });
         image.setAttribute('alt', place.name);
@@ -74,10 +96,8 @@ function generatePOIS(places){
 
 
 window.onload = () => {
-
     // first get current user location
     return navigator.geolocation.getCurrentPosition(function (position) {
-
             AFRAME.registerComponent('open-window-on-click', {
                 init: function () {
                     let scene = document.querySelector('a-scene');
@@ -87,16 +107,19 @@ window.onload = () => {
                             ev.stopPropagation();
                             ev.preventDefault();
 
+                            // effacer informations dans panneau
                             let content = document.querySelector(".panel");
                             while (content.hasChildNodes()) {
                                 content.removeChild(content.firstChild);
                             }
 
+                            //afficher panneau
                             content.style.display = "block";
                             content.style.position = "absolute";
                             content.style.right = "0";
                             content.style.width = "320px";
 
+                            //déclarer noeuds
                             let p = document.createElement("p");
                             let p2 = document.createElement("p");
                             let p3 = document.createElement("p");
@@ -106,6 +129,7 @@ window.onload = () => {
                             let latitude = link.dataset.latitude;
                             let longitude = link.dataset.longitude;
 
+                            //initialise class
                             img.className = "fit-picture";
                             img.src = link.dataset.image;
                             img.alt = link.dataset.titre;
@@ -115,12 +139,15 @@ window.onload = () => {
                             p.innerHTML = link.dataset.titre;
                             p2.innerHTML = link.dataset.description;
                             let distance = getDistance(latitude, longitude, position.coords.latitude, position.coords.longitude);
+                            
+                            //comparer la distance
                             if (distance < 1){
                                 p3.innerHTML = "Distances: " +  (distance * 1000).toFixed(0) + "m"
                             }else{
                                 p3.innerHTML = "Distances: " +  distance.toFixed(2) + "km";
                             }
                             
+                            //button ferme
                             close.className = "text-large close";
                             close.innerHTML = "&#x2715;";
 
@@ -128,6 +155,7 @@ window.onload = () => {
                                 content.style.display = "none";
                             })
 
+                            //ajout des noeuds
                             document.querySelector(".panel").appendChild(close);
                             document.querySelector(".panel").appendChild(p);
                             document.querySelector(".panel").appendChild(p2);
@@ -135,6 +163,7 @@ window.onload = () => {
                             document.querySelector(".panel").appendChild(button);
                             document.querySelector(".panel").appendChild(img);
 
+                            //transférer datas dans page poiDetail
                             document.querySelector('.mdl-button').addEventListener("click", ()=>{
                                 setCookie("id", link.dataset.id, 1);
                                 setCookie("returnGeo", "true", 1);
@@ -144,15 +173,11 @@ window.onload = () => {
                     })
                 }
             });
-
-            // than use it to load from remote APIs some places nearby
+            
+            //charger datas 
             sendXhrPromise("../datas/places.json").then((places) => {generatePOIS(places);})
         },
         (err) => console.error('Error in retrieving position', err),
-        {
-            enableHighAccuracy: true,
-            maximumAge: 0,
-            timeout: 27000,
-        }
+        {enableHighAccuracy: true, maximumAge: 0, timeout: 27000,}
     );
 };
