@@ -70,8 +70,8 @@ function generatePOIS(places){
                 let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
                 console.log(dis + " " + place.name + " ");
                 if (dis <= 1){
-                    image.setAttribute("width", ((dis * 0.4) / 0.1).toString());
-                    image.setAttribute("height", ((dis * 0.4) / 0.1).toString());
+                    image.setAttribute("width", (dis * 4).toString());
+                    image.setAttribute("height", (dis * 4).toString());
                 }
                 else if(1 < dis < 5){
                     //s'agrandit 4 fois de taille original
