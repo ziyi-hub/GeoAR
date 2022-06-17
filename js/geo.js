@@ -174,8 +174,12 @@ window.onload = () => {
                 }
             });
             
-            //charger datas 
-            sendXhrPromise("../datas/places.json").then((places) => {generatePOIS(places);})
+            //charger datas et actualise POI toutes les dix secondes
+            sendXhrPromise("../datas/places.json").then((places) => {
+                window.setInterval(()=>{
+                    generatePOIS(places);
+                }, 10000);
+            })
         },
         (err) => console.error('Error in retrieving position', err),
         {enableHighAccuracy: true, maximumAge: 0, timeout: 27000,}

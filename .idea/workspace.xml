@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/boussole.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/boussole.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/radar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/radar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +121,7 @@
       <workItem from="1655194480078" duration="14964000" />
       <workItem from="1655210346804" duration="6222000" />
       <workItem from="1655289305449" duration="2612000" />
-      <workItem from="1655400192583" duration="7210000" />
+      <workItem from="1655400192583" duration="10327000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -404,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655217609833</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fix cursor">
+      <created>1655456942114</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1655456942114</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +442,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add fonctionnalité orientationchange" />
     <MESSAGE value="fix jarallax" />
     <MESSAGE value="add parallaxes" />
     <MESSAGE value="fix toolTipContent to remove content of label" />
@@ -461,7 +466,8 @@
     <MESSAGE value="fix z-index panel" />
     <MESSAGE value="supprime dossier utils" />
     <MESSAGE value="supprime licence" />
-    <option name="LAST_COMMIT_MESSAGE" value="supprime licence" />
+    <MESSAGE value="fix cursor" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix cursor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1655111082934">
