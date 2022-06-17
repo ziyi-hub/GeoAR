@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,7 @@
       <workItem from="1655194480078" duration="14964000" />
       <workItem from="1655210346804" duration="6222000" />
       <workItem from="1655289305449" duration="2612000" />
-      <workItem from="1655400192583" duration="17813000" />
+      <workItem from="1655400192583" duration="20570000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
