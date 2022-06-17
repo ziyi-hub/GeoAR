@@ -63,6 +63,8 @@ function generatePOIS(places){
         // add place name
         const image = document.createElement('a-image');
         image.setAttribute('gps-entity-place', `latitude: ${place.latitude}; longitude: ${place.longitude};`);
+        
+        window.setInterval(()=>{
         navigator.geolocation.getCurrentPosition(function (position) {
             let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
             console.log(dis + " " + place.name + " ");
@@ -79,6 +81,8 @@ function generatePOIS(places){
                 image.setAttribute("height", "10");
             }
         });
+        }, 10000);
+        
         image.setAttribute('src', place.image);
         image.setAttribute('alt', place.name);
         image.setAttribute('data-id', place.id);
@@ -174,9 +178,7 @@ window.onload = () => {
             
             //charger datas et actualise POI toutes les dix secondes
             sendXhrPromise("../datas/places.json").then((places) => {
-                window.setInterval(()=>{
-                    generatePOIS(places);
-                }, 10000);
+                generatePOIS(places);
             })
         },
         (err) => console.error('Error in retrieving position', err),
