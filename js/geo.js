@@ -75,8 +75,8 @@ function generatePOIS(places){
                 }
                 else if(1 < dis < 5){
                     //s'agrandit 4 fois de taille original
-                    image.setAttribute("width", ((dis * 4) / 2).toString());
-                    image.setAttribute("height", ((dis * 4) / 2).toString());
+                    image.setAttribute("width", ((dis * 4) / 1.8).toString());
+                    image.setAttribute("height", ((dis * 4) / 1.8).toString());
                 }else{
                     image.setAttribute("width", "6");
                     image.setAttribute("height", "6");
