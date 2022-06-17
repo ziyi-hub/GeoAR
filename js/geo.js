@@ -63,24 +63,25 @@ function generatePOIS(places){
         // add place name
         const image = document.createElement('a-image');
         image.setAttribute('gps-entity-place', `latitude: ${place.latitude}; longitude: ${place.longitude};`);
-        
+
+        // actualise POI toutes les dix secondes
         window.setInterval(()=>{
-        navigator.geolocation.getCurrentPosition(function (position) {
-            let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
-            console.log(dis + " " + place.name + " ");
-            if (dis <= 1){
-                image.setAttribute("width", "0.4");
-                image.setAttribute("height", "0.4");
-            }
-            else if(1 < dis < 5){
-                //s'agrandit 4 fois de taille original
-                image.setAttribute("width", "4");
-                image.setAttribute("height", "4");
-            }else{
-                image.setAttribute("width", "10");
-                image.setAttribute("height", "10");
-            }
-        });
+            navigator.geolocation.getCurrentPosition(function (position) {
+                let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
+                console.log(dis + " " + place.name + " ");
+                if (dis <= 1){
+                    image.setAttribute("width", "0.4");
+                    image.setAttribute("height", "0.4");
+                }
+                else if(1 < dis < 5){
+                    //s'agrandit 4 fois de taille original
+                    image.setAttribute("width", "4");
+                    image.setAttribute("height", "4");
+                }else{
+                    image.setAttribute("width", "10");
+                    image.setAttribute("height", "10");
+                }
+            });
         }, 10000);
         
         image.setAttribute('src', place.image);
@@ -176,7 +177,7 @@ window.onload = () => {
                 }
             });
             
-            //charger datas et actualise POI toutes les dix secondes
+            // charger datas
             sendXhrPromise("../datas/places.json").then((places) => {
                 generatePOIS(places);
             })

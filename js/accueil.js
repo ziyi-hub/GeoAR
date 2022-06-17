@@ -26,18 +26,28 @@ function clacDistance(lat1, lng1, lat2, lng2){
     return s.toFixed(2);
 }
 
-function loadPlaces() {
-    let PLACES;
-    let request = new XMLHttpRequest();
+/**
+ * il permet de récupérer des datas
+ * @param url url d'un fichier data
+ * @return {Promise<String[]>}
+ */
+function sendXhrPromise(url){
+    return new Promise(function (resolve, reject) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.responseType = 'json';
+        xhr.send();
 
-    request.open('GET','https://ziyi-hub.github.io/GeoAR/datas/places.json', false);
-    request.onreadystatechange = function () {
-        if (this.readyState === 4) {
-            PLACES = JSON.parse(this.responseText);
-        }
-    };
-    request.send();
-    return Promise.resolve(PLACES);
+        //Les données arrivent correctement
+        xhr.addEventListener("load", function (response){
+            resolve(response.target.response);
+        });
+
+        //On a un code d'erreur du serveur
+        xhr.addEventListener("error", function (response){
+            reject("data transfert error : " + response);
+        });
+    })
 }
 
 
@@ -50,6 +60,12 @@ function setCookie(cname, cvalue, exdays) {
 
 
 function generatePlaces(arrSort) {
+    
+    let content = document.querySelector("ul");
+    while (content.hasChildNodes()) {
+        content.removeChild(content.firstChild);
+    }
+    
     for (let i = 0; i < 5; i++){
         let nom = arrSort[i][0];
         let image = arrSort[i][1];
@@ -90,7 +106,6 @@ function generatePlaces(arrSort) {
         div.style.top = "70px";
         div.style.fontWeight = "bolder";
         distance < 1?div.innerHTML = nom + " (" + distance * 1000 + "m)":div.innerHTML = nom + " (" + distance + "km)"
-        //div.innerHTML = nom + "(" + distance + ")";
 
         div.appendChild(p);
         a.appendChild(logo);
@@ -100,11 +115,10 @@ function generatePlaces(arrSort) {
     }
 }
 
-
-window.onload = () => {
+function init(){
     let arr = [];
-    return navigator.geolocation.getCurrentPosition(function (position) {
-        loadPlaces().then((places) => {
+    navigator.geolocation.getCurrentPosition(function (position) {
+        sendXhrPromise("../datas/places.json").then((places) => {
             places.forEach((place) => {
                 let distance = clacDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
                 arr.push([place.name, place.image, parseFloat(distance), place.icon, place.adresse, place.description, place.id]);
@@ -116,4 +130,8 @@ window.onload = () => {
         });
     })
 }
+
+init();
+window.setInterval(init, 30000);
+
 
