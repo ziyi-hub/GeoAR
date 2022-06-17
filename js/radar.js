@@ -60,7 +60,7 @@ window.setInterval(()=>{
             let curLatitude = position.coords.latitude;
             let curLongitude = position.coords.longitude;
             //transformPosition(aleatoire(), curLatitude, curLongitude);
-            transformPosition(data, curLatitude, curLongitude);
+            transformPosition(data, curLatitude, curLongitude, data2);
             createChart(data2, [{x: curLatitude, y: curLongitude}]);
         },
         error => {
@@ -79,7 +79,7 @@ function aleatoire(){
     return dataAle;
 }
 
-function transformPosition(data, curLatitude, curLongitude){
+function transformPosition(data, curLatitude, curLongitude, tab){
     data.forEach(place => {
         let distance = clacDistance(curLatitude, curLongitude, place.x, place.y);
         if (distance > rayon){
@@ -90,25 +90,13 @@ function transformPosition(data, curLatitude, curLongitude){
             let cercleLng = curLongitude + (place.y - curLongitude) * rayon / distance;
             //console.log("Lat tranform: " + cercleLat);
             //console.log("Lng transform: " + cercleLng);
-            data2.push({x: cercleLat, y: cercleLng});
+            tab.push({x: cercleLat, y: cercleLng});
         }else{
-            data2.push({x: place.x, y: place.y});
+            tab.push({x: place.x, y: place.y});
         }
     })
 }
 
-function transformPosition2(data, curLatitude, curLongitude){
-    data.forEach(place => {
-        let distance = clacDistance(curLatitude, curLongitude, place.x, place.y);
-        if (distance > rayon){
-            let cercleLat = curLatitude + (place.x - curLatitude) * rayon / distance;
-            let cercleLng = curLongitude + (place.y - curLongitude) * rayon / distance;
-            data3.push({x: cercleLat, y: cercleLng});
-        }else{
-            data3.push({x: place.x, y: place.y});
-        }
-    })
-}
 
 function clacDistance(lat1, lng1, lat2, lng2){
     let radLat1 = lat1 * Math.PI/ 180.0 ;
@@ -185,7 +173,7 @@ function createChart(data1, data2) {
     }
 
     console.log(data2[0].x);
-    transformPosition2(data1, data2[0].x, data2[0].y);
+    transformPosition(data1, data2[0].x, data2[0].y, data3);
     chart.options.data[0].dataPoints = data3;
     chart.render();
 
