@@ -70,16 +70,16 @@ function generatePOIS(places){
                 let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
                 console.log(dis + " " + place.name + " ");
                 if (dis <= 1){
-                    image.setAttribute("width", "0.4");
-                    image.setAttribute("height", "0.4");
+                    image.setAttribute("width", ((dis * 0.4) / 0.1).toString());
+                    image.setAttribute("height", ((dis * 0.4) / 0.1).toString());
                 }
                 else if(1 < dis < 5){
                     //s'agrandit 4 fois de taille original
-                    image.setAttribute("width", "4");
-                    image.setAttribute("height", "4");
+                    image.setAttribute("width", ((dis * 4) / 2).toString());
+                    image.setAttribute("height", ((dis * 4) / 2).toString());
                 }else{
-                    image.setAttribute("width", "10");
-                    image.setAttribute("height", "10");
+                    image.setAttribute("width", "6");
+                    image.setAttribute("height", "6");
                 }
             });
         }, 10000);
