@@ -63,15 +63,6 @@ function generatePOIS(places){
         // add place name
         const image = document.createElement('a-image');
         image.setAttribute('gps-entity-place', `latitude: ${place.latitude}; longitude: ${place.longitude};`);
-        image.setAttribute('src', place.image);
-        image.setAttribute('alt', place.name);
-        image.setAttribute('data-id', place.id);
-        image.setAttribute('data-latitude', place.latitude);
-        image.setAttribute('data-longitude', place.longitude);
-        image.setAttribute('data-titre', place.name);
-        image.setAttribute('data-description', place.description);
-        image.setAttribute('data-image', place.image);
-
         navigator.geolocation.getCurrentPosition(function (position) {
             let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
             console.log(dis + " " + place.name + " ");
@@ -88,7 +79,14 @@ function generatePOIS(places){
                 image.setAttribute("height", "10");
             }
         });
-
+        image.setAttribute('src', place.image);
+        image.setAttribute('alt', place.name);
+        image.setAttribute('data-id', place.id);
+        image.setAttribute('data-latitude', place.latitude);
+        image.setAttribute('data-longitude', place.longitude);
+        image.setAttribute('data-titre', place.name);
+        image.setAttribute('data-description', place.description);
+        image.setAttribute('data-image', place.image);
         image.setAttribute('href', "javascript:void(0)");
         image.setAttribute('scale', '120 120 120');
         image.setAttribute('open-window-on-click', "")
