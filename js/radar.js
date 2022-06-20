@@ -64,12 +64,12 @@ window.setInterval(()=>{
             createChart(data2, [{x: curLatitude, y: curLongitude}]);
         },
         error => {
-            console.log("Load reject");
+            console.log("Load reject" + error);
         }, {
             enableHighAccuracy: true,
         }
     );
-}, 5000);
+}, 10000);
 
 function aleatoire(){
     let dataAle = [];
@@ -96,7 +96,6 @@ function transformPosition(data, curLatitude, curLongitude, tab){
         }
     })
 }
-
 
 function clacDistance(lat1, lng1, lat2, lng2){
     let radLat1 = lat1 * Math.PI/ 180.0 ;
