@@ -104,86 +104,92 @@ function generatePOIS(places){
     });
 }
 
+function getCurPosition(options) {
+    return new Promise(function (resolve, reject) {
+        navigator.geolocation.getCurrentPosition(resolve, reject, options);
+    });
+}
+
 
 window.onload = () => {
-    // first get current user location
-    return navigator.geolocation.getCurrentPosition(function (position) {
-            AFRAME.registerComponent('open-window-on-click', {
-                init: function () {
-                    this.el.addEventListener('click', () => {
-                        // effacer informations dans panneau
-                        let content = document.querySelector(".panel");
-                        while (content.hasChildNodes()) {
-                            content.removeChild(content.firstChild);
-                        }
-                        //console.log(this.el);
+    AFRAME.registerComponent('open-window-on-click', {
+        init: function () {
+            this.el.addEventListener('click', () => {
+                // effacer informations dans panneau
+                let content = document.querySelector(".panel");
+                while (content.hasChildNodes()) {
+                    content.removeChild(content.firstChild);
+                }
+                //console.log(this.el);
 
-                        //afficher panneau
-                        content.style.display = "block";
-                        content.style.position = "absolute";
-                        content.style.right = "0";
-                        content.style.width = "320px";
+                //afficher panneau
+                content.style.display = "block";
+                content.style.position = "absolute";
+                content.style.right = "0";
+                content.style.width = "320px";
 
-                        //déclarer noeuds
-                        let p = document.createElement("p");
-                        let p2 = document.createElement("p");
-                        let p3 = document.createElement("p");
-                        let close = document.createElement("span");
-                        let button = document.createElement("button");
-                        let img = document.createElement("img");
-                        let latitude = this.el.dataset.latitude;
-                        let longitude = this.el.dataset.longitude;
+                //déclarer noeuds
+                let p = document.createElement("p");
+                let p2 = document.createElement("p");
+                let p3 = document.createElement("p");
+                let close = document.createElement("span");
+                let button = document.createElement("button");
+                let img = document.createElement("img");
+                let latitude = this.el.dataset.latitude;
+                let longitude = this.el.dataset.longitude;
 
-                        //initialise class
-                        img.className = "fit-picture";
-                        img.src = this.el.dataset.image;
-                        img.alt = this.el.dataset.titre;
-                        button.className = "mdl-button mdl-button--raised mdl-button--accent";
-                        button.innerHTML = "Afficher plus";
-                        p.className = "text-large";
-                        p.innerHTML = this.el.dataset.titre;
-                        p2.innerHTML = this.el.dataset.description;
+                //initialise class
+                img.className = "fit-picture";
+                img.src = this.el.dataset.image;
+                img.alt = this.el.dataset.titre;
+                button.className = "mdl-button mdl-button--raised mdl-button--accent";
+                button.innerHTML = "Afficher plus";
+                p.className = "text-large";
+                p.innerHTML = this.el.dataset.titre;
+                p2.innerHTML = this.el.dataset.description;
+
+                getCurPosition()
+                    .then((position) => {
                         let distance = getDistance(latitude, longitude, position.coords.latitude, position.coords.longitude);
-
                         //comparer la distance
                         if (distance < 1){
                             p3.innerHTML = "Distances: " +  (distance * 1000).toFixed(0) + "m"
                         }else{
                             p3.innerHTML = "Distances: " +  distance.toFixed(2) + "km";
                         }
-
-                        //button ferme
-                        close.className = "text-large close";
-                        close.innerHTML = "&#x2715;";
-
-                        close.addEventListener("click", ()=>{
-                            content.style.display = "none";
-                        })
-
-                        //ajout des noeuds
-                        document.querySelector(".panel").appendChild(close);
-                        document.querySelector(".panel").appendChild(p);
-                        document.querySelector(".panel").appendChild(p2);
-                        document.querySelector(".panel").appendChild(p3);
-                        document.querySelector(".panel").appendChild(button);
-                        document.querySelector(".panel").appendChild(img);
-
-                        //transférer datas dans page poiDetail
-                        document.querySelector('.mdl-button').addEventListener("click", ()=>{
-                            setCookie("id", this.el.dataset.id, 1);
-                            setCookie("returnGeo", "true", 1);
-                            window.location.href = "poiDetail.html";
-                        });
+                    })
+                    .catch((err) => {
+                        console.error(err.message);
                     });
-                }
+
+                //button ferme
+                close.className = "text-large close";
+                close.innerHTML = "&#x2715;";
+
+                close.addEventListener("click", ()=>{
+                    content.style.display = "none";
+                })
+
+                //ajout des noeuds
+                document.querySelector(".panel").appendChild(close);
+                document.querySelector(".panel").appendChild(p);
+                document.querySelector(".panel").appendChild(p2);
+                document.querySelector(".panel").appendChild(p3);
+                document.querySelector(".panel").appendChild(button);
+                document.querySelector(".panel").appendChild(img);
+
+                //transférer datas dans page poiDetail
+                document.querySelector('.mdl-button').addEventListener("click", ()=>{
+                    setCookie("id", this.el.dataset.id, 1);
+                    setCookie("returnGeo", "true", 1);
+                    window.location.href = "poiDetail.html";
+                });
             });
-            
-            // charger datas
-            sendXhrPromise("../datas/places.json").then((places) => {
-                generatePOIS(places);
-            })
-        },
-        (err) => console.error('Error in retrieving position', err),
-        {enableHighAccuracy: true, maximumAge: 0, timeout: 27000,}
-    );
+        }
+    });
+    
+    // charger datas
+    sendXhrPromise("../datas/places.json").then((places) => {
+        generatePOIS(places);
+    })
 };
