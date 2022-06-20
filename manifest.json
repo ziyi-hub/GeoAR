@@ -1,0 +1,17 @@
+{
+    "name": "UL Maps",
+    "short_name": "UL Maps",
+    "theme_color": "#00FF00",
+    "background_color": "#00FF00",
+    "display": "fullscreen",
+    "Scope": "/",
+    "start_url": "/index.html",
+    "icons": [
+        {
+            "src": "assets/splashscreen/logo.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        }
+    ],
+    "splash_pages": null
+}

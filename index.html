@@ -14,6 +14,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <title>Introduction</title>
+    
+    <!-- commencer nouveau -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="apple-touch-icon" sizes="192x192" href="assets/splashscreen/logo.png">
+    <meta name="apple-touch-icon" sizes="512x512" href="assets/splashscreen/logo.png">
+    <meta name="apple-mobile-web-app-title" content="UL Maps">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <script>
+        window.addEventListener('beforeinstallprompt', (e) => {
+            let deferredPrompt;
+            let addBtn = document.querySelector('.add-button');
+            addBtn.style.display = 'none';
+            
+            // 防止 Chrome 67 及更早版本自动显示安装提示
+            e.preventDefault();
+            // 稍后再触发此事件
+            deferredPrompt = e;
+            // 更新 UI 以提醒用户可以将 App 安装到桌面
+            addBtn.style.display = 'block';
+
+            addBtn.addEventListener('click', (e) => {
+                // 隐藏显示 A2HS 按钮的界面
+                addBtn.style.display = 'none';
+                // 显示安装提示
+                deferredPrompt.prompt();
+                // 等待用户反馈
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    } else {
+                        console.log('User dismissed the A2HS prompt');
+                    }
+                    deferredPrompt = null;
+                });
+            });
+        });
+    </script>
+    <!-- terminer -->
 </head>
 
 <body>
@@ -21,6 +60,7 @@
         <div class="fond image_2"></div>
         <div class="fond image_1"></div>
         <div class="fond image_3">
+            <button class="add-button">Add to home screen</button>
             <div class="desc titre_1">Visites virtuels de campus</div>
             <p class="desc titre_2">L’application sera sous la forme d’une carte de la université où l’on devra se placer physiquement à divers endroits à la manière en utilisant la réalité augmentée avec Flutter pour une 'visite virtuelle' des campus de l'université de Lorraine à Nancy.</p>
             <center>
