@@ -86,6 +86,7 @@ function generatePOIS(places){
         
         image.setAttribute('src', place.image);
         image.setAttribute('alt', place.name);
+        image.setAttribute('look-at', "[camera]");
         image.setAttribute('data-id', place.id);
         image.setAttribute('data-latitude', place.latitude);
         image.setAttribute('data-longitude', place.longitude);
