@@ -11,23 +11,25 @@ if ('serviceWorker' in navigator) {
 }
 
 let deferredPrompt;
-
+//Si votre application Web progressive répond aux critères d'installation requis , le navigateur déclenche beforeinstallpromptl'événement
 window.addEventListener('beforeinstallprompt', (e) => {
     // Prevent Chrome 67 and earlier from automatically showing the prompt
     e.preventDefault();
     // Stash the event so it can be triggered later.
     deferredPrompt = e;
-    // Update UI notify the user they can install the PWA
-    showInstallPromotion();
     // Update UI notify the user they can add to home screen
-    document.querySelector('#install').style.display = 'block';
+    /*document.querySelector('#install').style.display = 'block';*/
 });
 
 let btnAdd = document.querySelector("#install");
 btnAdd.addEventListener('click', async () => {
     // hide our user interface that shows our A2HS button
-    btnAdd.style.display = 'none';
+    //btnAdd.style.display = 'none';
     // Show the prompt
+    if (!deferredPrompt) {
+        alert("unsupported deferred prompt");
+        return;
+    }
     deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
     await deferredPrompt.userChoice
@@ -39,4 +41,11 @@ btnAdd.addEventListener('click', async () => {
             }
             deferredPrompt = null;
         });
+});
+
+window.addEventListener('appinstalled', () => {
+    // Clear the deferredPrompt so it can be garbage collected
+    deferredPrompt = null;
+    // Optionally, send analytics event to indicate successful install
+    alert('UL Maps was installed');
 });
