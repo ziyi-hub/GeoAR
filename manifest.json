@@ -1,17 +1,24 @@
 {
     "name": "UL Maps",
     "short_name": "UL Maps",
-    "theme_color": "#00FF00",
-    "background_color": "#00FF00",
-    "display": "fullscreen",
-    "Scope": "/",
-    "start_url": "/index.html",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#CC9933",
+    "theme_color": "#CC9933",
+    "orentation": "portrait_only",
     "icons": [
         {
             "src": "assets/splashscreen/logo.png",
-            "sizes": "72x72",
-            "type": "image/png"
+            "sizes": "1024x1024",
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ],
-    "splash_pages": null
+    "prefer_related_applications": true,
+    "related_applications": [
+        {
+            "platform": "play",
+            "id": "com.google.samples.apps.iosched"
+        }
+    ]
 }
