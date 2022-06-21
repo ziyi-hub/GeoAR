@@ -50,15 +50,18 @@ self.addEventListener('fetch', (event)=>{
 });
 
 //supprimer cache
-self.addEventListener('activate', (e)=>{
-    e.waitUntil(
-        caches.keys().then((keys) => {
-            return Promise.add(
-                keys.filter((key) => key !== staticCacheName).map((key => caches.delete(key)))
-            )
+self.addEventListener('activate', function(event) {
+    event.waitUntil(
+        caches.keys().then(function(cacheNames) {
+            return Promise.all(
+                cacheNames.filter(function(cacheName) {
+                    // Return true if you want to remove this cache,
+                    // but remember that caches are shared across
+                    // the whole origin
+                }).map(function(cacheName) {
+                    return caches.delete(cacheName);
+                })
+            );
         })
-            .catch(err => {
-                console.log(err.message);
-            })
-    )
-})
+    );
+});
