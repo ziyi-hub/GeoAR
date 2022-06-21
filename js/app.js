@@ -17,6 +17,10 @@ let btnAdd = document.querySelector("#install");
 btnAdd.addEventListener('click', (e) => {
     // hide our user interface that shows our A2HS button
     btnAdd.style.display = 'none';
+    if (!deferredPrompt) {
+        alert("unsupported deferred prompt");
+        return;
+    }
     // Show the prompt
     deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
