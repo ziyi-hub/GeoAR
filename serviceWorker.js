@@ -26,7 +26,7 @@ self.addEventListener('fetch', (event)=>{
                 // IMPORTANT: Cloner la requête.
                 // Une requete est un flux et est à consommation unique
                 // Il est donc nécessaire de copier la requete pour pouvoir l'utiliser et la servir
-                var fetchRequest = event.request.clone();
+                let fetchRequest = event.request.clone();
 
                 return fetch(fetchRequest).then(
                     function(response) {
@@ -35,7 +35,7 @@ self.addEventListener('fetch', (event)=>{
                         }
 
                         // IMPORTANT: Même constat qu'au dessus, mais pour la mettre en cache
-                        var responseToCache = response.clone();
+                        let responseToCache = response.clone();
 
                         caches.open(staticCacheName)
                             .then(function(cache) {
@@ -49,15 +49,15 @@ self.addEventListener('fetch', (event)=>{
     );
 });
 
-self.addEventListener('activate', (e)=>{
-    e.waitUntil(
-        caches.keys().then(keys => {
-            return Promise.add(
-                keys.filter((key) => key !== staticCacheName).map((key => caches.delete(key)))
-            )
-        })
-        .catch(err => {
-            console.log(err.message);
-        })
-    )
-})
+self.addEventListener('activate', (event) => {
+    console.log('[ServiceWorker] Activate');
+    event.waitUntil((async () => {
+        // Enable navigation preload if it's supported.
+        // See https://developers.google.com/web/updates/2017/02/navigation-preload
+        if ('navigationPreload' in self.registration) {
+            await self.registration.navigationPreload.enable();
+        }
+    })());
+    // Tell the active service worker to take control of the page immediately.
+    self.clients.claim();
+});
