@@ -1,5 +1,5 @@
 //mise en cache
-const staticCacheName = "cache-v1";
+const staticCacheName = "cache-v2";
 const assets = [
     "./",
     "index.html",
