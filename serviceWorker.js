@@ -48,7 +48,7 @@ self.addEventListener('fetch', (event)=>{
             })
     );
 });
-
+/*
 self.addEventListener('activate', (event) => {
     console.log('[ServiceWorker] Activate');
     event.waitUntil((async () => {
@@ -61,3 +61,5 @@ self.addEventListener('activate', (event) => {
     // Tell the active service worker to take control of the page immediately.
     self.clients.claim();
 });
+
+ */
