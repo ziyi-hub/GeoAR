@@ -137,6 +137,15 @@ center{
     padding-bottom: 5%;
 }
 
+#install{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: none;
+    color: red;
+}
+
 @media all and (min-width: 600px) {
     .titre_2 {
         font-size: 1.5em;
