@@ -21,6 +21,7 @@ btnAdd.addEventListener('click', (e) => {
         alert("unsupported deferred prompt");
         return;
     }
+    alert("support deferred prompt");
     // Show the prompt
     deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
