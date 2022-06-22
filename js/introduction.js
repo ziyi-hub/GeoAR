@@ -26,13 +26,55 @@ window.addEventListener('beforeinstallprompt', (e) => {
     }
 });
 
+// Ouvrir la fenêtre de supression
+function openModal() {
+    document.querySelector(".d-modal").style.display="block"
+}
+
+// fermer la fenêtre de supression
+function closeModal() {
+    document.querySelector(".d-modal").style.display="none"
+}
+
+function changeParImage(){
+    let modalbody = document.querySelector(".d-modal-body");
+    while (modalbody.hasChildNodes()) {
+        modalbody.removeChild(modalbody.firstChild);
+    }
+
+    let div = document.createElement("div");
+    let img1 = document.createElement("img"); 
+    let p = document.createElement("h6");
+    let button = document.createElement("button");
+    
+    div.setAttribute("id", "installation");
+    div.className = "desc";
+    
+    img1.setAttribute("src", "./assets/image/installation_1.png");
+    p.innerHTML = "1. Cliquez sur le bouton de partage<br/>2. Cliquez sur l'écran d'accueil<br>3. Cliquez sur Ajouter";
+    button.className = "center btn btn-lg btn-primary btn-continue";
+    button.innerHTML = "Continuer";
+    button.style.width = "100%";
+    
+    div.appendChild(img1);
+    div.appendChild(p);
+    div.appendChild(button);
+    
+    modalbody.appendChild(div);
+    modalbody.style.textAlign = "initial";
+    
+    button.addEventListener("click", ()=>{
+        closeModal();
+    })
+}
+
 let btnAdd = document.querySelector("#install");
 btnAdd.addEventListener('click', async () => {
     // hide our user interface that shows our A2HS button
     // Show the prompt
     if (!deferredPrompt) {
-        alert("unsupported deferred prompt");
-        window.location.hash = "#installation";
+        //alert("unsupported deferred prompt");
+        openModal();
         return;
     }
     deferredPrompt.prompt();

@@ -30,17 +30,40 @@
 <header>
     <div class="fond image_2"></div>
     <div class="fond image_1"></div>
+    <!-- supression fenêtre -->
+    <div class="d-modal fond">
+        <div class="d-modal-content">
+            <div class="d-modal-head">
+                <div class="d-modal-head-left">Alerte</div>
+                <div class="d-modal-head-right" onclick="closeModal()"></div>
+            </div>
+            <div class="d-modal-body">
+                <div class="d-modal-body-left"></div>
+                <div class="d-modal-body-right">
+                    <div class="d-modal-body-title">Votre navigateur ne support pas, Clique sur oui pour installer en manière manuel</div>
+                    <div>
+                        <div class="d-btn" onclick="changeParImage()">Oui</div>
+                        <div class="d-btn" onclick="closeModal()">Annuler</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="install">
+        <div class="titre">        
+            <div class="logo"></div>
+            <h3>UL Maps</h3>
+        </div>
+        <p>Installer UL Maps</p>
+    </div>
+    
     <div class="fond image_3">
-        <button id="install">Install</button>
         <div class="desc titre_1">Visites virtuels de campus</div>
         <p class="desc titre_2">L’application sera sous la forme d’une carte de la université où l’on devra se placer physiquement à divers endroits à la manière en utilisant la réalité augmentée avec Flutter pour une 'visite virtuelle' des campus de l'université de Lorraine à Nancy.</p>
         <center>
             <a href="html/introduction.html"><button type="button" class="center btn btn-lg btn-primary btn-suivant">Suivant</button></a>
             <a href="html/geo.html"><button type="button" class="center btn btn-outline btn-lg text-white border border-2 border-primary btn-sauter">Sauter</button></a>
-            <div id="installation" class="desc">
-                <img src="./assets/image/installation_1.png">
-                <img src="./assets/image/installation_2.png">
-            </div>
         </center>
     </div>
 </header>

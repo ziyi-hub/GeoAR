@@ -84,10 +84,6 @@ div.debug {
     opacity: 0.9;
 }
 
-img{
-    width: 300px;
-}
-
 .desc{
     padding: 10% 6% 6%;
     line-height: 100%;
@@ -103,10 +99,10 @@ img{
     color: white;
 }
 
-.btn-suivant{
+.btn-suivant, .btn-continue{
     font-size: 1.5em; 
     border-radius: 0.5em; 
-    color:white;
+    color: white;
 }
 
 .btn-sauter{
@@ -141,10 +137,156 @@ center{
 }
 
 #install{
-    bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 75px;
+    background: linear-gradient(45deg,#fc5c7d,#6a82fb,#fc5c7d);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto auto;
+    text-align: center;
+    position: absolute;
 }
+
+img{
+    width: 100%;
+}
+
+
+.titre{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+h5{
+    width: fit-content;
+}
+
+.logo{
+    background: url(../assets/splashscreen/logo.png) no-repeat 0 0;
+    background-size: auto 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.d-modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.d-modal-content {
+    width: 345px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.d-modal-head {
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+}
+
+.d-modal-head .d-modal-head-left {
+    float: left;
+    padding-left: 12px;
+}
+
+.d-modal-head .d-modal-head-right {
+
+    float: none;
+    width: 16px;
+    height: 16px;
+    background: url(../assets/image/icon-delete.png) no-repeat 0 0;
+    background-size: auto 16px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.d-modal-body {
+    text-align: center;
+    overflow-y: scroll;
+    height: 160px;
+}
+
+.d-modal-body-left {
+    float: none;
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    width: 80px;
+    height: 110px;
+    position: static;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    vertical-align: top;
+    background: url(../assets/image/dialog_doubt.png) no-repeat 15px 50%;
+    background-size: 62px auto;
+}
+
+.d-modal-body-right {
+    margin: 0;
+    padding: 15px;
+    max-width: 74%;
+    display: inline-block;
+    min-height: 110px;
+    vertical-align: top;
+}
+
+.d-modal-body-title {
+    margin: 20px 0;
+    text-align: left;
+    font-size: inherit;
+}
+
+.d-btn {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.d-btn:first-child, .d-btn:last-child {
+    padding: 0 20px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.d-btn:first-child {
+    color: #fff;
+    border: 1px solid #325ce1;
+    background-color: #325ce1;
+}
+
+.d-btn:last-child {
+    color: #999;
+    border: 1px solid #d9d9d9;
+    background-color: #fafafa;
+}
+
 
 @media all and (min-width: 600px) {
     .titre_2 {
