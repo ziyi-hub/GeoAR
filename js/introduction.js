@@ -19,7 +19,12 @@ window.addEventListener('beforeinstallprompt', (e) => {
     deferredPrompt = e;
     // Update UI notify the user they can add to home screen
     /*document.querySelector('#install').style.display = 'block';*/
-    alert("support to add to home screen");
+    if (!deferredPrompt) {
+        alert("unsupported deferred prompt");
+        return;
+    }else{
+        alert("support deferred prompt");
+    }
 });
 
 let btnAdd = document.querySelector("#install");
@@ -30,8 +35,6 @@ btnAdd.addEventListener('click', async () => {
     if (!deferredPrompt) {
         alert("unsupported deferred prompt");
         return;
-    }else{
-        alert("support deferred prompt");
     }
     deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
