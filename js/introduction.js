@@ -36,7 +36,27 @@ function closeModal() {
     document.querySelector(".d-modal").style.display="none"
 }
 
+function getBrowserType(){
+    let userAgent = navigator.userAgent;
+    let browser='unknown';
+    if (userAgent.indexOf("IE")!=-1) {
+        browser="IE";
+    }else if(userAgent.indexOf('Firefox')!=-1){
+        browser="Firefox";
+    }else if(userAgent.indexOf('OPR')!=-1){
+        browser="Opera";
+    }else if(userAgent.indexOf('Chrome')!=-1){
+        browser="Chrome";
+    }else if(userAgent.indexOf('Safari')!=-1){
+        browser="Safari";
+    }else if(userAgent.indexOf('Trident')!=-1){
+        browser='IE 11';
+    }
+    return browser;
+}
+
 function changeParImage(){
+    console.log(getBrowserType());
     let modalbody = document.querySelector(".d-modal-body");
     while (modalbody.hasChildNodes()) {
         modalbody.removeChild(modalbody.firstChild);
