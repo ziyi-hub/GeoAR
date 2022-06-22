@@ -33,7 +33,7 @@ btnAdd.addEventListener('click', async () => {
     //btnAdd.style.display = 'none';
     // Show the prompt
     if (!deferredPrompt) {
-        alert("unsupported deferred prompt");
+        alert("unsupported deferred prompt2");
         return;
     }
     deferredPrompt.prompt();
