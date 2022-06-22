@@ -7,7 +7,6 @@ div.debug {
     bottom: 20px;
     left: 10px;
     z-index: 1;
-    width: 100%;
     background-color: rgba(1, 1, 1, 0.2);
     color: #ff7500;
     font-size: 0.75em;
@@ -71,9 +70,22 @@ div.debug {
     opacity: 0.9;
 }
 
+.image_3{
+    background-color: black;
+    opacity: 0.7;
+    height: 55%;
+    top: 45%;
+    border-radius: 20px 20px 0 0;
+    color: white;
+}
+
 .image_4{
     background-image: url(../assets/image/intro2.jpg);
     opacity: 0.9;
+}
+
+img{
+    width: 300px;
 }
 
 .desc{
@@ -124,15 +136,6 @@ div.debug {
     margin-right: 20%;
 }
 
-.image_3{
-    background-color: black;
-    opacity: 0.7;
-    height: 55%;
-    top: 45%;
-    border-radius: 20px 20px 0 0;
-    color: white;
-}
-
 center{
     padding-bottom: 5%;
 }
@@ -141,7 +144,6 @@ center{
     bottom: 0;
     width: 100%;
     height: 50px;
-    display: none;
 }
 
 @media all and (min-width: 600px) {

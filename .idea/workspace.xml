@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/image/installation_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/installation_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/introduction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/introduction.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/introduction.css" afterDir="false" />
     </list>
@@ -35,9 +38,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -71,13 +74,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$/examples/places-name" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/image" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -126,7 +130,7 @@
       <workItem from="1655723581516" duration="2955000" />
       <workItem from="1655795310754" duration="20736000" />
       <workItem from="1655821049413" duration="2305000" />
-      <workItem from="1655881538100" duration="2215000" />
+      <workItem from="1655881538100" duration="6155000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -486,12 +490,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="455" height="442" key="Diff.GoToChangePopup/0.0.1440.900@0.0.1440.900" timestamp="1653319432090" />
-    <state x="109" y="110" width="1808" height="970" key="DiffContextDialog" timestamp="1655883046792">
+    <state x="109" y="110" width="1808" height="970" key="DiffContextDialog" timestamp="1655885494479">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="20" y="200" width="1356" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1655823815483" />
     <state x="112" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.801/0.25.1920.1055@0.25.1920.1055" timestamp="1654866494389" />
-    <state x="109" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655883046792" />
+    <state x="109" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655885494479" />
     <state x="705" y="246" key="RollbackChangesDialog" timestamp="1655716446520">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -527,13 +531,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/introduction.js</url>
-          <line>21</line>
+          <line>20</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/introduction.js</url>
-          <line>26</line>
+          <line>25</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="11" />
         </line-breakpoint>

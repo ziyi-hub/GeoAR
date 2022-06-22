@@ -18,7 +18,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // Stash the event so it can be triggered later.
     deferredPrompt = e;
     // Update UI notify the user they can add to home screen
-    document.querySelector('#install').style.display = 'block';
     if (!deferredPrompt) {
         alert("unsupported deferred prompt");
         return;
@@ -30,11 +29,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
 let btnAdd = document.querySelector("#install");
 btnAdd.addEventListener('click', async () => {
     // hide our user interface that shows our A2HS button
-    btnAdd.style.display = 'none';
     // Show the prompt
     if (!deferredPrompt) {
-        alert("unsupported deferred prompt2");
-        
+        alert("unsupported deferred prompt");
+        window.location.hash = "#installation";
         return;
     }
     deferredPrompt.prompt();
