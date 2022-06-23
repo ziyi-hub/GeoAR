@@ -136,6 +136,10 @@ center{
     padding-bottom: 5%;
 }
 
+.logo{
+    margin: 0 3px;
+}
+
 #install{
     width: 100%;
     height: 75px;
@@ -185,7 +189,7 @@ h5{
 }
 
 .d-modal-content {
-    width: 345px;
+    width: 90%;
     background: #fff;
     position: absolute;
     top: 50%;
@@ -226,7 +230,11 @@ h5{
 .d-modal-body {
     text-align: center;
     overflow-y: scroll;
-    height: 160px;
+    height: 200px;
+}
+
+.body-img{
+    text-align: left;
 }
 
 .d-modal-body-left {
@@ -287,6 +295,15 @@ h5{
     background-color: #fafafa;
 }
 
+.alert-system, .alert-img{
+    display: none;
+}
+
+.arrow{
+    position: absolute; 
+    right: 0; 
+    top: 35%;
+}
 
 @media all and (min-width: 600px) {
     .titre_2 {

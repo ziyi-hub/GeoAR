@@ -10,11 +10,16 @@
 
     <!-- css -->
     <link rel="stylesheet" href="stylesheets/introduction.css">
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+    <!-- pwa configuration d'installation -->
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="assets/splashscreen/logo.png">
     <meta name="apple-mobile-web-app-title" content="UL Maps">
@@ -31,20 +36,62 @@
     <div class="fond image_2"></div>
     <div class="fond image_1"></div>
     <!-- supression fenêtre -->
-    <div class="d-modal fond">
+    <div class="d-modal fond alert-warning">
         <div class="d-modal-content">
             <div class="d-modal-head">
-                <div class="d-modal-head-left">Alerte</div>
+                <div class="d-modal-head-left">Installation</div>
                 <div class="d-modal-head-right" onclick="closeModal()"></div>
             </div>
             <div class="d-modal-body">
                 <div class="d-modal-body-left"></div>
                 <div class="d-modal-body-right">
-                    <div class="d-modal-body-title">Votre navigateur ne support pas, Clique sur oui pour installer en manière manuel</div>
+                    <div class="d-modal-body-title">Votre navigateur n'est pas supporté, cliquez sur oui pour regarder manière manuel</div>
                     <div>
-                        <div class="d-btn" onclick="changeParImage()">Oui</div>
+                        <div class="d-btn" onclick="displayModel()">Oui</div>
                         <div class="d-btn" onclick="closeModal()">Annuler</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-modal fond alert-system">
+        <div class="d-modal-content">
+            <div class="d-modal-head">
+                <div class="d-modal-head-left">Installation</div>
+                <div class="d-modal-head-right close-system" onclick="closeModal()"></div>
+            </div>
+            <div class="d-modal-body">
+                <div class="d-modal-body-left"></div>
+                <div class="d-modal-body-right">
+                    <div class="d-modal-body-title">Votre système est: </div>
+                    <div>
+                        <div class="d-btn" onclick="displayiOS()">iOS</div>
+                        <div class="d-btn" onclick="displayAndroid()">Android</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-modal fond alert-img">
+        <div class="d-modal-content">
+            <div class="d-modal-head">
+                <!--<div class="d-modal-head-left" onclick="backSystem()">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </div>-->
+                <div class="d-modal-head-left">Installation</div>
+                <div class="d-modal-head-right close-img" onclick="closeModal()"></div>
+            </div>
+            <div class="d-modal-body body-img">
+                <div class="desc" id="alert-info">
+                    <img class="install-img">
+                    <ul>
+                        <li>Cliquez sur le bouton de partage</li>
+                        <li>Cliquez sur l'écran d'accueil</li>
+                        <li>Cliquez sur Ajouter</li>
+                    </ul>
+                    <button class="center btn btn-lg btn-primary btn-continue">Continuer</button>
                 </div>
             </div>
         </div>
@@ -54,8 +101,13 @@
         <div class="titre">        
             <div class="logo"></div>
             <h3>UL Maps</h3>
+            <span class="arrow">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </span>
         </div>
-        <p>Installer UL Maps</p>
+        <p>
+            Installer UL Maps
+        </p>
     </div>
     
     <div class="fond image_3">
