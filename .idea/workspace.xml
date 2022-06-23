@@ -20,11 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/image/installation_2.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/introduction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/introduction.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/introduction.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/decouvrir.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/decouvrir.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/parametre.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/parametre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/poiDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/poiDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/propos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +136,7 @@
       <workItem from="1655895768116" duration="69000" />
       <workItem from="1655896191945" duration="8932000" />
       <workItem from="1655905920902" duration="5648000" />
-      <workItem from="1655968107809" duration="15906000" />
+      <workItem from="1655968107809" duration="16936000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
