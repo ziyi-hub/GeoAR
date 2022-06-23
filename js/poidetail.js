@@ -18,7 +18,7 @@ function loadPlaces() {
     let request = new XMLHttpRequest();
     let id = getCookie('id');
 
-    request.open('GET','https://ziyi-hub.github.io/GeoAR/datas/places.json', false);
+    request.open('GET','../datas/places.json', false);
     request.onreadystatechange = function () {
         if (this.readyState === 4) {
             places = JSON.parse(this.responseText).find(place => parseInt(place.id) == id);
