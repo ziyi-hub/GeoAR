@@ -130,7 +130,7 @@
       <workItem from="1655895768116" duration="69000" />
       <workItem from="1655896191945" duration="8932000" />
       <workItem from="1655905920902" duration="5648000" />
-      <workItem from="1655968107809" duration="22659000" />
+      <workItem from="1655968107809" duration="22805000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -538,18 +538,6 @@
           <url>file://$PROJECT_DIR$/js/introduction.js</url>
           <line>25</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>211</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>237</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
