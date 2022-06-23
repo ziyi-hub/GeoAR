@@ -207,6 +207,35 @@ function showSlides(n) {
 window.onload = () => {
     document.querySelector(".d-modal-head-right").addEventListener("click", closeModal);
     document.querySelector(".d-btn").addEventListener("click", closeModal);
+
+    //initialise cache de pwa
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('serviceWorker.js')
+            .then(function(reg){
+                console.log("service worker registered")
+            })
+            .catch(function(err) {
+                console.log(err)
+            });
+    } else {
+        console.log("Could not find serviceWorker in navigator")
+    }
+
+    let deferredPrompt;
+    //Si votre application Web progressive répond aux critères d'installation requis , le navigateur déclenche beforeinstallpromptl'événement
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        e.preventDefault();
+        // Stash the event so it can be triggered later.
+        deferredPrompt = e;
+        // Update UI notify the user they can add to home screen
+        if (!deferredPrompt) {
+            alert("unsupported deferred prompt");
+            return;
+        }else{
+            //alert("support deferred prompt");
+        }
+    });
     
     // images slide
     createSlide(images.length);
