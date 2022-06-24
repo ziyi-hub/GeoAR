@@ -100,11 +100,11 @@ function generatePOIS(places){
         image.setAttribute('data-description', place.description);
         image.setAttribute('data-image', place.image);
         image.setAttribute('href', "javascript:void(0)");
-        //image.setAttribute('scale', '120 120 120');
-        image.setAttribute('open-window-on-click', "")
+        image.setAttribute('scale', '120 120');
+        image.setAttribute('open-window-on-click', "");
 
         image.addEventListener('loaded', () => {
-            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
+            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'));
         });
         scene.appendChild(image);
     });
