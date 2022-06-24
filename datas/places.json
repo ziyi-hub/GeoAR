@@ -510,7 +510,7 @@
             "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=-um2nXpENt8oa21GSLNg-w&w=1177&h=580&thumb=2&yaw=276.11548&pitch=0",
             "https://lh5.googleusercontent.com/p/AF1QipNRiYK1r4jkTzRCqi8pwOx6hc25HYg0DKShGpFl=s1031-k-no"
         ],
-        "icon": "../assets/icon/IDMC.png"
+        "icon": "../assets/icon/IDMC_icon.png"
     },
     {
         "id": 27,
