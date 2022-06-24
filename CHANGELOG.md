@@ -1,5 +1,4 @@
 # Changelog v1.0.0-beta
-~~nicolocarpignoli
 
 ### What I done so far
 
