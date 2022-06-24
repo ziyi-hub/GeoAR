@@ -1,3 +1,5 @@
+import geo from "./geo.js";
+
 function selectionSort(arr) {
     let len = arr.length;
     let minIndex, temp;
@@ -31,6 +33,7 @@ function clacDistance(lat1, lng1, lat2, lng2){
  * @param url url d'un fichier data
  * @return {Promise<String[]>}
  */
+/*
 function sendXhrPromise(url){
     return new Promise(function (resolve, reject) {
         let xhr = new XMLHttpRequest();
@@ -49,15 +52,15 @@ function sendXhrPromise(url){
         });
     })
 }
-
-
+*/
+/*
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     let expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
+*/
 
 function generatePlaces(arrSort) {
     
@@ -90,8 +93,7 @@ function generatePlaces(arrSort) {
         a.style.backgroundSize = "cover";
         
         a.addEventListener("click", ()=>{
-            setCookie("id", id, 1);
-            console.log("ok");
+            geo.setCookie("id", id, 1);
             window.location.href = "poiDetail.html";
         })
         
@@ -118,12 +120,12 @@ function generatePlaces(arrSort) {
 function init(){
     let arr = [];
     navigator.geolocation.getCurrentPosition(function (position) {
-        sendXhrPromise("../datas/places.json").then((places) => {
+        geo.sendXhrPromise("../datas/places.json").then((places) => {
             places.forEach((place) => {
                 let distance = clacDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
                 arr.push([place.name, place.image, parseFloat(distance), place.icon, place.adresse, place.description, place.id]);
             });
-            console.log(selectionSort(arr));
+            //console.log(selectionSort(arr));
             let arrSort = selectionSort(arr);
             generatePlaces(arrSort);
             

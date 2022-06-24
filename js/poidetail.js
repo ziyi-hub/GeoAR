@@ -1,3 +1,5 @@
+import geo from "./geo.js";
+
 function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
@@ -91,7 +93,7 @@ function createSlide(nbImage){
     slideContainer.appendChild(next);
 }
 
-
+/*
 function createDot(nbImage){
     let slideDot = document.querySelector(".slide-dot");
 
@@ -105,13 +107,13 @@ function createDot(nbImage){
         slideDot.appendChild(span);
     }
 }
-
+*/
 document.querySelector(".titre").innerHTML = `${place.name}`;
 document.querySelector(".description").innerHTML = `${place.description}`;
 document.querySelector(".adresse").innerHTML = `${place.adresse}`;
 document.querySelector(".site").innerHTML = `${place.site}`;
 createSlide(place.carousel.length);
-createDot(place.carousel.length);
+geo.createDot(place.carousel.length);
 
 let slideIndex = 1;
 showSlides(slideIndex);
