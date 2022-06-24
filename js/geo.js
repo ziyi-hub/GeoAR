@@ -118,6 +118,11 @@ function getCurPosition(options) {
 
 function closeModal(){
     document.querySelector(".d-modal").style.display = "none";
+    // effacer flous
+    let others = document.querySelectorAll('body > *');
+    [].forEach.call(others, function(elem){
+        elem.style.filter = 'initial';
+    });
 }
 
 function createSlide(nbImage){
@@ -187,30 +192,20 @@ function displayContenu(n){
         document.querySelector(".d-btn").style.display = "inline-block";
         let p1 = document.createElement("p");
         let p2 = document.createElement("p");
-        p1.innerHTML = "Découvrez les 5 Université de Lorraine les plus proches dans l'accueil";
-        p2.innerHTML = "Voyez plus informations sur Découvrir";
+        p1.innerHTML = "I. Découvrez les 5 Université de Lorraine les plus proches dans l'accueil";
+        p2.innerHTML = "II. Voyez plus informations sur Découvrir";
         description.appendChild(p1);
         description.appendChild(p2);
     }else if (n === 1){
-        document.querySelector(".d-btn").style.display = "none";
         let p1 = document.createElement("p");
-        let p2 = document.createElement("p");
-        let p3 = document.createElement("p");
-        let p4 = document.createElement("p");
-        p1.innerHTML = "Regardez autour de vous";
-        p2.innerHTML = "Utilisez curseur pour cibler des UL";
-        p3.innerHTML = "Cliquez sur la zone au-dessous de POI pour acvtiver panneau";
-        p4.innerHTML = "Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
+        p1.innerHTML = "I. Regardez autour de vous<br>II. Utilisez curseur pour cibler des UL<br>III. Cliquez sur la zone au-dessous de POI pour acvtiver panneau<br>IV. Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
         description.appendChild(p1);
-        description.appendChild(p2);
-        description.appendChild(p3);
-        description.appendChild(p4);
     } else if (n === 2){
-        document.querySelector(".d-btn").style.display = "none";
         let p1 = document.createElement("p");
-        p1.innerHTML = "Tournez votre mobile, observez l'emplacement du radar";
+        p1.innerHTML = "I. Tournez votre mobile, observez l'emplacement du radar";
         description.appendChild(p1);
     }
+    document.querySelector(".d-btn").addEventListener("click", closeModal);
 }
 
 let slideIndex = 1;
@@ -233,15 +228,19 @@ function showSlides(n) {
 
 window.onload = () => {
     document.querySelector(".d-modal-head-right").addEventListener("click", closeModal);
-    document.querySelector(".d-btn").addEventListener("click", closeModal);
     
     // images slide
     createSlide(images.length);
     createDot(images.length);
-    
     showSlides(slideIndex);
-    document.querySelector(".prev").addEventListener('click', ()=>{plusSlides(-1)})
-    document.querySelector(".next").addEventListener('click', ()=>{plusSlides(1)})
+    document.querySelector(".prev").addEventListener('click', ()=>{
+        plusSlides(-1);
+        displayContenu(slideIndex);
+    })
+    document.querySelector(".next").addEventListener('click', ()=>{
+        plusSlides(1);
+        displayContenu(slideIndex);
+    })
     for(let i = 0; i < document.querySelectorAll(".dot").length; i++){
         document.querySelectorAll(".dot")[i].addEventListener("click", ()=>{currentSlide(i+1);})
     }
