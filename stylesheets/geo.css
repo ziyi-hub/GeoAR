@@ -162,8 +162,8 @@ body > *:not(.d-modal){
 }
 
 .slide-img{
-    width: 81vw;
-    height: 81vw;
+    width: 78vw;
+    height: 78vw;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
