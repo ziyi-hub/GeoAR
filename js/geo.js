@@ -178,11 +178,38 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-function showBtnDemarrer(n){
+function displayContenu(n){
+    let description = document.querySelector(".description");
+    while (description.hasChildNodes()) {
+        description.removeChild(description.firstChild);
+    }
     if (n === images.length){
         document.querySelector(".d-btn").style.display = "inline-block";
-    }else{
+        let p1 = document.createElement("p");
+        let p2 = document.createElement("p");
+        p1.innerHTML = "Découvrez les 5 Université de Lorraine les plus proches dans l'accueil";
+        p2.innerHTML = "Voyez plus informations sur Découvrir";
+        description.appendChild(p1);
+        description.appendChild(p2);
+    }else if (n === 1){
         document.querySelector(".d-btn").style.display = "none";
+        let p1 = document.createElement("p");
+        let p2 = document.createElement("p");
+        let p3 = document.createElement("p");
+        let p4 = document.createElement("p");
+        p1.innerHTML = "Regardez autour de vous";
+        p2.innerHTML = "Utilisez curseur pour cibler des UL";
+        p3.innerHTML = "Cliquez sur la zone au-dessous de POI pour acvtiver panneau";
+        p4.innerHTML = "Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
+        description.appendChild(p1);
+        description.appendChild(p2);
+        description.appendChild(p3);
+        description.appendChild(p4);
+    } else if (n === 2){
+        document.querySelector(".d-btn").style.display = "none";
+        let p1 = document.createElement("p");
+        p1.innerHTML = "Tournez votre mobile, observez l'emplacement du radar";
+        description.appendChild(p1);
     }
 }
 
@@ -201,7 +228,7 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active2";
-    showBtnDemarrer(n);
+    displayContenu(n);
 }
 
 window.onload = () => {
