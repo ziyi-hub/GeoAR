@@ -198,11 +198,11 @@ function displayContenu(n){
         description.appendChild(p2);
     }else if (n === 1){
         let p1 = document.createElement("p");
-        p1.innerHTML = "I. Regardez autour de vous<br>II. Utilisez curseur pour cibler des UL<br>III. Cliquez sur la zone au-dessous de POI pour acvtiver panneau<br>IV. Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
+        p1.innerHTML = "I. Scannez autour de vous<br>II. Utilisez curseur pour cibler des UL<br>III. Cliquez sur la zone au-dessous de POI pour acvtiver panneau<br>IV. Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
         description.appendChild(p1);
     } else if (n === 2){
         let p1 = document.createElement("p");
-        p1.innerHTML = "I. Tournez votre mobile, observez l'emplacement du radar";
+        p1.innerHTML = "I. Tournez votre mobile, l’emplacement de chaque UL dans radar va changer en temps réel";
         description.appendChild(p1);
     }
     document.querySelector(".d-btn").addEventListener("click", closeModal);
