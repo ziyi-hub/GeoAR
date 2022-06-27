@@ -1,6 +1,6 @@
 let images = [
     "../assets/splashscreen/logo.png",
-    "../assets/splashscreen/logo.png",
+    "../assets/image/videoRadar.gif",
     "../assets/splashscreen/logo.png"
 ];
 
