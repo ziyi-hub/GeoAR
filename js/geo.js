@@ -1,7 +1,7 @@
 let images = [
-    "../assets/splashscreen/logo.png",
+    "../assets/image/videoPoi.gif",
     "../assets/image/videoRadar.gif",
-    "../assets/splashscreen/logo.png"
+    "../assets/image/videoAccueil.gif"
 ];
 
 /**
