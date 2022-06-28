@@ -137,7 +137,7 @@ btnAdd.addEventListener('click', async () => {
             deferredPrompt = null;
         });
 });
-
+//Cette fonctionnalité ne détecte pas installation manuel
 window.addEventListener('appinstalled', () => {
     // Clear the deferredPrompt so it can be garbage collected
     deferredPrompt = null;
