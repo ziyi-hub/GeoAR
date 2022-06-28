@@ -190,6 +190,7 @@ h5{
 
 .d-modal-content {
     width: 90%;
+    height: 90%;
     background: #fff;
     position: absolute;
     top: 50%;
@@ -230,7 +231,7 @@ h5{
 .d-modal-body {
     text-align: center;
     overflow-y: scroll;
-    height: 200px;
+    height: 85%;
 }
 
 .body-img{
