@@ -43,19 +43,8 @@ function closeModal() {
 }
 
 /**
- * Retourner dans la popup de demande de système
- */
-
-function backSystem(){
-    document.querySelector(".alert-system").style.display = "block";
-    document.querySelector(".alert-warning").style.display = "none";
-    document.querySelector(".alert-img").style.display = "none";
-}
-
-/**
  * Rediriger dans la popup warning
  */
-
 function displayModel(){
     document.querySelector(".alert-system").style.display = "block";
     document.querySelector(".alert-warning").style.display = "none";
@@ -70,7 +59,7 @@ function displayiOS(){
     document.querySelector(".alert-system").style.display = "none";
     document.querySelector(".alert-img").style.display = "block";
     let navigator = getBrowserType();
-    console.log(navigator);
+    //console.log(navigator);
     switch(navigator) {
         case "Safari":
             document.querySelector(".install-img").setAttribute("src", "./assets/image/installation_1.png");
@@ -108,6 +97,10 @@ function displayAndroid(){
     }
 }
 
+/**
+ * Getter type de navigateur
+ * @return {string}
+ */
 function getBrowserType(){
     let userAgent = navigator.userAgent;
     let browser='unknown';
@@ -149,5 +142,5 @@ window.addEventListener('appinstalled', () => {
     // Clear the deferredPrompt so it can be garbage collected
     deferredPrompt = null;
     // Optionally, send analytics event to indicate successful install
-    alert('UL Maps was installed');
+    alert('UL Maps bien installé');
 });
