@@ -21,7 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/introduction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/decouvrir.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/decouvrir.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/parametre.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/parametre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/poiDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/poiDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/propos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +141,7 @@
       <workItem from="1656073393159" duration="7174000" />
       <workItem from="1656313523906" duration="5347000" />
       <workItem from="1656400548885" duration="774000" />
-      <workItem from="1656401676951" duration="11986000" />
+      <workItem from="1656401676951" duration="12384000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
