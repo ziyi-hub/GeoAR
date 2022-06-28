@@ -102,6 +102,7 @@ function generatePOIS(places){
         image.setAttribute('href', "javascript:void(0)");
         image.setAttribute('scale', '120 120 120');
         image.setAttribute('side', "front");
+        image.setAttribute('opacity', "0.7");
         image.setAttribute('open-window-on-click', "");
         image.setAttribute('cursor-listener', "");
 
@@ -269,11 +270,13 @@ window.onload = () => {
                 heightOriginal = this.getAttribute("height");
                 this.setAttribute("width", (parseFloat(this.getAttribute("width")) * 1.1).toString());
                 this.setAttribute("height", (parseFloat(this.getAttribute("height")) * 1.1).toString());
+                this.setAttribute('opacity', "1");
             });
 
             this.el.addEventListener('mouseleave', function () {
                 this.setAttribute("width", widthOriginal);
                 this.setAttribute("height", heightOriginal);
+                this.setAttribute('opacity', "0.7");
             });
         }
     });
