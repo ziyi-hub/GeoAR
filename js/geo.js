@@ -74,7 +74,7 @@ function generatePOIS(places){
         window.setInterval(()=>{
             navigator.geolocation.getCurrentPosition(function (position) {
                 let dis = getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
-                console.log(dis + " " + place.name + " ");
+                //console.log(dis + " " + place.name + " ");
                 if (dis <= 1){
                     image.setAttribute("width", (dis * 4).toString());
                     image.setAttribute("height", (dis * 4).toString());
@@ -101,18 +101,20 @@ function generatePOIS(places){
         image.setAttribute('data-image', place.image);
         image.setAttribute('href', "javascript:void(0)");
         image.setAttribute('scale', '120 120 120');
+        image.setAttribute('side', "front");
         image.setAttribute('open-window-on-click', "");
+        image.setAttribute('cursor-listener', "");
 
         //Lorsque cursor cible un POI, son couleur va changer en rouge
         image.addEventListener('mouseenter', changeColor);
         image.addEventListener('mouseleave', changeBack);
         let cursor = document.querySelector('#cursor');
         function changeColor () {
-            cursor.setAttribute('material', 'color: red; shader: flat');
+            cursor.setAttribute('material', 'color: #bbf085; shader: flat');
         }
 
         function changeBack () {
-            cursor.setAttribute('material', 'color: #FFC0CB; shader: flat');
+            cursor.setAttribute('material', 'color: red; shader: flat');
         }
 
         image.addEventListener('loaded', () => {
@@ -256,6 +258,25 @@ window.onload = () => {
     for(let i = 0; i < document.querySelectorAll(".dot").length; i++){
         document.querySelectorAll(".dot")[i].addEventListener("click", ()=>{currentSlide(i+1);})
     }
+
+    
+    // Component pour s'agrandir POI on click.
+    AFRAME.registerComponent('cursor-listener', {
+        init: function () {
+            let widthOriginal, heightOriginal;
+            this.el.addEventListener('mouseenter', function () {
+                widthOriginal = this.getAttribute("width");
+                heightOriginal = this.getAttribute("height");
+                this.setAttribute("width", (parseFloat(this.getAttribute("width")) * 1.1).toString());
+                this.setAttribute("height", (parseFloat(this.getAttribute("height")) * 1.1).toString());
+            });
+
+            this.el.addEventListener('mouseleave', function () {
+                this.setAttribute("width", widthOriginal);
+                this.setAttribute("height", heightOriginal);
+            });
+        }
+    });
     
     //AFRAME
     AFRAME.registerComponent('open-window-on-click', {
