@@ -133,6 +133,7 @@ function getCurPosition(options) {
 
 function closeModal(){
     document.querySelector(".d-modal").style.display = "none";
+    localStorage.setItem('closeModal', "true");
     // effacer flous
     let others = document.querySelectorAll('body > *');
     [].forEach.call(others, function(elem){
@@ -206,11 +207,8 @@ function displayContenu(n){
     if (n === images.length){
         document.querySelector(".d-btn").style.display = "inline-block";
         let p1 = document.createElement("p");
-        let p2 = document.createElement("p");
-        p1.innerHTML = "I. Découvrez les 5 Université de Lorraine les plus proches dans l'accueil";
-        p2.innerHTML = "II. Voyez plus informations sur Découvrir";
+        p1.innerHTML = "I. Découvrez les 5 Université de Lorraine les plus proches dans l'accueil<br>II. Voyez plus informations sur Découvrir";
         description.appendChild(p1);
-        description.appendChild(p2);
     }else if (n === 1){
         let p1 = document.createElement("p");
         p1.innerHTML = "I. Scannez autour de vous<br>II. Utilisez curseur pour cibler des UL<br>III. Cliquez sur la zone au-dessous de POI pour acvtiver panneau<br>IV. Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
@@ -242,6 +240,8 @@ function showSlides(n) {
 }
 
 window.onload = () => {
+    (localStorage.getItem('closeModal') === "true")?closeModal():null;
+
     document.querySelector(".d-modal-head-right").addEventListener("click", closeModal);
     
     // images slide
