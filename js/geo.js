@@ -103,6 +103,18 @@ function generatePOIS(places){
         image.setAttribute('scale', '120 120 120');
         image.setAttribute('open-window-on-click', "");
 
+        //Lorsque cursor cible un POI, son couleur va changer en rouge
+        image.addEventListener('mouseenter', changeColor);
+        image.addEventListener('mouseleave', changeBack);
+        let cursor = document.querySelector('#cursor');
+        function changeColor () {
+            cursor.setAttribute('material', 'color: red; shader: flat');
+        }
+
+        function changeBack () {
+            cursor.setAttribute('material', 'color: #FFC0CB; shader: flat');
+        }
+
         image.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'));
         });

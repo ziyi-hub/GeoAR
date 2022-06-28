@@ -22,6 +22,7 @@
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +135,8 @@
       <workItem from="1656054478168" duration="9279000" />
       <workItem from="1656073393159" duration="7174000" />
       <workItem from="1656313523906" duration="5347000" />
+      <workItem from="1656400548885" duration="774000" />
+      <workItem from="1656401676951" duration="639000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -523,11 +526,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/geo.js</url>
-          <line>94</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/radar.js</url>
           <line>71</line>
           <option name="timeStamp" value="2" />
@@ -545,8 +543,13 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/introduction.js</url>
           <line>149</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/geo.js</url>
+          <line>94</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
