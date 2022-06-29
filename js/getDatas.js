@@ -128,44 +128,6 @@ function showSlidesIntro(n) {
     dots[slideIndex-1].className += " active2";
 }
 
-function showSlidesGeo(n) {
-    let i;
-    let slides = document.getElementsByClassName("custom-slider");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active2", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active2";
-    displayContenu(n);
-}
-
-function displayContenu(n){
-    let description = document.querySelector(".description");
-    while (description.hasChildNodes()) {
-        description.removeChild(description.firstChild);
-    }
-    if (n === 1){
-        let p1 = document.createElement("p");
-        p1.innerHTML = "I. Scannez autour de vous<br>II. Utilisez curseur pour cibler des UL<br>III. Cliquez sur la zone au-dessous de POI pour acvtiver panneau<br>IV. Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
-        description.appendChild(p1);
-    } else if (n === 2){
-        let p1 = document.createElement("p");
-        p1.innerHTML = "I. Tournez votre mobile, l’emplacement de chaque UL dans radar va changer en temps réel";
-        description.appendChild(p1);
-    }else{
-        document.querySelector(".d-btn").style.display = "inline-block";
-        let p1 = document.createElement("p");
-        p1.innerHTML = "I. Découvrez les 5 Université de Lorraine les plus proches dans l'accueil<br>II. Voyez plus informations sur Découvrir";
-        description.appendChild(p1);
-    }
-}
-
 export default {
     sendXhrPromise: sendXhrPromise,
     setCookie: setCookie,
@@ -174,7 +136,5 @@ export default {
     createDot: createDot,
     plusSlides: plusSlides,
     currentSlide: currentSlide,
-    showSlidesGeo: showSlidesGeo,
     showSlidesIntro: showSlidesIntro,
-    displayContenu: displayContenu,
 }

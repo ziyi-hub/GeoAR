@@ -89,6 +89,52 @@ function closeModal(){
     });
 }
 
+function displayContenu(n){
+    let description = document.querySelector(".description");
+    while (description.hasChildNodes()) {
+        description.removeChild(description.firstChild);
+    }
+    if (n === images.length){
+        document.querySelector(".d-btn").style.display = "inline-block";
+        let p1 = document.createElement("p");
+        p1.innerHTML = "I. Découvrez les 5 Université de Lorraine les plus proches dans l'accueil<br>II. Voyez plus informations sur Découvrir";
+        description.appendChild(p1);
+    }else if (n === 1){
+        let p1 = document.createElement("p");
+        p1.innerHTML = "I. Scannez autour de vous<br>II. Utilisez curseur pour cibler des UL<br>III. Cliquez sur la zone au-dessous de POI pour acvtiver panneau<br>IV. Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
+        description.appendChild(p1);
+    } else if (n === 2){
+        let p1 = document.createElement("p");
+        p1.innerHTML = "I. Tournez votre mobile, l’emplacement de chaque UL dans radar va changer en temps réel";
+        description.appendChild(p1);
+    }
+    document.querySelector(".d-btn").addEventListener("click", closeModal);
+}
+
+function plusSlides(n) {
+    showSlidesGeo(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlidesGeo(slideIndex = n);
+}
+
+function showSlidesGeo(n) {
+    let i;
+    let slides = document.getElementsByClassName("custom-slider");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active2", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active2";
+}
+
 window.onload = () => {
     (localStorage.getItem('closeModal') === "true")?closeModal():null;
 
@@ -97,19 +143,20 @@ window.onload = () => {
     // images slide
     datas.createSlide(images.length, images);
     datas.createDot(images.length);
-    datas.showSlidesGeo(slideIndex);
+    showSlidesGeo(slideIndex);
+    displayContenu(slideIndex);
     document.querySelector(".prev").addEventListener('click', ()=>{
-        datas.plusSlides(-1);
-        datas.displayContenu(slideIndex);
+        plusSlides(-1);
+        displayContenu(slideIndex);
         document.querySelector(".d-btn").addEventListener("click", closeModal);
     })
     document.querySelector(".next").addEventListener('click', ()=>{
-        datas.plusSlides(1);
-        datas.displayContenu(slideIndex);
+        plusSlides(1);
+        displayContenu(slideIndex);
         document.querySelector(".d-btn").addEventListener("click", closeModal);
     })
     for(let i = 0; i < document.querySelectorAll(".dot").length; i++){
-        document.querySelectorAll(".dot")[i].addEventListener("click", ()=>{datas.currentSlide(i+1);})
+        document.querySelectorAll(".dot")[i].addEventListener("click", ()=>{currentSlide(i+1);})
     }
 
     
