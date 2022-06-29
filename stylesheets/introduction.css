@@ -132,6 +132,11 @@ div.debug {
     margin-right: 20%;
 }
 
+.btn-ios, .btn-android{
+    width: 30%;
+    margin: initial;
+}
+
 center{
     padding-bottom: 5%;
 }
@@ -295,15 +300,33 @@ h5{
     border: 1px solid #d9d9d9;
     background-color: #fafafa;
 }
-
+/*
 .alert-system, .alert-img{
     display: none;
 }
-
+*/
 .arrow{
     position: absolute; 
     right: 0; 
     top: 35%;
+}
+
+.install-img{
+    width: 78vw;
+    height: 78vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+
+.btn-bar{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 @media all and (min-width: 600px) {

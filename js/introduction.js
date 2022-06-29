@@ -26,6 +26,14 @@ window.addEventListener('beforeinstallprompt', (e) => {
     }
 });
 
+//Cette fonctionnalité ne détecte pas installation manuel
+window.addEventListener('appinstalled', () => {
+    // Clear the deferredPrompt so it can be garbage collected
+    deferredPrompt = null;
+    // Optionally, send analytics event to indicate successful install
+    alert('UL Maps bien installé');
+});
+
 /**
  * Ouvrir la popup de supression
  */
@@ -38,82 +46,26 @@ function openModal() {
  */
 function closeModal() {
     document.querySelector(".alert-warning").style.display="none";
-    document.querySelector(".alert-system").style.display="none";
     document.querySelector(".alert-img").style.display="none";
 }
 
-/**
- * Rediriger dans la popup warning
- */
-function displayModel(){
-    document.querySelector(".alert-system").style.display = "block";
+function displayImg(){
     document.querySelector(".alert-warning").style.display = "none";
-    document.querySelector(".alert-img").style.display = "none";
+    document.querySelector(".alert-img").style.display = "block";
 }
 
 /**
  * Rediriger dans la popup d'installation d'image Android
  */
 function displayiOS(){
-    document.querySelector(".alert-warning").style.display = "none";
-    document.querySelector(".alert-system").style.display = "none";
-    document.querySelector(".alert-img").style.display = "block";
-    let navigator = getBrowserType();
-    //console.log(navigator);
-    switch(navigator) {
-        case "Safari":
-            document.querySelector(".install-img").setAttribute("src", "./assets/image/installation_1.png");
-            document.querySelector(".btn-continue").addEventListener("click", ()=>{
-                closeModal();
-            })
-            break;
-        default:
-            document.querySelector("#alert-info").style.display = "none";
-            document.querySelector(".body-img").innerHTML = "Votre navigateur " + navigator + " non pris en charge, vous devriez ouvrir avec Safari";
-            break;
-    }
+    document.querySelector(".install-img").setAttribute("src", "./assets/image/installation_1.png");
 }
 
 /**
  * Rediriger dans la popup d'installation d'image Android
  */
 function displayAndroid(){
-    document.querySelector(".alert-warning").style.display = "none";
-    document.querySelector(".alert-system").style.display = "none";
-    document.querySelector(".alert-img").style.display = "block";
-    let navigator = getBrowserType();
-    console.log(navigator);
-    switch(navigator) {
-        case "Chrome":
-            document.querySelector(".install-img").setAttribute("src", "./assets/image/installation_2.JPG");
-            document.querySelector(".btn-continue").addEventListener("click", ()=>{
-                closeModal();
-            });
-            break;
-        default:
-            document.querySelector("#alert-info").style.display = "none";
-            document.querySelector(".body-img").innerHTML = "Votre navigateur " + navigator + " non pris en charge, vous devriez ouvrir avec Chrome";
-            break;
-    }
-}
-
-/**
- * Getter type de navigateur
- * @return {string}
- */
-function getBrowserType(){
-    let userAgent = navigator.userAgent;
-    let browser='unknown';
-    if(userAgent.indexOf('Firefox')!=-1){
-        browser="Firefox";
-    }else if(userAgent.indexOf('OPR')!=-1){
-        browser="Opera";
-    }else if(userAgent.indexOf('Chrome')!=-1){
-        browser="Chrome";
-    }else if(userAgent.indexOf('Safari')!=-1){
-        browser="Safari";
-    }
-    return browser;
+    document.querySelector(".install-img").setAttribute("src", "./assets/image/installation_2.JPG");
 }
 
 let btnAdd = document.querySelector("#install");
@@ -137,10 +89,17 @@ btnAdd.addEventListener('click', async () => {
             deferredPrompt = null;
         });
 });
-//Cette fonctionnalité ne détecte pas installation manuel
-window.addEventListener('appinstalled', () => {
-    // Clear the deferredPrompt so it can be garbage collected
-    deferredPrompt = null;
-    // Optionally, send analytics event to indicate successful install
-    alert('UL Maps bien installé');
-});
+
+let close = document.querySelector(".d-modal-head-right");
+let btnDisplay = document.querySelector(".btn-display");
+let btnAnnuler = document.querySelector(".btn-annuler");
+let closeImg = document.querySelector(".close-img");
+let btniOS = document.querySelector(".btn-ios");
+let btnAndroid = document.querySelector(".btn-android");
+
+close.addEventListener("click", closeModal);
+btnDisplay.addEventListener("click", ()=>{displayImg(); displayAndroid();});
+btnAnnuler.addEventListener("click", closeModal);
+closeImg.addEventListener("click", closeModal);
+btniOS.addEventListener("click", displayiOS);
+btnAndroid.addEventListener("click", displayAndroid);
