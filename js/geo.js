@@ -135,6 +135,14 @@ function showSlidesGeo(n) {
     dots[slideIndex-1].className += " active2";
 }
 
+navigator.permissions.query({name: 'camera'})
+    .then((permissionObj) => {
+        console.log(permissionObj.state);
+    })
+    .catch((error) => {
+        console.log('Got error :', error);
+    })
+
 //window.onload = () => {
     (localStorage.getItem('closeModal') === "true")?closeModal():null;
 
