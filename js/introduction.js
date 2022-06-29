@@ -1,3 +1,6 @@
+let images = [];
+let slideIndex = 1;
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('serviceWorker.js')
         .then(function(reg){
@@ -67,9 +70,13 @@ function empty() {
 function displayiOS(){
     empty();
     images.push(
-        "assets/image/videoRadar.gif",
-        "assets/image/videoRadar.gif",
+        "assets/image/installation_ios_1.png",
+        "assets/image/installation_ios_2.png",
     );
+    displaySlides();
+}
+
+function displaySlides(){
     // images slide
     createSlide(images.length);
     createDot(images.length);
@@ -91,22 +98,10 @@ function displayiOS(){
 function displayAndroid(){
     empty();
     images.push(
-        "assets/image/videoPoi.gif",
-        "assets/image/videoPoi.gif",
+        "assets/image/installation_android_1.png",
+        "assets/image/installation_android_2.png",
     );
-    // images slide
-    createSlide(images.length);
-    createDot(images.length);
-    showSlides(slideIndex);
-    document.querySelector(".prev").addEventListener('click', ()=>{
-        plusSlides(-1);
-    })
-    document.querySelector(".next").addEventListener('click', ()=>{
-        plusSlides(1);
-    })
-    for(let i = 0; i < document.querySelectorAll(".dot").length; i++){
-        document.querySelectorAll(".dot")[i].addEventListener("click", ()=>{currentSlide(i+1);})
-    }
+    displaySlides();
 }
 
 let btnAdd = document.querySelector("#install");
@@ -147,11 +142,7 @@ btnAndroid.addEventListener("click", displayAndroid);
 
 
 
-//======================jno ===========================
-
-let images = [];
-
-let slideIndex = 1;
+//====================== image slide ===========================
 
 function createSlide(nbImage){
     let slideContainer = document.querySelector(".slide-container");
