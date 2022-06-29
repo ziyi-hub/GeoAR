@@ -76,6 +76,12 @@ function displayiOS(){
         "assets/image/installation_ios_2.png",
     );
     displaySlides();
+    document.querySelector(".btn-ios").style.backgroundColor = "#325ce1";
+    document.querySelector(".btn-ios").style.color = "#fff";
+    document.querySelector(".btn-ios").style.border = "1px solid #325ce1";
+    document.querySelector(".btn-android").style.backgroundColor = "#fafafa";
+    document.querySelector(".btn-android").style.color = "#999";
+    document.querySelector(".btn-android").style.border = "1px solid #d9d9d9";
 }
 
 /**
@@ -106,6 +112,12 @@ function displayAndroid(){
         "assets/image/installation_android_2.png",
     );
     displaySlides();
+    document.querySelector(".btn-android").style.backgroundColor = "#325ce1";
+    document.querySelector(".btn-android").style.color = "#fff";
+    document.querySelector(".btn-android").style.border = "1px solid #325ce1";
+    document.querySelector(".btn-ios").style.backgroundColor = "#fafafa";
+    document.querySelector(".btn-ios").style.color = "#999";
+    document.querySelector(".btn-ios").style.border = "1px solid #d9d9d9";
 }
 
 let btnAdd = document.querySelector("#install");
