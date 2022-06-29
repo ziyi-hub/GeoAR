@@ -1,3 +1,6 @@
+let place = loadPlaces();
+let images = place.carousel;
+
 function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
@@ -27,9 +30,6 @@ function loadPlaces() {
     request.send();
     return places;
 }
-let place = loadPlaces();
-let images = place.carousel;
-
 
 function initMap(content) {
     let mapProp = {
@@ -144,7 +144,6 @@ document.querySelector(".prev").addEventListener('click', ()=>{plusSlides(-1)})
 
 document.querySelector(".next").addEventListener('click', ()=>{plusSlides(1)})
 
-
 for(let i = 0; i < document.querySelectorAll(".dot").length; i++){
     document.querySelectorAll(".dot")[i].addEventListener("click", ()=>{currentSlide(i+1);})
 }
@@ -157,4 +156,4 @@ document.querySelector(".btn-close").addEventListener("click", ()=>{
     }else{
         window.location.href = "decouvrir.html";
     }
-})
+});

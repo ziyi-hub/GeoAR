@@ -368,5 +368,5 @@ export default {
     sendXhrPromise: sendXhrPromise,
     setCookie: setCookie,
     createDot: createDot,
-    
+    getDistance: getDistance,
 }

@@ -17,51 +17,6 @@ function selectionSort(arr) {
     return arr;
 }
 
-function clacDistance(lat1, lng1, lat2, lng2){
-    let radLat1 = lat1 * Math.PI/ 180.0 ;
-    let radLat2 = lat2 * Math.PI/ 180.0 ;
-    let a = radLat1 - radLat2;
-    let b = lng1 * Math.PI/ 180.0 - lng2 * Math.PI/ 180.0 ;
-    let s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.pow(Math.sin(b / 2), 2)))
-    s = s * 6378.137; //Earth radius
-    s = Math.round(s * 10000) / 10000;
-    return s.toFixed(2);
-}
-
-/**
- * il permet de récupérer des datas
- * @param url url d'un fichier data
- * @return {Promise<String[]>}
- */
-/*
-function sendXhrPromise(url){
-    return new Promise(function (resolve, reject) {
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', url);
-        xhr.responseType = 'json';
-        xhr.send();
-
-        //Les données arrivent correctement
-        xhr.addEventListener("load", function (response){
-            resolve(response.target.response);
-        });
-
-        //On a un code d'erreur du serveur
-        xhr.addEventListener("error", function (response){
-            reject("data transfert error : " + response);
-        });
-    })
-}
-*/
-/*
-function setCookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    let expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-*/
-
 function generatePlaces(arrSort) {
     
     let content = document.querySelector("ul");
@@ -122,8 +77,8 @@ function init(){
     navigator.geolocation.getCurrentPosition(function (position) {
         geo.sendXhrPromise("../datas/places.json").then((places) => {
             places.forEach((place) => {
-                let distance = clacDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
-                arr.push([place.name, place.image, parseFloat(distance), place.icon, place.adresse, place.description, place.id]);
+                let distance = geo.getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
+                arr.push([place.name, place.image, parseFloat(distance.toFixed(2)), place.icon, place.adresse, place.description, place.id]);
             });
             //console.log(selectionSort(arr));
             let arrSort = selectionSort(arr);

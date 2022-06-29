@@ -20,14 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/image/installation_android_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/installation_android_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/installation_ios_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/installation_ios_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/installation_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/installation_2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/introduction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/decouvrir.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/decouvrir.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/poiDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/poiDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/accueil.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/accueil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/decouvrir.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/decouvrir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/poidetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/poidetail.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +143,7 @@
       <workItem from="1656400548885" duration="774000" />
       <workItem from="1656401676951" duration="14592000" />
       <workItem from="1656451193819" duration="1337000" />
-      <workItem from="1656486465329" duration="12563000" />
+      <workItem from="1656486465329" duration="15089000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>

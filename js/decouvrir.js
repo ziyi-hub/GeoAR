@@ -1,3 +1,5 @@
+import geo from "./geo.js";
+
 function filtrer() {
     let input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
@@ -15,39 +17,16 @@ function filtrer() {
     }
 }
 
-
-function loadPlaces() {
-    let PLACES;
-    let request = new XMLHttpRequest();
-
-    request.open('GET','../datas/places.json', false);
-    request.onreadystatechange = function () {
-        if (this.readyState === 4) {
-            PLACES = JSON.parse(this.responseText);
-        }
-    };
-    request.send();
-    return Promise.resolve(PLACES);
-}
-
-
-function setCookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    let expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-
 window.onload = () => {
     const ul = document.querySelector('#myUL');
     ul.style.position = "relative";
     ul.style.bottom = "100px";
 
     const myInput = document.querySelector('#myInput');
+    myInput.addEventListener("keyup", filtrer);
     myInput.style.zIndex = "100";
 
-    loadPlaces()
+    geo.sendXhrPromise("../datas/places.json")
         .then((places) => {
             places.forEach((place) => {
                 const id = place.id;
@@ -84,8 +63,8 @@ window.onload = () => {
                 ul.appendChild(li);
                 
                 li.addEventListener("click", ()=>{
-                    setCookie("id", id, 1);
-                    setCookie("returnGeo", "false", 1);
+                    geo.setCookie("id", id, 1);
+                    geo.setCookie("returnGeo", "false", 1);
                     window.location.href = "poiDetail.html";
                 })
 
