@@ -134,7 +134,7 @@ function showSlidesGeo(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active2";
 }
-
+/*
 navigator.permissions.query({name: 'camera'})
     .then((permissionObj) => {
         console.log(permissionObj.state);
@@ -142,7 +142,7 @@ navigator.permissions.query({name: 'camera'})
     .catch((error) => {
         console.log('Got error :', error);
     })
-
+*/
 //window.onload = () => {
     (localStorage.getItem('closeModal') === "true")?closeModal():null;
 
