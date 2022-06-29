@@ -135,7 +135,7 @@ function showSlidesGeo(n) {
     dots[slideIndex-1].className += " active2";
 }
 
-window.onload = () => {
+//window.onload = () => {
     (localStorage.getItem('closeModal') === "true")?closeModal():null;
 
     document.querySelector(".d-modal-head-right").addEventListener("click", closeModal);
@@ -261,4 +261,4 @@ window.onload = () => {
     datas.sendXhrPromise("../datas/places.json").then((places) => {
         generatePOIS(places);
     })
-};
+//};
