@@ -1,4 +1,4 @@
-import geo from "./geo.js";
+import datas from "./getDatas.js";
 
 function filtrer() {
     let input, filter, ul, li, a, i, txtValue;
@@ -26,7 +26,7 @@ window.onload = () => {
     myInput.addEventListener("keyup", filtrer);
     myInput.style.zIndex = "100";
 
-    geo.sendXhrPromise("../datas/places.json")
+    datas.sendXhrPromise("../datas/places.json")
         .then((places) => {
             places.forEach((place) => {
                 const id = place.id;
@@ -63,8 +63,8 @@ window.onload = () => {
                 ul.appendChild(li);
                 
                 li.addEventListener("click", ()=>{
-                    geo.setCookie("id", id, 1);
-                    geo.setCookie("returnGeo", "false", 1);
+                    datas.setCookie("id", id, 1);
+                    datas.setCookie("returnGeo", "false", 1);
                     window.location.href = "poiDetail.html";
                 })
 

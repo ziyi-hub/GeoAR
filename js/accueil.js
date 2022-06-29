@@ -1,4 +1,4 @@
-import geo from "./geo.js";
+import datas from "./getDatas.js";
 
 function selectionSort(arr) {
     let len = arr.length;
@@ -18,7 +18,6 @@ function selectionSort(arr) {
 }
 
 function generatePlaces(arrSort) {
-    
     let content = document.querySelector("ul");
     while (content.hasChildNodes()) {
         content.removeChild(content.firstChild);
@@ -48,7 +47,7 @@ function generatePlaces(arrSort) {
         a.style.backgroundSize = "cover";
         
         a.addEventListener("click", ()=>{
-            geo.setCookie("id", id, 1);
+            datas.setCookie("id", id, 1);
             window.location.href = "poiDetail.html";
         })
         
@@ -75,9 +74,9 @@ function generatePlaces(arrSort) {
 function init(){
     let arr = [];
     navigator.geolocation.getCurrentPosition(function (position) {
-        geo.sendXhrPromise("../datas/places.json").then((places) => {
+        datas.sendXhrPromise("../datas/places.json").then((places) => {
             places.forEach((place) => {
-                let distance = geo.getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
+                let distance = datas.getDistance(place.latitude, place.longitude, position.coords.latitude, position.coords.longitude);
                 arr.push([place.name, place.image, parseFloat(distance.toFixed(2)), place.icon, place.adresse, place.description, place.id]);
             });
             //console.log(selectionSort(arr));
