@@ -308,6 +308,23 @@ h5{
         text-align: justify;
         padding-top: 0;
     }
+
+    .d-modal-body-title {
+        margin: 20px 0;
+        text-align: justify;
+        font-size: 1.5em;
+    }
+
+    .d-modal-head .d-modal-head-left {
+        float: left;
+        padding-left: 12px;
+        font-size: 1.5em;
+    }
+    
+    .desc{
+        line-height: initial;
+    }
+    
 }
 
 
