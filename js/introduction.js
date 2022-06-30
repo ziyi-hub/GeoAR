@@ -35,8 +35,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
 window.addEventListener('appinstalled', () => {
     // Clear the deferredPrompt so it can be garbage collected
     deferredPrompt = null;
+    // Update UI notify the user they can add to home screen
+    document.querySelector('#install').style.display = 'none';
     // Optionally, send analytics event to indicate successful install
-    alert('UL Maps bien installé');
+    alert('Merci d\'avoir installé notre application!');
 });
 
 /**
@@ -119,29 +121,6 @@ function displayAndroid(){
     document.querySelector(".btn-ios").style.color = "#999";
     document.querySelector(".btn-ios").style.border = "1px solid #d9d9d9";
 }
-
-/**
- * Getter type de navigateur
- * @return {string}
- */
-function getBrowserType(){
-    let userAgent = navigator.userAgent;
-    let browser='unknown';
-    if(userAgent.indexOf('Firefox')!=-1){
-        browser="Firefox";
-    }else if(userAgent.indexOf('OPR')!=-1){
-        browser="Opera";
-    }else if(userAgent.indexOf('Chrome')!=-1){
-        browser="Chrome";
-    }else if(userAgent.indexOf('Safari')!=-1){
-        browser="Safari";
-    }else{
-        browser="Unknow";
-    }
-    return browser;
-}
-
-alert(getBrowserType());
 
 let btnAdd = document.querySelector("#install");
 btnAdd.addEventListener('click', async () => {
