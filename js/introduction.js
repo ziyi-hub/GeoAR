@@ -37,6 +37,7 @@ window.addEventListener('appinstalled', () => {
     deferredPrompt = null;
     // Update UI notify the user they can add to home screen
     document.querySelector('#install').style.display = 'none';
+    localStorage.setItem('appinstalled', "true");
     // Optionally, send analytics event to indicate successful install
     alert('Merci d\'avoir installé notre application!');
 });
@@ -120,6 +121,12 @@ function displayAndroid(){
     document.querySelector(".btn-ios").style.backgroundColor = "#fafafa";
     document.querySelector(".btn-ios").style.color = "#999";
     document.querySelector(".btn-ios").style.border = "1px solid #d9d9d9";
+}
+
+if(localStorage.getItem('appinstalled') === "true"){
+    document.querySelector('#install').style.display = 'none';
+}else{
+    document.querySelector('#install').style.display = 'block';
 }
 
 let btnAdd = document.querySelector("#install");
