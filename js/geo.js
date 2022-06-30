@@ -101,7 +101,7 @@ function displayContenu(n){
         description.appendChild(p1);
     }else if (n === 1){
         let p1 = document.createElement("p");
-        p1.innerHTML = "I. Scannez autour de vous<br>II. Utilisez curseur pour cibler des UL<br>III. Cliquez sur la zone au-dessous de POI pour acvtiver panneau<br>IV. Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
+        p1.innerHTML = "I. Utilisez votre caméra pour inspecter lentement ce qui vous entoure<br>II. Utilisez curseur pour cibler des UL<br>III. Cliquez sur la zone au-dessous de POI pour activer panneau<br>IV. Cliquez sur bouton AFFICHER PLUS pour voir plus informations";
         description.appendChild(p1);
     } else if (n === 2){
         let p1 = document.createElement("p");
