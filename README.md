@@ -1,8 +1,14 @@
 # GeoAR.js
 
-To better introduce this library I wrote an [article on Medium](https://medium.com/chialab-open-source/location-based-gps-augmented-reality-on-the-web-7a540c515b3c). You can start from it.
+une application qui permet de visualiser l'environnement de chaque établissement de l’Université de Lorraine pour une visite virtuelle où des points d’intérêts et les objets virtuels sont ajoutés à différentes scènes.
 
-## Components
+## Tâches à faire
+- Installation hors-ligne de PWA
+- API nodejs
+- Optimisation temps de charge radar
+- Sans cursor, cliquant directement sur l’objet
+
+## Components utilisés
 
 ### `gps-camera`
 
@@ -36,8 +42,8 @@ In addition to that, as you can see on the example above, we also have to add `r
 
 This component makes every entity GPS-trackable. It assignes a specific world position to the entity, so the user can see it when their phone is pointing to its position in the real world. If user is far from the entity, their will see it smaller. If it is too far, their will not see it at all.
 
-It requires latitude and longitude as a single string parameter (example with `a-box` aframe primitive):
+It requires latitude and longitude as a single string parameter (example with `a-image` aframe primitive):
 
 ```HTML
-<a-box color="yellow" gps-entity-place="latitude: <your-latitude>; longitude: <your-longitude>"/>
+<a-image color="yellow" gps-entity-place="latitude: <your-latitude>; longitude: <your-longitude>"/>
 ```

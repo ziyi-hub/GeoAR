@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ade8236f-51ba-4eab-9e5b-7840adfbbe7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/geo.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/geo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/geo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/geo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +81,56 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/js" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prepublish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prepublish" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.prepublish" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.watch" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -139,7 +190,9 @@
       <workItem from="1656401676951" duration="14592000" />
       <workItem from="1656451193819" duration="1337000" />
       <workItem from="1656486465329" duration="29634000" />
-      <workItem from="1656662506330" duration="3111000" />
+      <workItem from="1656662506330" duration="3325000" />
+      <workItem from="1657008598067" duration="3849000" />
+      <workItem from="1657121538626" duration="1378000" />
     </task>
     <task id="LOCAL-00001" summary="add fonctionnalité orientationchange">
       <created>1654606176633</created>
@@ -507,10 +560,10 @@
     <state x="20" y="200" width="1356" height="700" key="DiffContextDialog/0.25.1440.875@0.25.1440.875" timestamp="1656410289596" />
     <state x="112" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.801/0.25.1920.1055@0.25.1920.1055" timestamp="1654866494389" />
     <state x="108" y="110" width="1808" height="970" key="DiffContextDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655993242995" />
-    <state x="529" y="205" key="RollbackChangesDialog" timestamp="1656504372042">
+    <state x="529" y="205" key="RollbackChangesDialog" timestamp="1657122279217">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="529" y="205" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1656504372042" />
+    <state x="529" y="205" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1657122279217" />
     <state x="705" y="246" key="RollbackChangesDialog/265.1105.1440.875/0.0.1920.1080@0.0.1920.1080" timestamp="1655716446520" />
     <state x="469" y="176" key="SettingsEditor" timestamp="1654859467779">
       <screen x="0" y="0" width="1920" height="1080" />
