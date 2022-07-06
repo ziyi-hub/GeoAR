@@ -7,6 +7,9 @@ une application qui permet de visualiser l'environnement de chaque établissemen
 - API nodejs
 - Optimisation temps de charge radar
 - Sans cursor, cliquant directement sur l’objet
+- Add UX/UI and messages when GPS data is not available or there's very poor signal (using a property)
+- Added an alert message when geolocation is switched off (from Phone Settings or permission not granted) also handled with alerts the [iOS 12 motion sensors permissions problem](https://www.macrumors.com/2019/02/04/ios-12-2-safari-motion-orientation-access-toggle/)
+
 
 ## Components utilisés
 
