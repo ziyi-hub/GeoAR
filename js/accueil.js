@@ -1,5 +1,10 @@
 import datas from "./getDatas.js";
 
+/**
+ * Il permet de tirer des objets par la distance
+ * @param arr
+ * @return {*}
+ */
 function selectionSort(arr) {
     let len = arr.length;
     let minIndex, temp;
@@ -17,6 +22,10 @@ function selectionSort(arr) {
     return arr;
 }
 
+/**
+ * Il permet d'afficher la liste de 5 Universités de Lorraine les plus proches
+ * @param arrSort
+ */
 function generatePlaces(arrSort) {
     let content = document.querySelector("ul");
     while (content.hasChildNodes()) {
@@ -71,6 +80,9 @@ function generatePlaces(arrSort) {
     }
 }
 
+/**
+ * Il permet de initialiser l'accueil
+ */
 function init(){
     let arr = [];
     navigator.geolocation.getCurrentPosition(function (position) {
