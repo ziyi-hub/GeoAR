@@ -1,6 +1,11 @@
 let place = loadPlaces();
 let images = place.carousel;
 
+/**
+ * Il permet de récupérer un élément dans cookie transmettant
+ * @param cname nom de cookie
+ * @return {string} valeur retourné
+ */
 function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
@@ -16,6 +21,10 @@ function getCookie(cname) {
     return "";
 }
 
+/**
+ * On parcourt toutes les données, si le id de chaque université correspond au id transmettant, alors renvoie tous les éléments de cette université
+ * @return {*}
+ */
 function loadPlaces() {
     let places;
     let request = new XMLHttpRequest();
@@ -31,6 +40,10 @@ function loadPlaces() {
     return places;
 }
 
+/**
+ * Il permet de initialiser Google Maps
+ * @param content
+ */
 function initMap(content) {
     let mapProp = {
         center: new google.maps.LatLng(parseFloat(place.latitude), parseFloat(place.longitude)),
@@ -55,7 +68,10 @@ function initMap(content) {
 
 google.maps.event.addDomListener(window, 'load', initMap(place.name));
 
-
+/**
+ * Il permet de créer des images coulissantes
+ * @param nbImage
+ */
 function createSlide(nbImage){
     let slideContainer = document.querySelector(".slide-container");
 
@@ -91,7 +107,10 @@ function createSlide(nbImage){
     slideContainer.appendChild(next);
 }
 
-
+/**
+ * Il permet de créer des indicateur de position de l'image courantes
+ * @param nbImage
+ */
 function createDot(nbImage){
     let slideDot = document.querySelector(".slide-dot");
 
@@ -116,14 +135,26 @@ createDot(place.carousel.length);
 let slideIndex = 1;
 showSlides(slideIndex);
 
+/**
+ * Il permet de passer tutoriel suivant
+ * @param n
+ */
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
+/**
+ * Il permet de afficher tutoriel courant
+ * @param n
+ */
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+/**
+ * Lorsque l'utilisateur passer tutoriel, son point d'indicateur correspondant va afficher en gris foncé, sinon en gris claire
+ * @param n
+ */
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("custom-slider");
@@ -148,7 +179,9 @@ for(let i = 0; i < document.querySelectorAll(".dot").length; i++){
     document.querySelectorAll(".dot")[i].addEventListener("click", ()=>{currentSlide(i+1);})
 }
 
-
+/**
+ * il permet de revenir au page précédent correspondant
+ */
 document.querySelector(".btn-close").addEventListener("click", ()=>{
     let returnGeo = getCookie('returnGeo');
     if (returnGeo === "true"){
