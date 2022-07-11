@@ -47,12 +47,15 @@ self.addEventListener('fetch', (event)=>{
                         // IMPORTANT: Même constat qu'au dessus, mais pour la mettre en cache
                         let responseToCache = response.clone();
 
-                        caches.open(staticCacheName)
-                            .then(function(cache) {
-                                cache.put(event.request, responseToCache).then(res => console.log(res));
-                            });
+                        // ignore des demandes de chrome-extension
+                        if((event.request.url.indexOf('http') === 0)) {
+                            caches.open(staticCacheName)
+                                .then(function (cache) {
+                                    cache.put(event.request, responseToCache).then(res => console.log(res));
+                                });
 
-                        return response;
+                            return response;
+                        }
                     }
                 );
             })
