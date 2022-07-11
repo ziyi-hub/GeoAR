@@ -43,20 +43,23 @@ window.addEventListener('appinstalled', () => {
 });
 
 /**
- * Ouvrir la popup de supression
+ * Ouvrir la popup d'installation
  */
 function openModal() {
     document.querySelector(".alert-warning").style.display="block";
 }
 
 /**
- * fermer la popup de supression
+ * fermer la popup d'installation
  */
 function closeModal() {
     document.querySelector(".alert-warning").style.display="none";
     document.querySelector(".alert-img").style.display="none";
 }
 
+/**
+ * Passer la popup d'installation
+ */
 function displayImg(){
     document.querySelector(".alert-warning").style.display = "none";
     document.querySelector(".alert-img").style.display = "block";
@@ -70,7 +73,7 @@ function empty() {
 }
 
 /**
- * Rediriger dans la popup d'installation d'image Android
+ * Rediriger dans la popup d'installation d'image iOS
  */
 function displayiOS(){
     empty();
@@ -123,12 +126,16 @@ function displayAndroid(){
     document.querySelector(".btn-ios").style.border = "1px solid #d9d9d9";
 }
 
+/**
+ * Si UL Maps a été installé, cache le bouton d'installation
+ */
 if(localStorage.getItem('appinstalled') === "true"){
     document.querySelector('#install').style.display = 'none';
 }else{
     document.querySelector('#install').style.display = 'block';
 }
 
+//PWA installation
 let btnAdd = document.querySelector("#install");
 btnAdd.addEventListener('click', async () => {
     // hide our user interface that shows our A2HS button

@@ -25,7 +25,7 @@ function sendXhrPromise(url){
 }
 
 /**
- * il permet d'enregistrer un valeur dans un cookie
+ * Il permet de mettre en place un cookie
  * @param cname nom de cookie
  * @param cvalue valeur de cookie
  * @param exdays date d'expiration
@@ -38,7 +38,7 @@ function setCookie(cname, cvalue, exdays) {
 }
 
 /**
- * il permet de calculer la distance de l'Université de Lorraine
+ * Il permet de calculer la distance entre l'utilisateur et l'Université de Lorraine
  * @param lat1 latitude de l'Université de Lorraine
  * @param lng1 longitude de l'Université de Lorraine
  * @param lat2 latitude de ma position courant
@@ -55,6 +55,11 @@ function getDistance(lat1, lng1, lat2, lng2){
     return Math.round(s * 10000) / 10000;
 }
 
+/**
+ * Il permet de créer des images coulissantes
+ * @param nbImage
+ * @param images
+ */
 function createSlide(nbImage, images){
     let slideContainer = document.querySelector(".slide-container");
 
@@ -90,6 +95,10 @@ function createSlide(nbImage, images){
     slideContainer.appendChild(next);
 }
 
+/**
+ * Il permet de créer des point d'indice
+ * @param nbImage
+ */
 function createDot(nbImage){
     let slideDot = document.querySelector(".slide-dot");
 
@@ -104,14 +113,26 @@ function createDot(nbImage){
     }
 }
 
+/**
+ * Il permet de passer indice suivant
+ * @param n nombre d'image
+ */
 function plusSlides(n) {
     showSlidesIntro(slideIndex += n);
 }
 
+/**
+ * Il permet d'afficher indice courant
+ * @param n nombre d'image
+ */
 function currentSlide(n) {
     showSlidesIntro(slideIndex = n);
 }
 
+/**
+ * Il permet de display des images coulissantes
+ * @param n nombre d'image
+ */
 function showSlidesIntro(n) {
     let i;
     let slides = document.getElementsByClassName("custom-slider");
@@ -128,6 +149,9 @@ function showSlidesIntro(n) {
     dots[slideIndex-1].className += " active2";
 }
 
+/**
+ * exporter
+ */
 export default {
     sendXhrPromise: sendXhrPromise,
     setCookie: setCookie,
