@@ -1,5 +1,8 @@
 import datas from "./getDatas.js";
 
+/**
+ * Il permet de filtrer les résultats et cette fonction sera appelée lorsque le champ de texte changera
+ */
 function filtrer() {
     let input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
@@ -63,6 +66,7 @@ window.onload = () => {
                 ul.appendChild(li);
                 
                 li.addEventListener("click", ()=>{
+                    //mettre en place des cookie pour transférer datas
                     datas.setCookie("id", id, 1);
                     datas.setCookie("returnGeo", "false", 1);
                     window.location.href = "poiDetail.html";
