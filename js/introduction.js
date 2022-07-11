@@ -3,6 +3,11 @@ import datas from "./getDatas.js";
 let images = [];
 let slideIndex = 1;
 
+/**
+ * Enregistrer le Service Worker
+ * Si l'API service worker est prise en charge dans le navigateur, il est enregistré pour le site en utilisant la méthode ServiceWorkerContainer.register(). Son contenu se trouve dans le fichier sw.js et peut être exécuté une fois que l'enregistrement a réussi. C'est la seule partie de code du Service Worker qui se trouve dans le fichier app.js. Tout le reste spécifique au Service Worker se trouve dans le fichier sw.js .
+ * Lien: https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps/Offline_Service_workers#service_workers_dans_lapp_js13kpwa 
+ */
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('serviceWorker.js')
         .then(function(reg){

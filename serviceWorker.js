@@ -1,11 +1,17 @@
-//mise en cache
+/**
+ * Une variable pour enregistrer le nom du cache est créée, les fichiers de l'app shell sont listés dans un tableau.
+ */
 const staticCacheName = "cache-v2";
 const assets = [
     "./",
     "index.html",
 ]
 
-//ajout fichiers en cache
+/**
+ * Une fois que l'enregistrement a été réalisé, le fichier sw.js est automatiquement téléchargé, puis installé, et finalement activé.
+ * L'API nous permet d'ajouter des intercepteurs d'événements ou event listeners pour les événements clef qui nous intéressent — le premier est l'événement install
+ * Dans le listener install, nous pouvons initialiser le cache et y ajouter des fichiers pour une utilisation hors connexion. Notre app cache-v2 ci-dessus fait exactement ça
+ */
 self.addEventListener('install', (e)=>{
     e.waitUntil(
         caches.open(staticCacheName).then((cache)=>{
@@ -14,6 +20,10 @@ self.addEventListener('install', (e)=>{
     )
 });
 
+/**
+ * Il permet d'intercepter des requêtes et d'y répondre de façon personnalisée. Voic un exemple d'utilisation simpliste
+ * La réponse peut être ce que nous voulons: le fichier demandé, sa copie mise en cache ou un bout de code JavaScript qui fera quelque chose de particulier — les possibilités sont infinies
+ */
 self.addEventListener('fetch', (event)=>{
     event.respondWith(
         caches.match(event.request)
@@ -49,7 +59,9 @@ self.addEventListener('fetch', (event)=>{
     );
 });
 
-//supprimer cache
+/**
+ * Il permet de vider l'ancien cache dont nous n'avons désormais plus besoin
+ */
 self.addEventListener('activate', function(event) {
     event.waitUntil(
         caches.keys().then(function(cacheNames) {
