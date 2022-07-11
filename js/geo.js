@@ -73,12 +73,20 @@ function generatePOIS(places){
     });
 }
 
+/**
+ * Il permet de récupérer position courante
+ * @param options
+ * @return {Promise<unknown>}
+ */
 function getCurPosition(options) {
     return new Promise(function (resolve, reject) {
         navigator.geolocation.getCurrentPosition(resolve, reject, options);
     });
 }
 
+/**
+ * Il permet de fermer un panneau informative
+ */
 function closeModal(){
     document.querySelector(".d-modal").style.display = "none";
     localStorage.setItem('closeModal', "true");
@@ -89,6 +97,10 @@ function closeModal(){
     });
 }
 
+/**
+ * Il permet d'afficher contenu de tutoriel
+ * @param n
+ */
 function displayContenu(n){
     let description = document.querySelector(".description");
     while (description.hasChildNodes()) {
@@ -111,14 +123,26 @@ function displayContenu(n){
     document.querySelector(".d-btn").addEventListener("click", closeModal);
 }
 
+/**
+ * Il permet de passer tutoriel suivant
+ * @param n
+ */
 function plusSlides(n) {
     showSlidesGeo(slideIndex += n);
 }
 
+/**
+ * Il permet de afficher tutoriel courant
+ * @param n
+ */
 function currentSlide(n) {
     showSlidesGeo(slideIndex = n);
 }
 
+/**
+ * Lorsque l'utilisateur passer tutoriel, son point d'indicateur correspondant va afficher en gris foncé, sinon en gris claire
+ * @param n
+ */
 function showSlidesGeo(n) {
     let i;
     let slides = document.getElementsByClassName("custom-slider");
