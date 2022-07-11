@@ -58,6 +58,7 @@ function generatePOIS(places){
         image.addEventListener('mouseenter', changeColor);
         image.addEventListener('mouseleave', changeBack);
         let cursor = document.querySelector('#cursor');
+        
         function changeColor () {
             cursor.setAttribute('material', 'color: #bbf085; shader: flat');
         }
@@ -66,9 +67,6 @@ function generatePOIS(places){
             cursor.setAttribute('material', 'color: red; shader: flat');
         }
 
-        image.addEventListener('loaded', () => {
-            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'));
-        });
         scene.appendChild(image);
     });
 }
